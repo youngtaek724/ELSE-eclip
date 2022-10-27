@@ -1,0 +1,344 @@
+@charset "UTF-8";
+/* content========================================================================== */
+.content {
+    margin-top: 50px;
+    height: 100%;
+}
+
+.content_wrapper {
+    margin: 0 auto;
+    margin-top: 70px;
+    width: 95%;
+}
+
+.user_search {
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    /* border: 1px solid red; */
+}
+
+.user_list {
+    margin-top: 20px;
+    width: 100%;
+    max-height: 800px;
+    background-color: white;
+    /* border: 1px solid red; */
+}
+
+.total_user {
+    position: relative;
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 20px;
+    padding-top: 10px;
+    height: 50px;
+    /* border: 1px solid slateblue; */
+}
+
+.notice_info {
+    width: 100%;
+    display: flex;
+}
+
+.user_info_wrapper {
+    /* border: 1px solid salmon; */
+    position: relative;
+}
+
+.check {
+    width: 70px;
+    padding-left: 24px;
+}
+
+.checkbox {
+    position: absolute;
+    top: 9px;
+    left: 36px;
+}
+
+input[id="total_check"] {
+    /* position: relative; */
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 6px;
+    left: 4px;
+}
+
+.user_info_title{
+    padding-top: 9px;
+    font-size: 16px;
+    margin-right: 20px;
+    width: 120px;
+}
+
+
+.user_info_top_div {
+    width: 100%;
+    height: 40px;
+}
+
+.user_list_info {
+    /* border: 1px solid seagreen; */
+    width: 100%;
+    max-height: 700px;
+}
+
+.user_info_wrapper :last-child {
+    padding-bottom: 8px;
+}
+
+.user_list_box {
+    position: relative;
+}
+
+.one_check {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 28px;
+    left: -10px;
+}
+
+.user_content {
+    width: 100%;
+    height: 50px;
+    /* border: 1px solid skyblue; */
+}
+
+.user_one_info {
+    padding-top: 24px;
+}
+
+
+/* search======================================================================== */
+.user_search {
+    position: relative;
+    height: 60px;
+}
+
+.user_search > div {
+    margin-left: 150px;
+}
+
+.user_search  img {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 18px;
+    left: 105px;
+}
+
+.search_text {
+    font-size: 20px;
+    background-color: white;
+    border: none;
+    width: 80%;
+    height: 30px;
+    padding-left: 20px;
+    margin-top: 16px;
+}
+
+.search_text:focus {
+    outline: none;
+}
+
+.board_title {
+    /* border: 1px solid black; */
+    width: 500px;
+    text-align: center;
+}
+
+.content_text_align {
+    text-align: center;
+    /* border: 1px solid black; */
+    width: 150px;
+}
+
+.title_bold {
+    font-weight: 700;
+}
+
+.btn_delete {
+    position: absolute;
+    top: 12px;
+    right: 22px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==================================== */
+.visit_statis {
+    width: 100%;
+    /* border: 1px solid blue; */
+    background-color: white;
+}
+
+.visit_title {
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom: 1px solid lightgray;
+    padding-top: 10px;
+    padding-left: 20px;
+    height: 50px;
+}
+
+.visit_chart {
+    width: 100%;
+    background-color: white;
+}
+
+.chart_box {
+    /* border: 1px solid blue; */
+    width: 90%;
+    margin: 0 auto;
+}
+
+.chart_flex {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.chart_flex_div {
+    background-color: white;
+    width: 48%;
+    text-align: center;
+}
+
+
+.parti_chart > canvas {
+    margin: 0 auto;
+}
+
+.use_point {
+    width: 100%;
+}
+
+.use_point_list {
+    display: flex;
+    /* border: 1px solid black; */
+    font-size: 20px;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+}
+
+.use_point_name {
+    width: 10%;
+}
+
+.use_point_place {
+    width: 30%;
+}
+
+.use_point_minus {
+    width: 20%;
+}
+
+.use_point_date {
+    width: 30%;
+}
+
+.daily_summary {
+    width: 100%;
+    background-color: white;
+    position: relative;
+    margin-bottom: 8px;
+}
+
+.card_head {
+    padding: 0 24px;
+    position: relative;
+    line-height: 50px;
+    min-height: 50px;
+    vertical-align: middle;
+    display: flex;
+}
+
+.choose_year {
+    display: inline-block;
+    margin-right: 10px;
+    width: 120px;
+    border-bottom-color: rgba(12, 12, 12, 0.12);
+    height: 29px;
+    line-height: 29px;
+    font-size: 14px;
+}
+
+.choose_month {
+    display: inline-block;
+    margin-right: 10px;
+    width: 120px;
+    border-bottom-color: rgba(12, 12, 12, 0.12);
+    height: 29px;
+    line-height: 29px;
+    font-size: 14px;
+}
+
+.card_body {
+    border-top: 1px solid #eee;
+    position: relative;
+}
+
+.table_responsive {
+    min-height: 0.01%;
+    overflow-x: auto;
+}
+
+.summary_table {
+    border-collapse: separate;
+    width: 100%;
+    max-width: 100%;
+    background-color: transparent;
+    /* margin-bottom: 10px; */
+}
+
+.text_center {
+    padding-left: 24px;
+    vertical-align: middle;
+    font-size: 13px;
+    padding: 8px;
+    text-align: center;
+}
+
+.text_right {
+    padding-left: 24px;
+    vertical-align: middle;
+    font-size: 13px;
+    padding: 8px;
+    text-align: right;
+}
+
+.point_padding {
+    padding-right: 20px;
+}
+
+.chart_flex_bottom {
+    /* border: 1px solid salmon; */
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

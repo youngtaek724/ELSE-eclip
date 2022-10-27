@@ -1,0 +1,74 @@
+@charset "UTF-8";
+.userInfo{
+    margin-top: 5%;
+    width: 15%;
+    height: 75%;
+    background-color: white;
+    border-style: groove;
+}
+
+.userProfile {
+    width: 60%;
+    border-radius: 50%;
+    margin-left: 15%;
+    margin-top: 15%;
+}
+
+#mpDIV{
+    text-align: center;
+    border-top-left-radius : 10px;
+    border-top-right-radius : 10px;
+    border-bottom-right-radius : 10px;
+    border-bottom-left-radius : 10px;
+}
+
+#left{
+    text-align: left;
+    margin-left: 10%;
+}
+
+#bold{
+    text-align: right;
+    font-size: 20px;
+}
+
+.supportList{
+    margin-top: 10%;
+    border-left-width:1px;
+    border-left-style:solid;
+    border-top-left-radius : 0px;
+    border-top-right-radius : 0px;
+    border-bottom-right-radius : 0px;
+    border-bottom-left-radius : 0px;
+}
+
+.userTag{
+    margin-left: 10%;
+    width: 80%;
+    border-style:groove;
+    border-top-left-radius : 10px;
+    border-top-right-radius : 10px;
+    border-bottom-right-radius : 10px;
+    border-bottom-left-radius : 10px;
+}
+
+.profile{
+    margin-top: 5.2%;
+    height: 80%;
+    width: 40%;
+    margin-left: 3%; 
+    background-color: white; 
+    float:left;
+    border-style: groove;
+}
+
+ul{
+    list-style: none;
+    text-align: left;
+}
+
+.optionButton{
+    float: right;
+    margin-right: 5%;
+    margin-top: 3%;
+}

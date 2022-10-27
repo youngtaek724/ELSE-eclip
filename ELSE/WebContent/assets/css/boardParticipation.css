@@ -1,0 +1,354 @@
+@charset "UTF-8";
+@media (min-width: 1200px){
+.particiPation_className {
+    display: inline-block;
+    width: calc(100% - 360px);
+    vertical-align: top;
+}
+}
+@media (min-width: 1200px){
+.partHeader_locationContainer {
+    display: inline-block;
+}
+}
+
+@media (min-width: 1200px){
+.JobDescription_JobDescription {
+    margin-bottom: 60px;
+    padding-right: 20px;
+}
+}
+
+@media (min-width: 992px) and (max-width: 1199px){
+partWorkPlace_classname {
+    margin-top: 20px;
+}
+}
+
+a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+body{
+    background-color: white;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.particiPationDetail {
+    background-color: white;
+}
+
+.particiPationDetail_contentWrapper{
+    margin-left: 350px;
+    margin-top: 100px;
+}
+
+.particiPationDetail_relativeWrapper{
+    position: relative;
+
+}
+
+.JobImage_JobImage_slide{
+    scroll-snap-align: start;
+    position: relative;
+    width: 100%;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    padding-bottom: 70%;
+    
+}
+.Jobmage_JobImage{
+    position: relative;
+    overflow: hidden;
+}
+
+.JobImage_JobImage_slide>img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    border-radius: 4px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    outline: 1px solid rgba(0,0,0,.05);
+    outline-offset: -1px;
+}
+.partHeader_className{
+    margin: 40px 0 30px;
+}
+@media (min-width: 1200px){
+
+.particiPation_className {
+    display: inline-block;
+    width: calc(100% - 360px);
+    vertical-align: top;
+}
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+.partHeader_className>h2 {
+    color: #333;
+    font-size: 22px;
+    font-weight: 600;
+    margin: 0 0 10px;
+    word-break: keep-all;
+    word-wrap: break-word;
+}
+
+.partHeader_className>div>h6 {
+    color: #999;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+}
+
+.category {
+    color: #333;
+    position: relative;
+    width: 100%;
+    text-overflow: ellipsis;
+    width: auto;
+    line-height: 1.4;
+
+}
+
+.partHeader_locationContainer{
+    position: relative;
+    white-space: nowrap;
+    margin-top: 40px;
+    color: #999;
+}
+.partHeader_locationContainer:before {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 12px;
+    background: #e1e2e3;
+    position: absolute;
+    top: 4px;
+    left: 0;
+}
+
+.partHeader_locationContainer:after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+.particiPation_className{
+    width: 50%;
+}
+
+.Process_container{
+    width: 340px;
+    position: fixed;
+    right: calc((100% - 1060px)/2);
+}
+.JobDescription_JobDescription {
+    margin: 40px 0;
+}
+
+.JobDescription_JobDescription p {
+    color: #333;
+    font-weight: 400;
+    word-wrap: break-word;
+    white-space: break-space;
+}
+.partContent_divider{
+    margin: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid #eee;
+}
+.JobDescription_JobDescription h6, .JobDescription_JobDescription p {
+    color: #333;
+    font-size: 16px;
+    line-height: 1.75;
+}
+
+.JobDescription_JobDescription h6 {
+    margin: 20px 0 0;
+    font-weight: 600;
+}
+.Before_container>header{
+    width: 400px;
+    border: 1px solid #e1e2e3;
+    background-color: #fff;
+    padding: 24px 20px;
+    border-radius: 3px;
+    margin-top: 30px;
+}
+
+.total_container>h3 {
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: normal;
+    text-align: left;
+    color: #333;
+}
+
+.total_container>ul{
+    overflow: hidden;
+    margin: 24px 0;
+}
+
+.total_container>ul>li{
+    float: left;
+    width: 50%;
+    letter-spacing: normal;
+    text-align: left;
+}
+ol, ul {
+    list-style: none;
+}
+
+.total_container>ul>li>h4{
+    font-size: 14px;
+    font-weight: 600;
+    color: #999;
+    margin-bottom: 8px;
+    line-height: 1.2;
+}
+
+.total_container>ul>li>p{
+    font-size: 15px;
+    color: #333;
+    font-weight: 600;
+}
+
+.applyBtn_container{
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    -ms-flex-align: start;
+    align-items: flex-start;
+
+}
+
+.applyBtn_container_item{
+    order: 0;
+    -ms-flex: 1 1;
+    flex: 1 1;
+    -ms-flex-item-align: auto;
+    align-self: auto;
+}
+
+.bookmarkBtn_container{
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
+    background-color: #fff;
+    border: 1px solid #36f;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: normal;
+    color: #36f;
+    text-align: center;
+}
+.bookmarkBtns_container{
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
+    background-color: #36f;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: normal;
+    color: #fff;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.partWorkPlace_classname{
+    margin-top: 40px 0px;
+}
+
+.partWorkPlace_classname>div{
+    margin-bottom: 20px;
+}
+
+.partWorkPlace_classname .header{
+    color: rgb(153, 153, 153);
+    width: 80px;
+}
+
+.partWorkPlace_classname .body, .partWorkPlace_classname .header {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    vertical-align: text-top;
+}
+.partWorkPlace_classname .body {
+    color: rgb(51, 51, 51);
+    width: calc(100% - 80px);
+}
+
+.NaverMap_NaverMap > img {
+    display: block;
+    width: 100%;
+    background-size: cover;
+    background-position: 50% center;
+}
+
+.NaverMap_NaverMap {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.Process_container{
+    bottom: 0px;
+    position: absolute;
+    right: 00px;
+    margin-left: 70px;
+}
+
+@media (min-width: 1200px){
+.Process_container {
+    width: 340px;
+    position: fixed;
+    right: calc((100% - 1260px)/2);
+}
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+@media (min-width: 1200px){
+.Process_container>header {
+    width: 340px;
+    border: 1px solid #e1e2e3;
+    background-color: #fff;
+    padding: 24px 20px;
+}
+}
+
+.Process_container>header{
+    border-radius: 3px;
+}
+

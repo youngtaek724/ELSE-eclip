@@ -1,0 +1,332 @@
+@charset "UTF-8";
+@media (min-width: 1200px){
+    .board_main {
+        padding-top: 25px;
+    }
+    }
+    
+    @media (min-width: 1200px){
+    .Shortcut_noticeboard {
+        margin: 0 auto;
+        padding: 60px 0 85px;
+        width: 87.72%;
+    }
+    }
+    
+    @media (min-width: 1200px){
+        .board_exchange_labor{
+            margin: 0 auto;
+            padding: 70px 0 50px;
+            width: 87.72%;
+        }
+        }
+    
+    article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+        display: block;
+    }
+    
+    a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+    }
+    .inner{
+        background-color: white;
+    }
+    * {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    
+    .board_main{
+        background-color: #fff;
+        overflow-x: hidden;
+    }
+    
+    .Shortcut_noticeboard {
+        max-width: 1060px;
+    }
+    
+    .Shortcut_noticeboard_list{
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        color: #333;
+        font-size: 18px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        word-break: break-all;
+    }
+    
+    /* .Shortcut_noticeboard_list>li:first-child {
+        background-color: #f2f5ff;
+        border-top-left-radius: 38.5px;
+        border-bottom-left-radius: 38.5px;
+        border-left: none;
+    }
+    
+    .Shortcut_noticeboard_list>li:nth-child(2){
+        background-color: rgb(248, 184, 184);
+    }
+    
+    .Shortcut_noticeboard_list>li:last-child {
+        border-top-right-radius: 38.5px;
+        border-bottom-right-radius: 38.5px;
+        background-color: #f2fbf5;
+    } */
+    
+    .Shortcut_noticeboard_list>li {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-flex: 1 0;
+        flex: 1 0;
+        height: 80px;
+        border-left: 1px solid #fff;
+    }
+    
+    body{
+        background-color: white;
+    }
+    .noticeboardBtn{
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -ms-flex-align: center;
+        align-items: center;
+        margin: auto 20px;
+    }
+    
+    
+    
+    .board_exchange_labor{
+        position: relative;
+        max-width: 1060px;
+        background-color: white;
+        padding-top: 80px;
+        
+    }
+    
+    .board_exchange_labor_title{
+        position: relative;
+        margin-bottom: 30px;
+    }
+    
+    .board_exchange_labor_title>h2{
+        display: inline;
+        text-align: center;
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 1.05;
+        color: #111;
+        margin-right: 50px;
+    }
+
+    .board_exchange_labor_title>h2:nth-child(2){
+        text-decoration: underline;
+    }
+    
+    .board_headerBtn{
+        float: right;
+        border: 1px solid rgb(51, 102, 255);
+        background-color: white;
+        color: rgb(51, 102, 255);
+        height: 25px;
+        width: 70px;
+        border-radius: 10px;
+        
+    }
+    
+    .exchange_list{
+        margin: -10px;
+        padding: 0;
+        padding-bottom: 10px;
+    }
+    
+    *:before, *:after {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    
+    .List_list>ul li {
+        width: 24.5%;
+        padding: 10px;
+        list-style: none;
+        display: inline-block;
+        vertical-align: top;
+    }
+    
+    .list_card>a {
+        display: block;
+    }
+    
+    .list_card header{
+        padding-bottom: 75%;
+        position: relative;
+        background-size: cover;
+        background-position: 50%;
+        border-radius: 4px;
+        -webkit-box-shadow: inset 0 0 0 1px rgb(0 0 0 / 10%);
+        box-shadow: inset 0 0 0 1px rgb(0 0 0 / 10%);
+        height: 300px;
+    }
+    
+    .list_card header .bookmarkBtn {
+        background: none;
+        padding: 8px 6px;
+        width: 42px;
+        height: 42px;
+        top: 0;
+        right: 0;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        z-index: 1;
+        -ms-flex-pack: end;
+        justify-content: flex-end;
+        -ms-flex-align: start;
+        align-items: flex-start;
+    }
+    
+    .list_card header button{
+        width: 60px;
+        height: 30px;
+        border-radius: 3px;
+        position: absolute;
+        background: rgba(0,0,0,.3);
+        color: #fff;
+        font-size: 12px;
+        font-weight: 400;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -ms-flex-align: center;
+        align-items: center;
+        display: -ms-flexbox;
+        display: flex;
+    }
+    
+    .list_card .body {
+        padding: 14px 0;
+    }
+    
+    @supports (-webkit-line-clamp:2) and (-webkit-box-orient:vertical){
+        .list_card .body .job-card-position {
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+    }
+    }
+    
+    .list_card .body .card_position {
+        position: relative;
+        color: #333;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 1.2;
+        max-height: 2.4em;
+        overflow: hidden;
+        text-align: left;
+        word-break: break-word;
+    }
+    
+    .list_card .body .card_location, .list_card .body .card_work_intensity {
+        font-size: 14px;
+        line-height: normal;
+        text-align: left;
+        word-break: break-word;
+        width: 100%;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        margin-top: 10px;
+    }
+    
+    .list_card .body .card_work_time {
+        margin-top: 10px;
+        color: #333;
+        font-size: 14px;
+        font-weight: 500;
+        text-align: left;
+        word-break: break-word;
+        width: 100%;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    
+    .board_exchange_labor_title {
+        position: relative;
+        display: block;
+        
+        margin-bottom: 40px;
+    }
+    
+    .board_exchange_labor_title>h2 {
+        text-align: center;
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 1.05;
+        color: #111;
+    }
+    
+    .board_headerBtn{
+        position: relative;
+        float: right;
+        align-items: center;
+        justify-content: center;
+        width: 119px;
+        height: 32px;
+        margin-top: 10px;
+    
+        border-radius: 25px;
+        background-color: #5071dc;
+        color: #fff;
+        font-size: 13px;
+        font-weight: 700;
+        line-height: 16px;
+    }
+    
+    .List_list{
+        margin-top: 60px;
+    }
+    
+    .card_deadline{
+        display: block;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        height: 15px;
+        border-radius: 25px;
+        border: 1px solid #c14a32;
+        color: #b92626;
+        font-size: 13px;
+        font-weight: 700;
+        line-height: 16px;
+        margin-top: 10px;
+    }
+    
+    .exchange_list::before{
+        content: " ";
+        display: table;
+    }
+    
+    .exchange_list::after{
+        content: " ";
+        display: table;
+        clear: both;
+    }
+
+    
