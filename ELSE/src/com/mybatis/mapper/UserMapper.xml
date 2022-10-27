@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="user">
+	<select id="checkId" parameterType="string" resultType="_int">
+		select count(user_number) from tbl_user where user_id = #{userId}
+	</select>
+	
+	<insert id="joinOk" parameterType="">
+		insert into tbl_user (칼럼,칼럼,칼럼,칼럼)
+		values #{userNumber},#{userName},#{userEmail},#{userPassword}
+	</insert>
+	
+	<select id="loginOk" parameterType="string" resultType="_int">
+		select count(user_number) from tbl_userd
+		where user_id = #{userId}
+	</select>
+</mapper>
+
+

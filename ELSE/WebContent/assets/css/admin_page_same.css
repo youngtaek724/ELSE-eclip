@@ -1,0 +1,198 @@
+@charset "UTF-8";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    font-size: 13px;
+    background: #eee;
+    background-size: 100% 100%;
+    line-height: 1.42857143;
+}
+
+ul {
+    list-style: none;
+}
+
+/* main================================================================= */
+.main {
+    float: right;
+    margin-left: 200px;
+    width: calc(100% - 200px);
+    height: 100%;
+    /* border-bottom: 1px solid black; */
+}
+
+.top_header {
+    float: right;
+    height: 100%;
+    background: #fff;
+    width: calc(100%);
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 10%);
+
+}
+
+.headerbar {
+    position: relative;
+    background-color: #fff;
+    height: 50px;
+}
+
+
+.admin_name {
+    display: inline-block;
+    font-size: 20px;
+    line-height: 48px;
+    margin-left: 10px;
+
+}
+
+.exit_button_div {
+    display: inline-block;
+    position: absolute;
+    top: 5px;
+    right: 15px;
+}
+
+.exit_button {
+    width: 150px;
+    height: 40px;
+    border: none;
+}
+
+
+/* menu========================================================*/
+.menu {
+    float: left;
+    width: 200px;
+    height: 100%;
+    position: fixed;
+    background-color: #353535;
+    font-size: 20px;
+}
+
+.logo_img {
+    width: 200px;
+    height: 50px;
+    border-bottom: 1px solid black;
+}
+
+.menu_admin {
+    border-bottom: 1px solid black;
+}
+
+.menu_admin > div {
+    margin: 10px;
+    position: relative;
+    /* border: 2px solid red; */
+    height: 30px;
+}
+
+.menu_admin div img {
+    display: inline-block;
+    position: absolute;
+    top: 2px;
+    left: 0;
+}
+
+.menu_admin div div {
+    font-size: 16px;
+    /* border: 2px solid blue; */
+    position: absolute;
+    right: 16px;
+    top: 4px;
+}
+
+.statis_list {
+    display: block;
+}
+
+.statis_list_img {
+    width: 25px;
+    height: 25px;
+}
+
+.list_li {
+    margin: 15px 0;
+}
+
+.list_li div {
+    display: inline-block;
+    margin-right: 20px;
+    margin-left: 10px;
+    position: relative;
+}
+
+.list_li div img {
+    position: absolute;
+    top: -20px;
+}
+
+.list_li span {
+    margin-left: 20px;
+    font-size: 16px;
+}
+
+.list_admin_notice {
+    border-top: 1px solid black;
+    padding-top: 15px;
+}
+
+.list_li {
+    position: relative;
+}
+
+.arrow_down {
+    position: absolute;
+    right: 16px;
+    top: 8px;
+}
+
+/* 토글========================================================================== */
+.toggle_menu {
+    display: none;
+}
+
+.toggle_menu.active {
+    display: block;
+}
+
+.toggle_menu div {
+    margin: 0;
+    padding-left: 66px;
+    width: 200px;
+    font-size: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.logo_img {
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: 40px;
+    text-align: center;
+    color: white;
+}
+
+.menu div, .menu span {
+    color: white;
+}

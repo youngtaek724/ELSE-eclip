@@ -1,0 +1,548 @@
+@charset "UTF-8";
+
+html, body {
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    background-color: #f8f8f8;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333333;
+    font-family: Pretendard,Pretendard JP,Pretendard Std,-apple-system,system-ui,BlinkMacSystemFont,Roboto,Segoe UI,Helvetica,Arial,Apple SD Gothic Neo,Nanum Gothic,Malgun Gothic,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+div {
+    display: block;
+}
+
+button {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: none;
+    overflow: visible;
+    text-transform: none;
+    writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: buttontext;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    text-align: center;
+    cursor: default;
+}
+
+input, button, select, textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    color: inherit;
+}
+
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+    -webkit-appearance: button;
+    cursor: pointer;
+}
+
+button, select {
+    text-transform: none;
+}
+
+.Modal_Modal__root__lNnQN {
+    position: fixed;
+    z-index: 1400;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.Modal_Modal__root__backdrop__ENcJl {
+    z-index: -1;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,.5);
+}
+
+
+.Modal_Modal__root__body__1_X6A {
+    background-color: #fff;
+    border-radius: 5px;
+    -webkit-box-shadow: 4px 4px 4px 0 rgb(0 0 0 / 10%);
+    box-shadow: 4px 4px 4px 0 rgb(0 0 0 / 10%);
+    padding: 16px 20px;
+}
+
+.TermsModal_TermsModal__modal__2AlvO {
+    width: 400px;
+    padding: 0;
+    position: relative;
+}
+/* 상단 */
+.TermsModal_TermsModal__title__xzX0t {
+    height: 64px;
+    position: relative;
+}
+
+.ModalTitle_ModalTitle__root__y_KMH {
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+}
+
+/* 왼쪽 상단 취소 부분 */
+.TermsModal_TermsModal__title__cancel__2I8RE {
+    position: absolute;
+    height: 64px;
+    padding: 0 15px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.Button_Button__root__V1ie3 {
+    position: relative;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    vertical-align: middle;
+    min-width: 64px;
+    padding: 0 27px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: normal;
+    border: none;
+    background-color: none;
+    cursor: pointer;
+}
+
+.Button_Button__sizeMedium__k0A1w {
+    height: 40px;
+    font-size: 15px;
+}
+
+.TermsModal_TermsModal__title__cancel__button__B_HhX {
+    padding: 0;
+    color: #000;
+    font-weight: 400;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+}
+
+.Button_Button__label__1Kk0v {
+    width: 100%;
+    font-size: inherit;
+    font-weight: inherit;
+    display: inherit;
+    -ms-flex-align: inherit;
+    align-items: inherit;
+    -ms-flex-pack: inherit;
+    justify-content: inherit;
+    color: inherit;
+}
+
+/* 원티드 이용약관 */
+.TermsModal_TermsModal__title__header__jwLYj {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex: 1 1;
+    flex: 1 1;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.TermsModal_TermsModal__title__header__jwLYj>h4 {
+    color: #000;
+    font-weight: 600;
+}
+
+h4, .h4 {
+    font-size: 16px;
+}
+
+h4 {
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+    display: block;
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+
+/* 상단 로고 */
+.ModalContent_ModalContent__root__1Z9d1 {
+    -ms-flex: 1 1;
+    flex: 1 1;
+    overflow-y: hidden;
+    padding: 8px 24px;
+}
+
+.TermsModal_TermsModal__content___fAMk {
+    padding: 0 15px;
+    position: relative;
+}
+
+.ServiceInfo_ServiceInfo__Cm2i7 {
+    height: 120px;
+    width: 100%;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-bottom: 15px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.ServiceInfo_ServiceInfo__logo__9uzqZ {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.ServiceInfo_ServiceInfo__logo__9uzqZ>img {
+    width: 60px;
+    height: 60px;
+}
+
+.ServiceInfo_ServiceInfo__name__GakVL {
+    margin-top: 8px;
+    color: #333;
+    font-weight: 600;
+}
+
+h3, .h3 {
+    font-size: 18px;
+}
+
+h3, h4 {
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+    color: inherit;
+}
+
+/* 이메일 계정 설정 */
+a, a:active, a:hover, a:visited {
+    color: inherit;
+}
+
+a {
+    text-decoration: inherit;
+    cursor: pointer;
+    color: #444444;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.AccountSettingsButton_AccountSettingsButton__tJTEv {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    height: 50px;
+    margin-bottom: 30px;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0 12px;
+    border: 1px solid #e1e2e3;
+    border-radius: 6px;
+}
+
+.AccountSettingsButton_AccountSettingsButton__img__y0yJE {
+    height: 32px;
+    width: 32px;
+    border-radius: 18px;
+    margin-right: 8px;
+}
+
+img {
+    vertical-align: middle;
+    border: 0;
+}
+
+.AccountSettingsButton_AccountSettingsButton__email__YrL5v {
+    color: #333;
+    font-weight: 500;
+    max-width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.AccountSettingsButton_AccountSettingsButton__buttonWrapper__j3VmF {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex: 1 1;
+    flex: 1 1;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.SvgIcon_SvgIcon__root__8vwon {
+    width: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: inherit;
+    align-items: inherit;
+    -ms-flex-pack: inherit;
+    justify-content: inherit;
+}
+
+.AccountSettingsButton_AccountSettingsButton__icon__56Qki {
+    width: 15px!important;
+}
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+.SvgIcon_SvgIcon__root__svg__DKYBi {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    fill: currentColor;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    font-size: inherit;
+}
+
+/* 약관 동의서 */
+.Agreement_Agreement__wrapper__AsfFo {
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+
+.style_wrapper__yBOLk {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    position: relative;
+    height: 14px;
+}
+
+.Agreement_Agreement__checkboxAll__p_wxN {
+    color: #888;
+    height: auto;
+    padding-bottom: 14px;
+}
+
+.style_check__N8T_o {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 17.3px;
+    height: 17.3px;
+    margin-right: 10px;
+}
+
+.Agreement_Agreement__checkboxAll__p_wxN>div:last-of-type {
+    color: #000;
+    font-weight: 600;
+}
+
+.style_label__Qjlun {
+    -ms-flex: 1 1;
+    flex: 1 1;
+    font-size: 15px;
+    color: #666;
+}
+
+.style_wrapper__yBOLk input[type=checkbox] {
+    position: absolute;
+    left: 1px;
+    opacity: 0;
+    vertical-align: top;
+    cursor: pointer;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    margin: 4px 0 0;
+    margin-top: 1px \9;
+    line-height: normal;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+input {
+    outline: none!important;
+    box-shadow: none!important;
+}
+
+hr {
+    display: block;
+    unicode-bidi: isolate;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    overflow: hidden;
+    border-style: inset;
+    border-width: 1px;
+    box-sizing: content-box;
+}
+.Divider_Divider__root__f2LD0 {
+    height: 1px;
+    margin: 0;
+    border: none;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    background-color: #ececec;
+}
+
+.Agreement_Agreement__checkbox__gNuLN {
+    margin-top: 15px;
+    margin-right: 10px;
+    font-weight: 400;
+    max-height: 35px;
+    height: auto!important;
+    -ms-flex-align: start!important;
+    align-items: flex-start!important;
+    color: #888;
+}
+
+.Agreement_Agreement__checkbox__gNuLN>div:last-of-type {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-align: center;
+    align-items: center;
+    color: #767676;
+    position: relative;
+    top: -2px;
+}
+.Agreement_Agreement__checkbox__gNuLN input[type=checkbox] {
+    left: -25px;
+    top: 0;
+}
+
+.Agreement_Agreement__linkWrapper__64oW6 {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex: 1 1;
+    flex: 1 1;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+}
+
+.Agreement_Agreement__checkbox__gNuLN p {
+    max-width: calc(100% - 60px);
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.Agreement_Agreement__link__BZIYd {
+    float: right;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 19px;
+    color: #767676!important;
+}
+
+
+.Agreement_Agreement__notificationWrapper__1OhHR {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    padding-left: 25px;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+/* 하단 : 동의하고 계속하기 버튼 */
+.ModalActions_ModalActions__root__8OUZk {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+}
+.TermsModal_TermsModal__actions__YQiY3 {
+    padding: 30px 15px;
+}
+
+.Button_Button__contained__toUI5 {
+    color: #fff;
+    background-color: #36f;
+    border: none;
+}
+.Button_Button__fullWidth__RU4tf {
+    width: 100%;
+}
+.TermsModal_TermsModal__button__OuyGk, .TermsModal_TermsModal__button__OuyGk:hover {
+    background-color: #000;
+}
+button[disabled], html input[disabled] {
+    cursor: default;
+}
+.Button_Button__contained__toUI5:disabled {
+    background-color: #f2f4f7;
+    color: #ccc;
+}

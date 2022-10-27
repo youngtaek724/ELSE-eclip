@@ -1,0 +1,235 @@
+@charset "UTF-8";
+.ResumeDetail_ResumeDetail {
+    background-color: #fff;
+}
+
+@media (min-width: 1200px){
+.submitDetail_container {
+    width: 87.72%;
+}
+}
+
+.submitDetail_container{
+    padding: 0;
+    max-width: 1060px;
+    margin: 0 auto;
+}
+.submitDetail_body{
+    position: relative;
+    padding-bottom: 50px;
+}
+.submitDetail_body_basic{
+    margin-bottom: 60px;
+}
+
+a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+div {
+    display: block;
+}
+body{
+    background-color: white;
+}
+
+.submitDetail_body_basic_title{
+    padding-top: 130px;
+}
+
+.submitInput_name {
+    margin-top: 20px;
+    margin-bottom: 0;
+    font-size: 30px;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    margin-bottom: 3px;
+    border-radius: 0;
+    height: auto;
+    width: 100%;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+.submitInput_phonenumber{
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-size: 30px;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    margin-bottom: 3px;
+    border-radius: 0;
+    height: auto;
+    width: 100%;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+.submitDetail_body_about{
+    margin-bottom: 60px;
+}
+
+.submitDetail_body_about_header{
+    padding: 20px 0 6px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #3b3d40;
+    border-bottom: 1px solid #bababa;
+}
+.submitDetail_body_guide{
+    white-space: break-space;
+    padding: 10px;
+    background-color: #f3f9fe;
+    font-size: 14px;
+    line-height: 1.42;
+    letter-spacing: normal;
+    color: #666;
+    margin-top: 10px;
+    margin-left: 0%;
+    
+}
+
+.DynamicTextarea_Textarea{
+    position: relative;
+    overflow-x: hidden;
+}
+
+.submit_input{
+    font-size: 16px;
+    margin-top: 30px;
+    white-space: pre-wrap;
+    word-break: break-all;
+    word-wrap: break-word;
+    caret-color: #000;
+    overflow: hidden;
+    line-height: 22px;
+    -webkit-box-shadow: none!important;
+    box-shadow: none!important;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    resize: none;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    margin-bottom: 3px;
+    border-radius: 0;
+    height: auto;
+    width: 100%;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+.submitDetail_photo{
+    margin-bottom: 20px;
+}
+
+.submitDetail_photo_header{
+    padding: 40px 0 6px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #3b3d40;
+    border-bottom: 1px solid #bababa;
+}
+
+.submitDetail_photo_guide{
+    white-space: break-space;
+    padding: 10px;
+    background-color: #f3f9fe;
+    font-size: 14px;
+    line-height: 1.42;
+    letter-spacing: normal;
+    color: #666;
+    margin-top: 10px;
+}
+
+.submitDetail_photoBtn{
+    color: #36f;
+    background-color: transparent;
+    border-bottom: 1px solid #f1f1f1;
+    width: 100%;
+    padding: 30px 0;
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: left;
+    border: none;
+    border-radius: 0;
+}
+
+.submitDetail_list_typeA{
+    display: block;
+}
+
+.submitDetail_photoBtnA{
+    display: block;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 35px;
+    border-radius: 20px;
+    border: 1px solid #36f;
+    color: #36f;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 16px;
+    margin-top: 30px;
+}
+
+.submitDetail_form{
+    margin-top: 20px;
+}
+.submitDetail_inputA{
+    display: block;
+    height: 40px;
+    width: 100%;
+    padding: 0 1.0rem;
+    color: black;
+    box-sizing: border-box;
+    border: 1px solid #d0e3f4;
+    background-color: white;
+    outline: none;
+    border-radius: 4px;
+    transition: border .2s ease-out;
+}
+.submitDetail_inputA>button {font-size:100px; padding:2px 3px;}
+
+.pont{
+    font-size: 1rem;
+    line-height: 2rem;
+}
+.pont>input{
+    box-sizing: border-box;
+}
+
+input[type='radio'],
+input[type='radio']:checked {
+
+  width: 0.9rem;
+  height: 0.9rem;
+  border-radius: 100%;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+}
+
+.submit_label{
+    display: block;
+
+    font-size: 1rem;
+    line-height: 2rem;
+    color: black;
+}
+#inputab{
+    margin-bottom: 10px;
+}
+
