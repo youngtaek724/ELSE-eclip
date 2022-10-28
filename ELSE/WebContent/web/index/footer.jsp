@@ -8,8 +8,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="${pageContext.request.contextPath}/assets/css/footer.css" rel="stylesheet" />
-    <!--í°í¸ ê´ë ¨ css-->
+    <link href="css/footer.css" rel="stylesheet" />
+    <!--폰트 관련 css-->
     <link
       rel="stylesheet"
       type="text/css"
@@ -19,11 +19,11 @@
 
   <!--
     ******************************************************************
-        Footer ìì ì id, class, css ëª¨ë¥´ë ë¶ë¶ì ë°ë¡ ë¬¸ì
+        Footer 작업 시 id, class, css 모르는 부분은 바로 문의
 
-        í¼ë¸ : í©ìí(2022-10-21)
+        퍼블 : 황영택(2022-10-21)
 
-        ë°± : ë¯¸ì 
+        백 : 미정
     ******************************************************************
   -->
 
@@ -32,7 +32,7 @@
       <div class="Footer_rowClass__bFAtS">
         <div class="NavLinks_NavLinks__xaNkJ">
           <div class="NavLinks_NavLinks__logo__MCbfZ">
-            <!--ì´ê³³ì ê¸°ìì ë¡ê³ ê° ë¤ì´ê°ëë¤-->
+            <!--이곳에 기업의 로고가 들어갑니다-->
             <img
               src="../img/hot6.jpg"
               alt="wanted"
@@ -40,11 +40,11 @@
             />
           </div>
           <div class="NavLinks_NavLinks__links__bQozT">
-            <a href="https://www.wantedlab.com/" class="">ê¸°ììê°</a
-            ><a href="https://www.wanted.co.kr/terms" class="">ì´ì©ì½ê´</a
+            <a href="https://www.wantedlab.com/" class="">기업소개</a
+            ><a href="https://www.wanted.co.kr/terms" class="">이용약관</a
             ><a href="https://www.wanted.co.kr/privacy" class=""
-              >ê°ì¸ì ë³´ ì²ë¦¬ë°©ì¹¨</a
-            ><a href="helpDesk.html" class="">ê³ ê°ì¼í°</a>
+              >개인정보 처리방침</a
+            ><a href="helpDesk.html" class="">고객센터</a>
           </div>
         </div>
         <div class="SocialLinks_SocialLinks__hZutB">
@@ -85,8 +85,8 @@
       </div>
       <div class="Footer_rowClass__bFAtS Footer_border__k1rgk">
         <p class="Footer_footerText__CTqnd kr">
-          ì´ê³³ì Footerì ë´ì©ì ì ìµëë¤<br />
-          ex) 6ì¡° íì´í
+          이곳에 Footer의 내용을 적습니다<br />
+          ex) 6조 파이팅
         </p>
         <div class="LocaleSelect_localeSelectClass__7TvCY">
           <img
@@ -95,9 +95,9 @@
             alt="country flag KR"
           />
           <select>
-            <option value="KR">íêµ­ (íêµ­ì´)</option>
+            <option value="KR">한국 (한국어)</option>
             <!--
-              <option value="JP">æ¥æ¬ (æ¥æ¬èª)</option>
+              <option value="JP">日本 (日本語)</option>
               <option value="WW">Worldwide (English)</option>
               <option value="SG">Singapore (English)</option>
               !-->

@@ -1,15 +1,16 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<!DOCTYPE html>
 <html lang="ko-KR" class="ko kr">
   <head>
 
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
     <meta charset="utf-8" />
-    <title>í«ìì¤-íìì´</title>
+    <title>핫식스-품앗이</title>
 
-      <!--í°í¸ ê´ë ¨ css-->
+      <!--폰트 관련 css-->
     <link
           rel="stylesheet"
           type="text/css"
@@ -17,65 +18,65 @@
           />
     
      <!--main css-->
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/main.css">
+    <link rel="stylesheet" href="css/main.css">
 
-     <!--Header css(ëì¤ì íì¼ ë¶ë¦¬)-->
-    <link rel = "stylesheet" href = "${pageContext.request.contextPath}/assets/css/header.css">
+     <!--Header css(나중에 파일 분리)-->
+    <link rel = "stylesheet" href = "css/header.css">
 
     <!--body css-->
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/slick.css" media="screen" />
+    <link rel="stylesheet" href="css/slick.css" media="screen" />
 
-    <!-- footer css (ëì¤ì íì¼ ë¶ë¦¬)-->
+    <!-- footer css (나중에 파일 분리)-->
     <link href="css/footer.css  " rel="stylesheet">
   </head>
 
   <!--
     ******************************************************************
-        ë§¤ì¸ íì´ì§ ìì ì id, class, css ëª¨ë¥´ë ë¶ë¶ì ë°ë¡ ë¬¸ì
+        매인 페이지 작업 시 id, class, css 모르는 부분은 바로 문의
 
-        í¼ë¸ : í©ìí(2022-10-21)
+        퍼블 : 황영택(2022-10-21)
 
-        ë°± : ë¯¸ì 
+        백 : 미정
     ******************************************************************
   -->
 
   <body>
-    <!--header (ëì¤ì ì ê±°)-->
+    <!--header (나중에 제거)-->
     <div id="__next">
       <div class="NavBar_container">
           <div class="MainBar_width">
               <nav class="MainBar_flex">
                   <div class="MainBar_logoBox">
                       <div>
-                        <!-- ì¢ì¸¡ ìë¨ íë²ê±° ì´ë¯¸ì§-->
+                        <!-- 좌측 상단 햄버거 이미지-->
                           <button type="button" class="MainBar_hamberger">
                               <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Ficon-menu.png&amp;w=undefined&amp;q=75" alt="hamberger menu" style="width:17px;height:14px;object-fit:contain">
                           </button>
                           <a href="/" class="MainBar_logo">
-                              <!--ë¡ê³  : 74*16 -->
+                              <!--로고 : 74*16 -->
                               <i></i>
                             </a>
                       </div>
                   </div>
                   <ul class="menu_name_list">
                       <li class="">
-                          <a href="/" class="">í</a>
+                          <a href="/" class="">홈</a>
                       </li>
-                      <!--selectNavë ëì¤ì ì ì©(í´ë¦­íì ë íëì¤)-->
+                      <!--selectNav는 나중에 적용(클릭했을 때 파란줄)-->
                       <li class="selectedNav">
-                          <a href="" class="">íìì´ ê²ìí</a>
+                          <a href="" class="">품앗이 게시판</a>
                       </li>
                       <li class="">
-                          <a href="#" class="" aria-label="">ë§ì´ íì´ì§</a>
+                          <a href="#" class="" aria-label="">마이 페이지</a>
                       </li>
                       <li class="">
-                          <a href="#" class="" aria-label="">ë´ì¬ íë</a>
+                          <a href="#" class="" aria-label="">봉사 활동</a>
                       </li>
                       <li class="">
-                          <a href="#" class="">ì°¸ì¬ë´ì­</a>
+                          <a href="#" class="">참여내역</a>
                       </li>
                       <li>
-                          <a href="#" class="">ë´ì¬ íí©</a>
+                          <a href="#" class="">봉사 현황</a>
                       </li>
                   </ul>
                   <aside class="Aside_box">
@@ -93,19 +94,19 @@
                               </button>
                           </li>
                           <li>
-                              <button class="signUpButton" type="button">íìê°ì/ë¡ê·¸ì¸</button>
+                              <button class="signUpButton" type="button">회원가입/로그인</button>
                           </li>
                           <li class="leftDivision">
-                              <a class="dashboardButton" href="/dashboard">ê¸°ì ìë¹ì¤</a>
+                              <a class="dashboardButton" href="/dashboard">기업 서비스</a>
                           </li>                        
                       </ul>
                   </aside>
               </nav>
           </div>
       </div>
-      <!--header ë (ëì¤ì ì ê±°)-->
+      <!--header 끝 (나중에 제거)-->
 
-      <!---******body ìì*************-->
+      <!---******body 시작*************-->
       <div class="main_padding main_padding_logout"></div>
       <main class="main_paddingTop"> 
           <div id="banner_container" style="margin-bottom: -30px;">
@@ -145,7 +146,7 @@
             <hr>
             <div class="title_textalign">
               <div class="title__Wrapper">
-                <h2 class="title_header">íìì´ ê²ìí ì§íì¤</h2>        
+                <h2 class="title_header">품앗이 게시판 진행중</h2>        
               </div>
             </div>
             <div class="main__Category">
@@ -157,18 +158,18 @@
                     <img src="../img/hot6.jpg" alt="LINE X Wanted Session 5-2" />
                   </div>
                   <p class="main_content_text">
-                    íìì´ ì¬ì´í¸ ê°ë° ì§íì¤<br />
+                    품앗이 사이트 개발 진행중<br />
                   </p>
                   <p class="main_content_innerText">
-                    HOT-6 íì´ íìì´ ì¬ì´í¸ë¥¼ ê°ë° ì§íì¤ìëë¤ <br>
-                    ì ì²´ì ì¼ë¡ ì¤ì íµì¼í©ìë¤
+                    HOT-6 팀이 품앗이 사이트를 개발 진행중입니다 <br>
+                    전체적으로 줄을 통일합시다
                   </p>
                   <div class="main_content_logo">
                     <img
                       src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Ffavicon%2F144x144.png&amp;w=60&amp;q=90"
                       alt=""
                     />
-                    <p>ë©ì¸íì´ì§ í©ìí</p>
+                    <p>메인페이지 황영택</p>
                   </div></a
                 >
               </li>
@@ -184,18 +185,18 @@
                     />
                   </div>
                   <p class="main_content_text">
-                    ë°°ìì ë°ë¡ ì¨ë¨¹ë JSP2
+                    배워서 바로 써먹는 JSP2
                   </p>
                   <p class="main_content_innerText">
-                    íëì | ì´ 40ê°<br>
-                    ìê°ê¸°ê° : 2022.10.10~2022.11.10
+                    한동석 | 총 40강<br>
+                    수강기간 : 2022.10.10~2022.11.10
                   </p>
                   <div class="main_content_logo">
                     <img
                       src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Ffavicon%2F144x144.png&amp;w=60&amp;q=90"
                       alt="wanted"
                     />
-                    <p>ìëí´ë¼ì¤, íëì</p>
+                    <p>월드클라스, 한동석</p>
                   </div></a
                 >
               </li>
@@ -208,18 +209,18 @@
                     />
                   </div>
                   <p class="main_content_text">
-                    ë°°ìì ë°ë¡ ì¨ë¨¹ë JSP1
+                    배워서 바로 써먹는 JSP1
                   </p>
                   <p class="main_content_innerText">
-                    íëì | ì´ 40ê°<br>
-                    ìê°ê¸°ê° : 2022.10.10~2022.11.10
+                    한동석 | 총 40강<br>
+                    수강기간 : 2022.10.10~2022.11.10
                   </p>
                   <div class="main_content_logo">
                     <img
                       src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Ffavicon%2F144x144.png&amp;w=60&amp;q=90"
                       alt="wanted"
                     />
-                    <p>íëì</p>
+                    <p>한동석</p>
                   </div></a
                 >
               </li>
@@ -235,42 +236,42 @@
                     />
                   </div>
                   <p class="main_content_text">
-                    ë©í ì¨ë¦¬ì¦ íì´ì¬
+                    멘토씨리즈 파이썬
                   </p>
                   <p class="main_content_innerText">
-                    íëì | ì´ 35ê°<br>
-                    ìê°ê¸°ê° : 2022.10.10~2022.11.10
+                    한동석 | 총 35강<br>
+                    수강기간 : 2022.10.10~2022.11.10
                   </p>
                   <div class="main_content_logo">
                     <img
                       src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Ffavicon%2F144x144.png&amp;w=60&amp;q=90"
                       alt="wanted"
                     />
-                    <p>íëì</p>
+                    <p>한동석</p>
                   </div></a
                 >
               </li>
             </ul>
           </div>
         </section>
-        <!--ê·¸ë¥ ì -->
+        <!--그냥 선-->
         <div class="div_container__NNfRu">
           <hr class="main_hr" />
         </div>
-        <!--ê·¸ë¥ ì -->
+        <!--그냥 선-->
         <section class="main_section">
           <div class="section_wrapper">
             <div class="board_header_a board_header_b">
               <div class="title_textalign">
                 <div class="title__Wrapper">
                   <h2 class="title_header">
-                    íì¬ ëª¨ì§ì¤ì¸ ë´ì¬íë
+                    현재 모집중인 봉사활동
                   </h2>
                 </div>
                 <a
                   class="title__subtitle"
                   href="#"
-                  >ê²ìí ì ì²´ë³´ê¸°<span
+                  >게시판 전체보기<span
                     class="SvgIcon_SvgIcon__root__8vwon title__subtitle__icon__Hrpwd"
                     ><svg
                       class="SvgIcon_SvgIcon__root__svg__DKYBi"
@@ -316,12 +317,12 @@
                             </div>
                             <div class="undefined">
                               <p class="articleCard_content">
-                                ë¹¨ëë°ê¸°
+                                빨래밟기
                               </p>
                               <p
                                 class="ArticleCard__category"
                               >
-                                #ë´ì¬ #ì ê°ë #ë°ê¸°
+                                #봉사 #저강도 #밟기
                               </p>
                             </div></a
                           >
@@ -347,12 +348,12 @@
                             </div>
                             <div class="undefined">
                               <p class="articleCard_content">
-                                ì§ ì®ê¸°ê¸°
+                                짐 옮기기
                               </p>
                               <p
                                 class="ArticleCard__category"
                               >
-                                #ë¸ë #ê³ ê°ë #ë¿ë¯í¨
+                                #노동 #고강도 #뿌듯함
                               </p>
                             </div></a
                           >
@@ -378,12 +379,12 @@
                             </div>
                             <div class="undefined">
                               <p class="articleCard_content">
-                                ìë§íê¸°
+                                안마하기
                               </p>
                               <p
                                 class="ArticleCard__category"
                               >
-                                #ìë§ #ì ê°ë #ìì¸ê°ì¡±
+                                #안마 #저강도 #소외가족
                               </p>
                             </div></a
                           >
@@ -409,12 +410,12 @@
                             </div>
                             <div class="undefined">
                               <p class="articleCard_content">
-                                ê¸¸ê±°ë¦¬ íê²½ë¯¸í
+                                길거리 환경미화
                               </p>
                               <p
                                 class="ArticleCard__category"
                               >
-                                #ê¹¨ëí ê¸¸ê±°ë¦¬ #ì ê°ë #íê²½ë¯¸í
+                                #깨끗한 길거리 #저강도 #환경미화
                               </p>
                             </div></a
                           >
@@ -438,10 +439,10 @@
               <div class="title_textalign">
                 <div class="title__Wrapper">
                   <h2 class="title_header">
-                    ë´ì¬ ì¸ì¦ ê²ìí
+                    봉사 인증 게시판
                   </h2>
                 </div>
-                <a class="title__subtitle" href="#">ê²ìí ì ì²´ë³´ê¸°
+                <a class="title__subtitle" href="#">게시판 전체보기
                   <span class="SvgIcon_SvgIcon__root__8vwon title__subtitle__icon__Hrpwd">
                     <svg class="SvgIcon_SvgIcon__root__svg__DKYBi" viewBox="0 0 19 19">
                     <path
@@ -481,10 +482,10 @@
                             </div>
                             <div class="undefined">
                               <p class="articleCard_content">
-                                ë¹¨ê°ìê²½
+                                빨간안경
                               </p>
                               <p class="ArticleCard__category">
-                                #ë§ì¼íÂ·ê´ê³  #ë¸ëë© #ì·¨ì/ì´ì§
+                                #마케팅·광고 #브랜딩 #취업/이직
                               </p>
                             </div></a
                           >
@@ -507,12 +508,12 @@
                             </div>
                             <div class="undefined">
                               <p class="articleCard_content">
-                                ë¹¨ê°ìê²½
+                                빨간안경
                               </p>
                               <p
                                 class="ArticleCard__category"
                               >
-                                #ë§ì¼íÂ·ê´ê³  #ë¸ëë© #ì·¨ì/ì´ì§
+                                #마케팅·광고 #브랜딩 #취업/이직
                               </p>
                             </div></a
                           >
@@ -535,10 +536,10 @@
                             </div>
                             <div class="undefined">
                               <p class="articleCard_content">
-                                ë¹¨ê°ìê²½
+                                빨간안경
                               </p>
                               <p class="ArticleCard__category">
-                                #ë§ì¼íÂ·ê´ê³  #ë¸ëë© #ì·¨ì/ì´ì§
+                                #마케팅·광고 #브랜딩 #취업/이직
                               </p>
                             </div>
                           </a>
@@ -561,12 +562,12 @@
                             </div>
                             <div class="undefined">
                               <p class="articleCard_content">
-                                ë¹¨ê°ìê²½
+                                빨간안경
                               </p>
                               <p
                                 class="ArticleCard__category"
                               >
-                                #ë§ì¼íÂ·ê´ê³  #ë¸ëë© #ì·¨ì/ì´ì§
+                                #마케팅·광고 #브랜딩 #취업/이직
                               </p>
                             </div></a
                           >
@@ -579,14 +580,14 @@
             </ul>
           </div>
         </section>
-        <!--footer ìì-->
+        <!--footer 시작-->
         
     </div>
     <footer class="Footer_footerClass__OWEZy">
       <div class="Footer_rowClass__bFAtS">
         <div class="NavLinks_NavLinks__xaNkJ">
           <div class="NavLinks_NavLinks__logo__MCbfZ">
-            <!--ì´ê³³ì ê¸°ìì ë¡ê³ ê° ë¤ì´ê°ëë¤-->
+            <!--이곳에 기업의 로고가 들어갑니다-->
             <img
               src="../img/hot6.jpg"
               alt="wanted"
@@ -597,19 +598,19 @@
             <a
               href="https://www.wantedlab.com/"
               class=""
-              >ê¸°ììê°</a
+              >기업소개</a
             ><a
               href="https://www.wanted.co.kr/terms"
               class=""
-              >ì´ì©ì½ê´</a
+              >이용약관</a
             ><a
               href="https://www.wanted.co.kr/privacy"
               class=""
-              >ê°ì¸ì ë³´ ì²ë¦¬ë°©ì¹¨</a
+              >개인정보 처리방침</a
             ><a
               href="helpDesk.html"
               class=""
-              >ê³ ê°ì¼í°</a
+              >고객센터</a
             >
           </div>
         </div>
@@ -667,8 +668,8 @@
       </div>
       <div class="Footer_rowClass__bFAtS Footer_border__k1rgk">
         <p class="Footer_footerText__CTqnd kr">
-          ì´ê³³ì Footerì ë´ì©ì ì ìµëë¤<br>
-          ex) 6ì¡° íì´í
+          이곳에 Footer의 내용을 적습니다<br>
+          ex) 6조 파이팅
         </p>
         <div class="LocaleSelect_localeSelectClass__7TvCY">
           <img
@@ -676,9 +677,9 @@
             src="https://static.wanted.co.kr/images/userweb/ico_KR.svg"
             alt="country flag KR"
           /><select>
-            <option value="KR">íêµ­ (íêµ­ì´)</option>
-            <!--ì¶í ì í
-            <option value="JP">æ¥æ¬ (æ¥æ¬èª)</option>
+            <option value="KR">한국 (한국어)</option>
+            <!--추후 선택
+            <option value="JP">日本 (日本語)</option>
             <option value="WW">Worldwide (English)</option>
             <option value="SG">Singapore (English)</option></select
           ><i class="icon-arrow_bottom_fill"></i>
@@ -691,7 +692,7 @@
 
   <script language="JavaScript">
     $(document).ready(function () {
-      //ì¬ì©í  ë°°ë
+      //사용할 배너
       var $banner = $(".banner").find("ul");
       var $bannerWidth = $banner.children().outerWidth(); 
       var $bannerHeight = $banner.children().outerHeight(); 

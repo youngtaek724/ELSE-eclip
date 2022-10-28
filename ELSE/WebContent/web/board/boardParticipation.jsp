@@ -19,10 +19,10 @@
       content="width=device-width, initial-scale=1.0, user-scalable=no"
     />
     <meta name="next-head-count" content="27" />
-    <title>í«ìì¤ | íìì´</title>
+    <title>핫식스 | 품앗이</title>
 <<<<<<< HEAD
-    <!-- ã¡main css-->
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/header.css" crossorigin="anonymous" />
+    <!-- ㅡmain css-->
+    <link rel="stylesheet" href="src/main/css/header.css" crossorigin="anonymous" />
 =======
 >>>>>>> 64f120a9a720b89b082bfc6f9b9c483f3bcf75b9
     <link
@@ -30,24 +30,24 @@
       href="//d1azc1qln24ryf.cloudfront.net/78252/wantedicon/style-cf.css"
       media="screen"
     />
-    <!--í°í¸ê´ë ¨-->
+    <!--폰트관련-->
 
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/board.css" crossorigin="anonymous"/>
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/boardParticipation.css" crossorigin="anonymous"/>
-    <!-- ê²ìí ê´ë ¨ css -->
+    <link rel="stylesheet" href="../css/board.css" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="../css/boardParticipation.css" crossorigin="anonymous"/>
+    <!-- 게시판 관련 css -->
     <link
       rel="stylesheet"
       type="text/css"
       href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.3/dist/web/static/pretendard-dynamic-subset.css"
       crossorigin="anonymous"
     />
-    <!--header ê´ë ¨ css-->
+    <!--header 관련 css-->
     
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/header.css">
-    <!--footer ê´ë ¨ css-->
-    <link href="${pageContext.request.contextPath}/assets/css/footer.css" rel="stylesheet">
+    <link rel="stylesheet" href="../main/css/header.css">
+    <!--footer 관련 css-->
+    <link href="../main/css/footer.css" rel="stylesheet">
 
-      <!--í°í¸ ê´ë ¨ css ***** í°í¸ ê´ë ¨ cssë í ë²ë§ ì ì©-->
+      <!--폰트 관련 css ***** 폰트 관련 css는 한 번만 적용-->
   <link
     rel="stylesheet"
     type="text/css"
@@ -59,7 +59,7 @@
     
   </head>
   <body>
-   <!--header ì ì© ìì-->
+   <!--header 적용 시작-->
    <div id="__next">
     <div class="NavBar_container">
         <div class="MainBar_width">
@@ -70,30 +70,30 @@
                             <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Ficon-menu.png&amp;w=undefined&amp;q=75" alt="hamberger menu" style="width:17px;height:14px;object-fit:contain">
                         </button>
                         <a href="/" class="MainBar_logo">
-                            <!--ë¡ê³  : 74*16 -->
+                            <!--로고 : 74*16 -->
                             <i>logo </i>
                           </a>
                     </div>
                 </div>
                 <ul class="menu_name_list">
                     <li class="">
-                        <a href="/" class="">í</a>
+                        <a href="/" class="">홈</a>
                     </li>
-                    <!--selectNavë ëì¤ì ì ì©-->
+                    <!--selectNav는 나중에 적용-->
                     <li class="selectedNav">
-                        <a href="" class="">íìì´ ê²ìí</a>
+                        <a href="" class="">품앗이 게시판</a>
                     </li>
                     <li class="">
-                        <a href="#" class="" aria-label="">ë§ì´ íì´ì§</a>
+                        <a href="#" class="" aria-label="">마이 페이지</a>
                     </li>
                     <li class="">
-                        <a href="#" class="" aria-label="">ë´ì¬ íë</a>
+                        <a href="#" class="" aria-label="">봉사 활동</a>
                     </li>
                     <li class="">
-                        <a href="#" class="">ì°¸ì¬ë´ì­</a>
+                        <a href="#" class="">참여내역</a>
                     </li>
                     <li>
-                        <a href="#" class="">ë´ì¬ íí©</a>
+                        <a href="#" class="">봉사 현황</a>
                     </li>
                 </ul>
                 <aside class="Aside_box">
@@ -111,17 +111,17 @@
                             </button>
                         </li>
                         <li>
-                            <button class="signUpButton" type="button">íìê°ì/ë¡ê·¸ì¸</button>
+                            <button class="signUpButton" type="button">회원가입/로그인</button>
                         </li>
                         <li class="leftDivision">
-                            <a class="dashboardButton" href="/dashboard">ê¸°ì ìë¹ì¤</a>
+                            <a class="dashboardButton" href="/dashboard">기업 서비스</a>
                         </li>                        
                     </ul>
                 </aside>
             </nav>
         </div>
     </div>
-<!--header ì ì© ë-->
+<!--header 적용 끝-->
 
       <inner>
         <div class="particiPationDetail">
@@ -130,51 +130,51 @@
                   <div class="particiPation_className">
                       <section class="Jobmage_JobImage">
                           <div class="JobImage_JobImage_slide">
-                              <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjEwMTNfMTQ0%2FMDAxNjY1NjM2MzM0NDUy.yZbiJIA54qiIYG381peGj-KFRSd-L_nBZMFS1ikZJtYg.YhOnnBB3ceBlJYj6FQvUfjULiAEn9flDDjhEc8ahGxMg.JPEG.dugod6548%2F6.jpg&type=a340" alt="ê°ê·¤">
+                              <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjEwMTNfMTQ0%2FMDAxNjY1NjM2MzM0NDUy.yZbiJIA54qiIYG381peGj-KFRSd-L_nBZMFS1ikZJtYg.YhOnnBB3ceBlJYj6FQvUfjULiAEn9flDDjhEc8ahGxMg.JPEG.dugod6548%2F6.jpg&type=a340" alt="감귤">
                           </div>
                       </section>
                       <section class="partHeader_className">
-                        <h2>ê°ê·¤ ëì¬ ì²´ííê¸°</h2>
+                        <h2>감귤 농사 체험하기</h2>
                         <div>
                           <h6 style="max-width: calc(100% - 88px);">
-                            <button class="category">#ìí ë´ì¬</button>
+                            <button class="category">#수확 봉사</button>
                           </h6>
                         </div>
-                        <span class="partHeader_locationContainer">ì ì£¼
+                        <span class="partHeader_locationContainer">제주
                         </span>
                       </section>
                       <div class="JobContent_descriptionWrapper">
                         <section class="JobDescription_JobDescription">
                           <p>
                             <span>
-                              'Buying Square'ë í¨ì/ë·°í°/ê³¨í/ë¼ì´íì¤íì¼ ë¶ì¼ì ì ì¸ê³ ëªí ë¸ëë 2,400ê° ì´ìì
+                              'Buying Square'는 패션/뷰티/골프/라이프스타일 분야의 전세계 명품 브랜드 2,400개 이상을
                               <br>
-                              ììì ë²ì¸ì¬ìììê² ê³µê¸íë 'ëªí B2B íë«í¼' ì¤íí¸ì ìëë¤. 
-                              <br>
-                              <br>
-                              B2B ìì¥ì ëíë ì íµë°©ìì íë«í¼ê³¼ ë°ì´í° ê¸°ë°ì¼ë¡ íì íê³ ì ëì  1ìµ ê±´ì´ ëì ìí ë°ì´í°ë¥¼ ê¸°ë°ì¼ë¡ B2B ê±°ë íë«í¼ì êµ­ë´ ìµì´ë¡ ë°ì¹­íì¬ ì°½ì í 2ë ê° ëì  ê±°ëì¡ì ì½ 130ë°° ì´ìì¼ë¡ ì±ì¥íìì¼ë©° 80ì¬ê° ê³µê¸ì¬, 230ì¬ê° ê³ ê°ì¬ì í¨ê» ì§ì ì±ì¥íê³  ìì´ 2022ëìë ëì  ê±°ëì¡ 350ë°° ë¬ì±ì´ ììë©ëë¤.
+                              아시아 법인사업자에게 공급하는 '명품 B2B 플랫폼' 스타트업 입니다. 
                               <br>
                               <br>
-                              ê·¸ê° ë¬ì±í ì±ê³¼ì ë¯¸ë ì±ì¥ì±ì ìì¥ììë ì¸ì ë°ì 2022ë 3ì 110ìµ ê·ëª¨ì ìë¦¬ì¦ A í¬ìë¥¼ ì ì¹íììµëë¤. ìì¼ë¡ë ë²ì¸ê° ê±°ëê° ëì± ì½ê³  í¸í´ì§ ì ìëë¡ ì£¼ë¬¸ ìµì í, ííë¨¼í¸, íë ì´ì ë± Total Solutionì ì ê³µíì¬ 'ëªí B2B ìì¥ì Gamechanger' ì´ë¼ë ìëí Visionì ì¤íí  ê³íì¼ë¡ í¨ê» ì±ì·¨íê³  ì±ì¥í  ì ìë ì¸ì¬ë¥¼ ëª¨ìê³  ììµëë¤.
+                              B2B 시장의 낙후된 유통방식을 플랫폼과 데이터 기반으로 혁신하고자 누적 1억 건이 넘은 상품 데이터를 기반으로 B2B 거래 플랫폼을 국내 최초로 런칭하여 창업 후 2년 간 누적 거래액은 약 130배 이상으로 성장하였으며 80여개 공급사, 230여개 고객사와 함께 지속 성장하고 있어 2022년에는 누적 거래액 350배 달성이 예상됩니다.
                               <br>
                               <br>
-                              - ëíí  ëë í­ì ìëë°©ì ìì¥ë¶í° ìê°í©ëë¤.
+                              그간 달성한 성과와 미래 성장성을 시장에서도 인정받아 2022년 3월 110억 규모의 시리즈 A 투자를 유치하였습니다. 앞으로는 법인간 거래가 더욱 쉽고 편해질 수 있도록 주문 최적화, 풀필먼트, 큐레이션 등 Total Solution을 제공하여 '명품 B2B 시장의 Gamechanger' 이라는 원대한 Vision을 실현할 계획으로 함께 성취하고 성장할 수 있는 인재를 모시고 있습니다.
+                              <br>
+                              <br>
+                              - 대화할 때는 항상 상대방의 입장부터 생각합니다.
                             </span>
 
                           </p>
-                          <h6>ì£¼ììë¬´</h6>
+                          <h6>주요업무</h6>
 
 
                         </section>
                         <hr class="partContent_divider">
                         <section class="partWorkPlace_classname">
                           <div>
-                            <span class="header">ë§ê°ì¼</span>
-                            <span class="body">ìì</span>
+                            <span class="header">마감일</span>
+                            <span class="body">상시</span>
                           </div>
                           <div>
-                            <span class="header">ê·¼ë¬´ì§ì­</span>
-                            <span class="body">ì½ë¦¬ìitìì¹´ë°ë¯¸</span>
+                            <span class="header">근무지역</span>
+                            <span class="body">코리아it아카데미</span>
                           </div>
                           <a href="" class="NaverMap_NaverMap">
                             <img src="../imgs/mapping.png" alt="Map with company address">
@@ -189,29 +189,29 @@
                     <div class="Before_container">
                       <header>
                         <div class="total_container">
-                          <h3>íì¬ íí©</h3>
+                          <h3>현재 현황</h3>
                           <ul>
                             <li>
-                              <h4>ì ì²­ íí©</h4>
-                              <p>3ëª</p>
+                              <h4>신청 현황</h4>
+                              <p>3명</p>
                             </li>
                             <li>
-                              <h4>íìí ì¸ì</h4>
-                              <p>5ëª</p>
+                              <h4>필요한 인원</h4>
+                              <p>5명</p>
                             </li>
                           </ul>
                           
                         </div>
                         <div class="applyBtn_container">
                           <div class="applyBtn_container_item">
-                            <button class="bookmarkBtn_container">ê´ì¬ëª©ë¡ ì¶ê°</button>
+                            <button class="bookmarkBtn_container">관심목록 추가</button>
                           </div>
 
                           
                         </div>
                         <div class="applyBtn_container">
                           <div class="applyBtn_container_item">
-                            <button class="bookmarkBtns_container">ì°¸ì¬ì ì²­</button>
+                            <button class="bookmarkBtns_container">참여신청</button>
                           </div>
 
                           
@@ -225,12 +225,12 @@
         </div>
         
       </inner>
-<!--footer ì ì© ìì-->
+<!--footer 적용 시작-->
 <footer class="Footer_footerClass__OWEZy">
   <div class="Footer_rowClass__bFAtS">
     <div class="NavLinks_NavLinks__xaNkJ">
       <div class="NavLinks_NavLinks__logo__MCbfZ">
-        <!--ì´ê³³ì ê¸°ìì ë¡ê³ ê° ë¤ì´ê°ëë¤-->
+        <!--이곳에 기업의 로고가 들어갑니다-->
         <img
           src="../img/hot6.jpg"
           alt="wanted"
@@ -241,19 +241,19 @@
         <a
           href="https://www.wantedlab.com/"
           class=""
-          >ê¸°ììê°</a
+          >기업소개</a
         ><a
           href="https://www.wanted.co.kr/terms"
           class=""
-          >ì´ì©ì½ê´</a
+          >이용약관</a
         ><a
           href="https://www.wanted.co.kr/privacy"
           class=""
-          >ê°ì¸ì ë³´ ì²ë¦¬ë°©ì¹¨</a
+          >개인정보 처리방침</a
         ><a
           href="helpDesk.html"
           class=""
-          >ê³ ê°ì¼í°</a
+          >고객센터</a
         >
       </div>
     </div>
@@ -311,8 +311,8 @@
   </div>
   <div class="Footer_rowClass__bFAtS Footer_border__k1rgk">
     <p class="Footer_footerText__CTqnd kr">
-      ì´ê³³ì Footerì ë´ì©ì ì ìµëë¤<br>
-      ex) 6ì¡° íì´í
+      이곳에 Footer의 내용을 적습니다<br>
+      ex) 6조 파이팅
     </p>
     <div class="LocaleSelect_localeSelectClass__7TvCY">
       <img
@@ -320,9 +320,9 @@
         src="https://static.wanted.co.kr/images/userweb/ico_KR.svg"
         alt="country flag KR"
       /><select>
-        <option value="KR">íêµ­ (íêµ­ì´)</option>
-        <!--ì¶í ì í
-        <option value="JP">æ¥æ¬ (æ¥æ¬èª)</option>
+        <option value="KR">한국 (한국어)</option>
+        <!--추후 선택
+        <option value="JP">日本 (日本語)</option>
         <option value="WW">Worldwide (English)</option>
         <option value="SG">Singapore (English)</option></select
       ><i class="icon-arrow_bottom_fill"></i>
@@ -330,7 +330,7 @@
     </div>
   </div>
 </footer>
-<!--footer ì ì© ë-->
+<!--footer 적용 끝-->
     </div>
   </body>
 </html>

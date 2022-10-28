@@ -5,9 +5,9 @@
 		select count(user_number) from tbl_user where user_id = #{userId}
 	</select>
 	
-	<insert id="joinOk" parameterType="">
-		insert into tbl_user (칼럼,칼럼,칼럼,칼럼)
-		values #{userNumber},#{userName},#{userEmail},#{userPassword}
+	<insert id="join" parameterType="userVO">
+		insert into tbl_user (user_email, user_name, user_phonenum, user_password, user_passwordcheck)
+		values #{userEmail},#{userName},#{userPhoneNum},#{userPassword}, #{userPasswordCheck}
 	</insert>
 	
 	<select id="loginOk" parameterType="string" resultType="_int">

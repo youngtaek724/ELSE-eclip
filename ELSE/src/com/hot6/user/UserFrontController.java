@@ -29,18 +29,41 @@ public class UserFrontController extends HttpServlet{
 			// 회원가입 페이지 띄우기
 			// DB 접근 X
 		}else if(target.equals("/user/joinOk.me")) {
-			// DB 조회해서 아이디 
+		
+			result = new JoinOkController().execute(req, resp);
+// joinOk 해서 약관동의 페이지로 넘어가야함 -> 
 		}else if(target.equals("/user/checkId.me")) {
+			
 			// 아이디 중복 검사 DB 접근 O
+		
 		}else if(target.equals("/user/login.me")) {
-			// 로그인 페이지 이동
-			// DB 조회 X
+		
+			
 		}else if(target.equals("/user/loginOk.me")) {
+			
 			// 로그인 성공 시 -> 로그인 성공하고 넘어갈 페이지
 			// 로그인 실패 시 -> 다시 로그인 페이지
 			// 유저 번호 DB 조회 O
+			
 		}else if(target.equals("/user/logout.me")) {
+			
 			// 로그아웃 버튼 누르면 메인 페이지로.
+			
+		}else if(target.equals("/user/????.me")) {
+			
+			// signLogin에서 이메일 입력하고 버튼 눌렀을 때 main 페이지로 이동
+			
+		}else if(target.equals("/user/termsOfService.me")) {
+			
+			result = new Result();
+			result.setPath("/web/user/termsOfService.jsp");
+			
+		}else if(target.equals("/user/????.me")) {
+			
+			// signup에서 정보 기입하고 버튼 눌렀을 때 
+			// DB에 정보 insert 하고
+			// 약관동의 페이지(termsOfService)로 이동
+			
 		}
 		
 		if(result != null) {

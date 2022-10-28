@@ -11,9 +11,9 @@
     <title>Header</title>
 
     <!--Layout css-->
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/header.css" />
+    <link rel="stylesheet" href="css/header.css" />
 
-    <!--í°í¸ ê´ë ¨ css-->
+    <!--폰트 관련 css-->
     <link
       rel="stylesheet"
       type="text/css"
@@ -23,11 +23,11 @@
 
   <!--
     ******************************************************************
-        Header ìì ì id, class, css ëª¨ë¥´ë ë¶ë¶ì ë°ë¡ ë¬¸ì
+        Header 작업 시 id, class, css 모르는 부분은 바로 문의
 
-        í¼ë¸ : í©ìí(2022-10-21)
+        퍼블 : 황영택(2022-10-21)
 
-        ë°± : ë¯¸ì 
+        백 : 미정
     ******************************************************************
   -->
 
@@ -37,7 +37,7 @@
         <nav class="MainBar_flex">
           <div class="MainBar_logoBox">
             <div>
-              <!-- ì¢ì¸¡ ìë¨ íë²ê±° ì´ë¯¸ì§-->
+              <!-- 좌측 상단 햄버거 이미지-->
               <button type="button" class="MainBar_hamberger">
                 <img
                   src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Ficon-menu.png&amp;w=undefined&amp;q=75"
@@ -46,30 +46,30 @@
                 />
               </button>
               <a href="/" class="MainBar_logo">
-                <!--ë¡ê³  : 74*16 -->
+                <!--로고 : 74*16 -->
                 <i></i>
               </a>
             </div>
           </div>
           <ul class="menu_name_list">
             <li class="">
-              <a href="/" class="">í</a>
+              <a href="/" class="">홈</a>
             </li>
-            <!--selectNavë ëì¤ì ì ì©-->
+            <!--selectNav는 나중에 적용-->
             <li class="selectedNav">
-              <a href="" class="">íìì´ ê²ìí</a>
+              <a href="" class="">품앗이 게시판</a>
             </li>
             <li class="">
-              <a href="#" class="" aria-label="">ë§ì´ íì´ì§</a>
+              <a href="#" class="" aria-label="">마이 페이지</a>
             </li>
             <li class="">
-              <a href="#" class="" aria-label="">ë´ì¬ íë</a>
+              <a href="#" class="" aria-label="">봉사 활동</a>
             </li>
             <li class="">
-              <a href="#" class="">ì°¸ì¬ë´ì­</a>
+              <a href="#" class="">참여내역</a>
             </li>
             <li>
-              <a href="#" class="">ë´ì¬ íí©</a>
+              <a href="#" class="">봉사 현황</a>
             </li>
           </ul>
           <aside class="Aside_box">
@@ -103,11 +103,11 @@
               </li>
               <li>
                 <button class="signUpButton" type="button">
-                  íìê°ì/ë¡ê·¸ì¸
+                  회원가입/로그인
                 </button>
               </li>
               <li class="leftDivision">
-                <a class="dashboardButton" href="/dashboard">ê¸°ì ìë¹ì¤</a>
+                <a class="dashboardButton" href="/dashboard">기업 서비스</a>
               </li>
             </ul>
           </aside>

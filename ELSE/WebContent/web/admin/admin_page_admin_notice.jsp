@@ -431,5 +431,5 @@
       </div>
     </div>
   </body>
-  <script src="/src/admin/js_admin/admin_page_main.js"></script>
+  <script src="${pageContext.request.contextPath}/assets/js/admin_page_main.js"></script>
 </html>
