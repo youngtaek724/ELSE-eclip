@@ -7,86 +7,86 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/admin_page_main.css">
+    <link rel="stylesheet" href="/src/admin/css_admin/admin_page_main.css">
     <link href="/website/css/uicons-outline-rounded.css" rel="stylesheet">
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/admin_page_same.css">
+    <link rel="stylesheet" href="/src/admin/css_admin/admin_page_same.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>       
-<title>ê´ë¦¬ì íì´ì§ ë©ì¸</title>
+<title>관리자 페이지 메인</title>
 </head>
 <body>
     <div id="base">
         <div class="main">
             <header class="top_header">
                 <div class="headerbar">
-                    <div class="admin_name">ê´ë¦¬ì í</div>
+                    <div class="admin_name">관리자 홈</div>
                     <div class="exit_button_div">
-                        <input class="exit_button" type="button" value="ëê°ê¸°">
+                        <input class="exit_button" type="button" value="나가기">
                     </div>
                 </div>
             </header>
             <div class="content">
                 <div class="content_wrapper">
                     <div class="content_header">
-                        <div class="admin_notice">ê´ë¦¬ì ToDo</div>
+                        <div class="admin_notice">관리자 ToDo</div>
                         <div class="notice_box">
                             <div>
-                                <div class="notice_content">ê´ë¦¬ì í  ì¼ 1</div>
-                                <div class="notice_content">ê´ë¦¬ì í  ì¼ 2</div>
+                                <div class="notice_content">관리자 할 일 1</div>
+                                <div class="notice_content">관리자 할 일 2</div>
                             </div>
                         </div>
                     </div>
                     <div class="main_content">
                         <div class="box_box_top">
                             <div class="box box_top">
-                                <div class="box_title">ì ê· ê°ìì</div>
+                                <div class="box_title">신규 가입자</div>
                                 <div class="visit_chart">
                                     <canvas id="newUserChart" width="400px" height="100px"></canvas>
                                 </div>
                             </div>
                             <div class="box box_top">
-                                <div class="box_title">ì¼ìë³ ìì½</div>
+                                <div class="box_title">일자별 요약</div>
                                 <div class="daily_summary">
                                     <div class="daily_table">
                                         <table class="daily_summary_table">
                                             <thead>
                                                 <tr>
-                                                    <th class="daily_summary_table_head daily_summary_table_head_first">ì¼ì</th>
-                                                    <th class="daily_summary_table_head">ë°©ë¬¸ì</th>
-                                                    <th class="daily_summary_table_head">ë±ë¡ ê²ìê¸</th>
-                                                    <th class="daily_summary_table_head">ì°¸ì¬ ì ì²­</th>
-                                                    <th class="daily_summary_table_head">ê°ìì</th>
-                                                    <th class="daily_summary_table_head">ë¬¸ì</th>
+                                                    <th class="daily_summary_table_head daily_summary_table_head_first">일자</th>
+                                                    <th class="daily_summary_table_head">방문자</th>
+                                                    <th class="daily_summary_table_head">등록 게시글</th>
+                                                    <th class="daily_summary_table_head">참여 신청</th>
+                                                    <th class="daily_summary_table_head">가입자</th>
+                                                    <th class="daily_summary_table_head">문의</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <tr class="today">
                                                     <td class="text_left">2022-10-23</td>
-                                                    <td class="text_right">ê¹ë¼ë§ì</td>
-                                                    <td class="text_right">ê¹ë¼ë§ì</td>
-                                                    <td class="text_right">ê¹ë¼ë§ì</td>
-                                                    <td class="text_right">ê¹ë¼ë§ì</td>
-                                                    <td class="text_right">ê¹ë¼ë§ì</td>
+                                                    <td class="text_right">깔라만시</td>
+                                                    <td class="text_right">깔라만시</td>
+                                                    <td class="text_right">깔라만시</td>
+                                                    <td class="text_right">깔라만시</td>
+                                                    <td class="text_right">깔라만시</td>
                                                 </tr>
                                             </tbody>
                                             <tfoot>
                                                 <tr>
-                                                    <td class="text_left">ìµê·¼ 7ì¼ í©ê³</td>
-                                                    <td class="text_right">ì§ë¡</td>
-                                                    <td class="text_right">ì§ë¡</td>
-                                                    <td class="text_right">ì§ë¡</td>
-                                                    <td class="text_right">ì§ë¡</td>
-                                                    <td class="text_right">ì§ë¡</td>
+                                                    <td class="text_left">최근 7일 합계</td>
+                                                    <td class="text_right">진로</td>
+                                                    <td class="text_right">진로</td>
+                                                    <td class="text_right">진로</td>
+                                                    <td class="text_right">진로</td>
+                                                    <td class="text_right">진로</td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="text_left">ì´ë² ë¬ í©ê³</td>
-                                                    <td class="text_right">ì°ê³ </td>
-                                                    <td class="text_right">ì°ê³ </td>
-                                                    <td class="text_right">ì°ê³ </td>
-                                                    <td class="text_right">ì°ê³ </td>
-                                                    <td class="text_right">ì°ê³ </td>
+                                                    <td class="text_left">이번 달 합계</td>
+                                                    <td class="text_right">연고</td>
+                                                    <td class="text_right">연고</td>
+                                                    <td class="text_right">연고</td>
+                                                    <td class="text_right">연고</td>
+                                                    <td class="text_right">연고</td>
                                                 </tr>
                                             </tfoot>
                                         </table>
@@ -97,36 +97,36 @@
                         <div></div>
                         <div class="box_box_bottom">
                             <div class="box box_bottom">
-                                <div class="box_title">ìµì  ê²ìê¸</div>
+                                <div class="box_title">최신 게시글</div>
                                 <div class="question_box">
                                     <ul class="question_list">
                                         <li class="list_title">
                                             <a class="title_content" href="#">
-                                                <div class="title_text">10ì 24ì¼ (ì) ì ê²ì¼ë¡ ì¸í ìë¹ì¤ ì¼ì ì¤ì§ ìì  ìë´ </div>
+                                                <div class="title_text">10월 24일 (월) 점검으로 인한 서비스 일시 중지 예정 안내 </div>
                                                 <div class="title_date">2022-10-17</div>
                                             </a>
                                         </li>
                                         <li class="list_title">
                                             <a class="title_content" href="#">
-                                                <div class="title_text">10ì 24ì¼ (ì) ì ê²ì¼ë¡ ì¸í ìë¹ì¤ ì¼ì ì¤ì§ ìì  ìë´ </div>
+                                                <div class="title_text">10월 24일 (월) 점검으로 인한 서비스 일시 중지 예정 안내 </div>
                                                 <div class="title_date">2022-10-17</div>
                                             </a>
                                         </li>
                                         <li class="list_title">
                                             <a class="title_content" href="#">
-                                                <div class="title_text">10ì 24ì¼ (ì) ì ê²ì¼ë¡ ì¸í ìë¹ì¤ ì¼ì ì¤ì§ ìì  ìë´ </div>
+                                                <div class="title_text">10월 24일 (월) 점검으로 인한 서비스 일시 중지 예정 안내 </div>
                                                 <div class="title_date">2022-10-17</div>
                                             </a>
                                         </li>
                                         <li class="list_title">
                                             <a class="title_content" href="#">
-                                                <div class="title_text">10ì 24ì¼ (ì) ì ê²ì¼ë¡ ì¸í ìë¹ì¤ ì¼ì ì¤ì§ ìì  ìë´ </div>
+                                                <div class="title_text">10월 24일 (월) 점검으로 인한 서비스 일시 중지 예정 안내 </div>
                                                 <div class="title_date">2022-10-17</div>
                                             </a>
                                         </li>
                                         <li class="list_title">
                                             <a class="title_content" href="#">
-                                                <div class="title_text">10ì 24ì¼ (ì) ì ê²ì¼ë¡ ì¸í ìë¹ì¤ ì¼ì ì¤ì§ ìì  ìë´ </div>
+                                                <div class="title_text">10월 24일 (월) 점검으로 인한 서비스 일시 중지 예정 안내 </div>
                                                 <div class="title_date">2022-10-17</div>
                                             </a>
                                         </li>
@@ -135,36 +135,36 @@
                             </div>
                         
                         <div class="box box_bottom">
-                            <div class="box_title">ë¬¸ìê¸</div>
+                            <div class="box_title">문의글</div>
                             <div class="question_box">
                                 <ul class="question_list">
                                     <li class="list_title">
                                         <a class="title_content" href="#">
-                                            <div class="title_text">10ì 24ì¼ (ì) ì ê²ì¼ë¡ ì¸í ìë¹ì¤ ì¼ì ì¤ì§ ìì  ìë´ </div>
+                                            <div class="title_text">10월 24일 (월) 점검으로 인한 서비스 일시 중지 예정 안내 </div>
                                             <div class="title_date">2022-10-17</div>
                                         </a>
                                     </li>
                                     <li class="list_title">
                                         <a class="title_content" href="#">
-                                            <div class="title_text">10ì 24ì¼ (ì) ì ê²ì¼ë¡ ì¸í ìë¹ì¤ ì¼ì ì¤ì§ ìì  ìë´ </div>
+                                            <div class="title_text">10월 24일 (월) 점검으로 인한 서비스 일시 중지 예정 안내 </div>
                                             <div class="title_date">2022-10-17</div>
                                         </a>
                                     </li>
                                     <li class="list_title">
                                         <a class="title_content" href="#">
-                                            <div class="title_text">10ì 24ì¼ (ì) ì ê²ì¼ë¡ ì¸í ìë¹ì¤ ì¼ì ì¤ì§ ìì  ìë´ </div>
+                                            <div class="title_text">10월 24일 (월) 점검으로 인한 서비스 일시 중지 예정 안내 </div>
                                             <div class="title_date">2022-10-17</div>
                                         </a>
                                     </li>
                                     <li class="list_title">
                                         <a class="title_content" href="#">
-                                            <div class="title_text">10ì 24ì¼ (ì) ì ê²ì¼ë¡ ì¸í ìë¹ì¤ ì¼ì ì¤ì§ ìì  ìë´ </div>
+                                            <div class="title_text">10월 24일 (월) 점검으로 인한 서비스 일시 중지 예정 안내 </div>
                                             <div class="title_date">2022-10-17</div>
                                         </a>
                                     </li>
                                     <li class="list_title">
                                         <a class="title_content" href="#">
-                                            <div class="title_text">10ì 24ì¼ (ì) ì ê²ì¼ë¡ ì¸í ìë¹ì¤ ì¼ì ì¤ì§ ìì  ìë´ </div>
+                                            <div class="title_text">10월 24일 (월) 점검으로 인한 서비스 일시 중지 예정 안내 </div>
                                             <div class="title_date">2022-10-17</div>
                                         </a>
                                     </li>
@@ -186,7 +186,7 @@
             <div class="menu_admin">
                 <div><a href="#">
                     <img src="/src/admin/img_admin/home.png">
-                    <div>ì¬ì´í¸ ë°ë¡ê°ê¸°</div>
+                    <div>사이트 바로가기</div>
                 </a></div>
             </div>
             <div class="manage_list_div">
@@ -194,29 +194,29 @@
                     <li class="list_li">
                         <a href="admin_page_request.html">
                             <div><img class="manage_list_img" src="/src/admin/img_admin/browser.png"></div>
-                            <span>ìì²­ ê´ë¦¬</span>
+                            <span>요청 관리</span>
                         </a>
                     </li>
                     <li class="list_li">
                         <a href="admin_page_user.html">
                             <div><img class="manage_list_img" src="/src/admin/img_admin/user.png"></div>
-                            <span>ì´ì©ì ê´ë¦¬</span>
+                            <span>이용자 관리</span>
                         </a>
                     </li>
                     <li class="list_li">
                         <a class="arrow_down_menu" href="javascript:void(0);">
                                 <div><img class="manage_list_img" src="/src/admin/img_admin/ballot.png"></div>
-                                <span>ê²ìê¸ ê´ë¦¬</span>
+                                <span>게시글 관리</span>
                                 <img class="arrow_down" src="/src/admin/img_admin/angle-down1.png">
                                 <ul class="toggle_menu">
                                     <li><a href="admin_page_board.html">
-                                        <div>íìì´ ê²ìí</div>
+                                        <div>품앗이 게시판</div>
                                     </a></li>
                                     <li><a href="admin_page_board_promotion.html">
-                                        <div>íë³´ ê²ìí</div>
+                                        <div>홍보 게시판</div>
                                     </a></li>
                                     <li><a href="admin_page_board_review.html">
-                                        <div>ì¸ì¦, íê¸° ê²ìí</div>
+                                        <div>인증, 후기 게시판</div>
                                     </a></li>
                                 </ul>
                         </a>
@@ -224,19 +224,19 @@
                     <li class="list_li">
                         <a href="#">
                             <div><img class="statis_list_img" src="/src/admin/img_admin/statistic.png"></div>
-                            <span>íµê³</span>
+                            <span>통계</span>
                         </a>
                     </li>
                     <li class="list_li">
                         <a href="/src/admin/html_admin/admin_page_service.html">
                             <div><img class="manage_list_img" src="/src/admin/img_admin/comments.png"></div>
-                            <span>ê³ ê° ì¼í°</span>
+                            <span>고객 센터</span>
                         </a>
                     </li>
                     <li class="list_li list_admin_notice">
                         <a href="">
                             <div><img class="manage_list_img" src="/src/admin/img_admin/exclamation.png"></div>
-                            <span>ê´ë¦¬ì ê³µì§</span>
+                            <span>관리자 공지</span>
                         </a>
                     </li>
                 </ul>

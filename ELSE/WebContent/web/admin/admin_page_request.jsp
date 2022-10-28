@@ -7,9 +7,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/admin_page_request.css">
+    <link rel="stylesheet" href="/src/admin/css_admin/admin_page_request.css">
     <link href="/website/css/uicons-outline-rounded.css" rel="stylesheet">
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/admin_page_same.css">
+    <link rel="stylesheet" href="/src/admin/css_admin/admin_page_same.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
@@ -20,9 +20,9 @@
         <div class="main">
             <header class="top_header">
                 <div class="headerbar">
-                    <div class="admin_name">ìì²­ ê´ë¦¬</div>
+                    <div class="admin_name">요청 관리</div>
                     <div class="exit_button_div">
-                        <button class="exit_button">ëê°ê¸°</button>
+                        <button class="exit_button">나가기</button>
                     </div>
                 </div>
             </header>
@@ -30,268 +30,268 @@
                     <div class="content_wrapper">
                         <div class="request_box_two">
                             <div class="request_box">
-                                <div class="request_head">ì ì²­ ìì²­</div>
+                                <div class="request_head">신청 요청</div>
                                 <div class="list_div">
                                     <ul class="request_list">
                                         <div class="request_list_one request_title_div">
                                             <li class="request_flex">
                                                 <span class="content_none"></span>
-                                                <span class="request_title title_padding title_bold">ì ì²­ ê¸ ì ëª©</span>
-                                                <span class="request_user title_bold">ì ì²­ì</span>
+                                                <span class="request_title title_padding title_bold">신청 글 제목</span>
+                                                <span class="request_user title_bold">신청자</span>
                                             </li>
                                         </div>
                                         <div class="request_list_one">
                                             <li class="request_flex">
                                                 <span class="content_none">
-                                                    <input class="request_btn request_btn_ok" type="button" value="ì¹ì¸">
-                                                    <input class="request_btn" type="button" value="ê±°ì ">
+                                                    <input class="request_btn request_btn_ok" type="button" value="승인">
+                                                    <input class="request_btn" type="button" value="거절">
                                                 </span>
-                                                <span class="request_title title_padding title_list_text">ì ì²­ ê¸ ì ëª©</span>
-                                                <span class="request_user title_list_text">ì ì²­ì</span>
+                                                <span class="request_title title_padding title_list_text">신청 글 제목</span>
+                                                <span class="request_user title_list_text">신청자</span>
                                             </li>
                                         </div>
                                         <div class="request_list_one">
                                             <li class="request_flex">
                                                 <span class="content_none">
-                                                    <input class="request_btn request_btn_ok" type="button" value="ì¹ì¸">
-                                                    <input class="request_btn" type="button" value="ê±°ì ">
+                                                    <input class="request_btn request_btn_ok" type="button" value="승인">
+                                                    <input class="request_btn" type="button" value="거절">
                                                 </span>
-                                                <span class="request_title title_padding title_list_text">ì ì²­ ê¸ ì ëª©</span>
-                                                <span class="request_user title_list_text">ì ì²­ì</span>
+                                                <span class="request_title title_padding title_list_text">신청 글 제목</span>
+                                                <span class="request_user title_list_text">신청자</span>
                                             </li>
                                         </div>
                                         <div class="request_list_one">
                                             <li class="request_flex">
                                                 <span class="content_none">
-                                                    <input class="request_btn request_btn_ok" type="button" value="ì¹ì¸">
-                                                    <input class="request_btn" type="button" value="ê±°ì ">
+                                                    <input class="request_btn request_btn_ok" type="button" value="승인">
+                                                    <input class="request_btn" type="button" value="거절">
                                                 </span>
-                                                <span class="request_title title_padding title_list_text">ì ì²­ ê¸ ì ëª©</span>
-                                                <span class="request_user title_list_text">ì ì²­ì</span>
+                                                <span class="request_title title_padding title_list_text">신청 글 제목</span>
+                                                <span class="request_user title_list_text">신청자</span>
                                             </li>
                                         </div>
                                         <div class="request_list_one">
                                             <li class="request_flex">
                                                 <span class="content_none">
-                                                    <input class="request_btn request_btn_ok" type="button" value="ì¹ì¸">
-                                                    <input class="request_btn" type="button" value="ê±°ì ">
+                                                    <input class="request_btn request_btn_ok" type="button" value="승인">
+                                                    <input class="request_btn" type="button" value="거절">
                                                 </span>
-                                                <span class="request_title title_padding title_list_text">ì ì²­ ê¸ ì ëª©</span>
-                                                <span class="request_user title_list_text">ì ì²­ì</span>
+                                                <span class="request_title title_padding title_list_text">신청 글 제목</span>
+                                                <span class="request_user title_list_text">신청자</span>
                                             </li>
                                         </div>
                                         <div class="request_list_one">
                                             <li class="request_flex">
                                                 <span class="content_none">
-                                                    <input class="request_btn request_btn_ok" type="button" value="ì¹ì¸">
-                                                    <input class="request_btn" type="button" value="ê±°ì ">
+                                                    <input class="request_btn request_btn_ok" type="button" value="승인">
+                                                    <input class="request_btn" type="button" value="거절">
                                                 </span>
-                                                <span class="request_title title_padding title_list_text">ì ì²­ ê¸ ì ëª©</span>
-                                                <span class="request_user title_list_text">ì ì²­ì</span>
+                                                <span class="request_title title_padding title_list_text">신청 글 제목</span>
+                                                <span class="request_user title_list_text">신청자</span>
                                             </li>
                                         </div>
                                         <div class="request_list_one">
                                             <li class="request_flex">
                                                 <span class="content_none">
-                                                    <input class="request_btn request_btn_ok" type="button" value="ì¹ì¸">
-                                                    <input class="request_btn" type="button" value="ê±°ì ">
+                                                    <input class="request_btn request_btn_ok" type="button" value="승인">
+                                                    <input class="request_btn" type="button" value="거절">
                                                 </span>
-                                                <span class="request_title title_padding title_list_text">ì ì²­ ê¸ ì ëª©</span>
-                                                <span class="request_user title_list_text">ì ì²­ì</span>
+                                                <span class="request_title title_padding title_list_text">신청 글 제목</span>
+                                                <span class="request_user title_list_text">신청자</span>
                                             </li>
                                         </div>
                                         <div class="request_list_one">
                                             <li class="request_flex">
                                                 <span class="content_none">
-                                                    <input class="request_btn request_btn_ok" type="button" value="ì¹ì¸">
-                                                    <input class="request_btn" type="button" value="ê±°ì ">
+                                                    <input class="request_btn request_btn_ok" type="button" value="승인">
+                                                    <input class="request_btn" type="button" value="거절">
                                                 </span>
-                                                <span class="request_title title_padding title_list_text">ì ì²­ ê¸ ì ëª©</span>
-                                                <span class="request_user title_list_text">ì ì²­ì</span>
+                                                <span class="request_title title_padding title_list_text">신청 글 제목</span>
+                                                <span class="request_user title_list_text">신청자</span>
                                             </li>
                                         </div>
                                         <div class="request_list_one">
                                             <li class="request_flex">
                                                 <span class="content_none">
-                                                    <input class="request_btn request_btn_ok" type="button" value="ì¹ì¸">
-                                                    <input class="request_btn" type="button" value="ê±°ì ">
+                                                    <input class="request_btn request_btn_ok" type="button" value="승인">
+                                                    <input class="request_btn" type="button" value="거절">
                                                 </span>
-                                                <span class="request_title title_padding title_list_text">ì ì²­ ê¸ ì ëª©</span>
-                                                <span class="request_user title_list_text">ì ì²­ì</span>
+                                                <span class="request_title title_padding title_list_text">신청 글 제목</span>
+                                                <span class="request_user title_list_text">신청자</span>
                                             </li>
                                         </div>
                                         <div class="request_list_one">
                                             <li class="request_flex">
                                                 <span class="content_none">
-                                                    <input class="request_btn request_btn_ok" type="button" value="ì¹ì¸">
-                                                    <input class="request_btn" type="button" value="ê±°ì ">
+                                                    <input class="request_btn request_btn_ok" type="button" value="승인">
+                                                    <input class="request_btn" type="button" value="거절">
                                                 </span>
-                                                <span class="request_title title_padding title_list_text">ì ì²­ ê¸ ì ëª©</span>
-                                                <span class="request_user title_list_text">ì ì²­ì</span>
+                                                <span class="request_title title_padding title_list_text">신청 글 제목</span>
+                                                <span class="request_user title_list_text">신청자</span>
                                             </li>
                                         </div>
                                         <div class="request_list_one">
                                             <li class="request_flex">
                                                 <span class="content_none">
-                                                    <input class="request_btn request_btn_ok" type="button" value="ì¹ì¸">
-                                                    <input class="request_btn" type="button" value="ê±°ì ">
+                                                    <input class="request_btn request_btn_ok" type="button" value="승인">
+                                                    <input class="request_btn" type="button" value="거절">
                                                 </span>
-                                                <span class="request_title title_padding title_list_text">ì ì²­ ê¸ ì ëª©</span>
-                                                <span class="request_user title_list_text">ì ì²­ì</span>
+                                                <span class="request_title title_padding title_list_text">신청 글 제목</span>
+                                                <span class="request_user title_list_text">신청자</span>
                                             </li>
                                         </div>
                                         <div class="request_list_one">
                                             <li class="request_flex">
                                                 <span class="content_none">
-                                                    <input class="request_btn request_btn_ok" type="button" value="ì¹ì¸">
-                                                    <input class="request_btn" type="button" value="ê±°ì ">
+                                                    <input class="request_btn request_btn_ok" type="button" value="승인">
+                                                    <input class="request_btn" type="button" value="거절">
                                                 </span>
-                                                <span class="request_title title_padding title_list_text">ì ì²­ ê¸ ì ëª©</span>
-                                                <span class="request_user title_list_text">ì ì²­ì</span>
+                                                <span class="request_title title_padding title_list_text">신청 글 제목</span>
+                                                <span class="request_user title_list_text">신청자</span>
                                             </li>
                                         </div>
                                         <div class="request_list_one">
                                             <li class="request_flex">
                                                 <span class="content_none">
-                                                    <input class="request_btn request_btn_ok" type="button" value="ì¹ì¸">
-                                                    <input class="request_btn" type="button" value="ê±°ì ">
+                                                    <input class="request_btn request_btn_ok" type="button" value="승인">
+                                                    <input class="request_btn" type="button" value="거절">
                                                 </span>
-                                                <span class="request_title title_padding title_list_text">ì ì²­ ê¸ ì ëª©</span>
-                                                <span class="request_user title_list_text">ì ì²­ì</span>
+                                                <span class="request_title title_padding title_list_text">신청 글 제목</span>
+                                                <span class="request_user title_list_text">신청자</span>
                                             </li>
                                         </div>
                                     </ul>
                                 </div>
                             </div>
                             <div class="request_box">
-                                <div class="request_head">ì°¸ì¬ ìì²­</div>
+                                <div class="request_head">참여 요청</div>
                                 <div class="list_div">
                                     <ul class="request_list">
                                         <div class="request_list_one request_title_div">
                                             <li class="request_flex">
                                                 <span class="content_none"></span>
-                                                <span class="request_title title_padding title_bold">ì°¸ì¬ ê¸ ì ëª©</span>
-                                                <span class="request_user title_bold">ì ì²­ì</span>
+                                                <span class="request_title title_padding title_bold">참여 글 제목</span>
+                                                <span class="request_user title_bold">신청자</span>
                                             </li>
                                         </div>
                                         <div class="request_list_one">
                                             <li class="request_flex">
                                                 <span class="content_none">
-                                                    <input class="request_btn request_btn_ok" type="button" value="ì¹ì¸">
-                                                    <input class="request_btn" type="button" value="ê±°ì ">
+                                                    <input class="request_btn request_btn_ok" type="button" value="승인">
+                                                    <input class="request_btn" type="button" value="거절">
                                                 </span>
-                                                <span class="request_title title_padding title_list_text">ì°¸ì¬ ê¸ ì ëª©</span>
-                                                <span class="request_user title_list_text">ì ì²­ì</span>
+                                                <span class="request_title title_padding title_list_text">참여 글 제목</span>
+                                                <span class="request_user title_list_text">신청자</span>
                                             </li>
                                         </div>
                                         <div class="request_list_one">
                                             <li class="request_flex">
                                                 <span class="content_none">
-                                                    <input class="request_btn request_btn_ok" type="button" value="ì¹ì¸">
-                                                    <input class="request_btn" type="button" value="ê±°ì ">
+                                                    <input class="request_btn request_btn_ok" type="button" value="승인">
+                                                    <input class="request_btn" type="button" value="거절">
                                                 </span>
-                                                <span class="request_title title_padding title_list_text">ì°¸ì¬ ê¸ ì ëª©</span>
-                                                <span class="request_user title_list_text">ì ì²­ì</span>
+                                                <span class="request_title title_padding title_list_text">참여 글 제목</span>
+                                                <span class="request_user title_list_text">신청자</span>
                                             </li>
                                         </div>
                                         <div class="request_list_one">
                                             <li class="request_flex">
                                                 <span class="content_none">
-                                                    <input class="request_btn request_btn_ok" type="button" value="ì¹ì¸">
-                                                    <input class="request_btn" type="button" value="ê±°ì ">
+                                                    <input class="request_btn request_btn_ok" type="button" value="승인">
+                                                    <input class="request_btn" type="button" value="거절">
                                                 </span>
-                                                <span class="request_title title_padding title_list_text">ì°¸ì¬ ê¸ ì ëª©</span>
-                                                <span class="request_user title_list_text">ì ì²­ì</span>
+                                                <span class="request_title title_padding title_list_text">참여 글 제목</span>
+                                                <span class="request_user title_list_text">신청자</span>
                                             </li>
                                         </div>
                                         <div class="request_list_one">
                                             <li class="request_flex">
                                                 <span class="content_none">
-                                                    <input class="request_btn request_btn_ok" type="button" value="ì¹ì¸">
-                                                    <input class="request_btn" type="button" value="ê±°ì ">
+                                                    <input class="request_btn request_btn_ok" type="button" value="승인">
+                                                    <input class="request_btn" type="button" value="거절">
                                                 </span>
-                                                <span class="request_title title_padding title_list_text">ì°¸ì¬ ê¸ ì ëª©</span>
-                                                <span class="request_user title_list_text">ì ì²­ì</span>
+                                                <span class="request_title title_padding title_list_text">참여 글 제목</span>
+                                                <span class="request_user title_list_text">신청자</span>
                                             </li>
                                         </div>
                                         <div class="request_list_one">
                                             <li class="request_flex">
                                                 <span class="content_none">
-                                                    <input class="request_btn request_btn_ok" type="button" value="ì¹ì¸">
-                                                    <input class="request_btn" type="button" value="ê±°ì ">
+                                                    <input class="request_btn request_btn_ok" type="button" value="승인">
+                                                    <input class="request_btn" type="button" value="거절">
                                                 </span>
-                                                <span class="request_title title_padding title_list_text">ì°¸ì¬ ê¸ ì ëª©</span>
-                                                <span class="request_user title_list_text">ì ì²­ì</span>
+                                                <span class="request_title title_padding title_list_text">참여 글 제목</span>
+                                                <span class="request_user title_list_text">신청자</span>
                                             </li>
                                         </div>
                                         <div class="request_list_one">
                                             <li class="request_flex">
                                                 <span class="content_none">
-                                                    <input class="request_btn request_btn_ok" type="button" value="ì¹ì¸">
-                                                    <input class="request_btn" type="button" value="ê±°ì ">
+                                                    <input class="request_btn request_btn_ok" type="button" value="승인">
+                                                    <input class="request_btn" type="button" value="거절">
                                                 </span>
-                                                <span class="request_title title_padding title_list_text">ì°¸ì¬ ê¸ ì ëª©</span>
-                                                <span class="request_user title_list_text">ì ì²­ì</span>
+                                                <span class="request_title title_padding title_list_text">참여 글 제목</span>
+                                                <span class="request_user title_list_text">신청자</span>
                                             </li>
                                         </div>
                                         <div class="request_list_one">
                                             <li class="request_flex">
                                                 <span class="content_none">
-                                                    <input class="request_btn request_btn_ok" type="button" value="ì¹ì¸">
-                                                    <input class="request_btn" type="button" value="ê±°ì ">
+                                                    <input class="request_btn request_btn_ok" type="button" value="승인">
+                                                    <input class="request_btn" type="button" value="거절">
                                                 </span>
-                                                <span class="request_title title_padding title_list_text">ì°¸ì¬ ê¸ ì ëª©</span>
-                                                <span class="request_user title_list_text">ì ì²­ì</span>
+                                                <span class="request_title title_padding title_list_text">참여 글 제목</span>
+                                                <span class="request_user title_list_text">신청자</span>
                                             </li>
                                         </div>
                                         <div class="request_list_one">
                                             <li class="request_flex">
                                                 <span class="content_none">
-                                                    <input class="request_btn request_btn_ok" type="button" value="ì¹ì¸">
-                                                    <input class="request_btn" type="button" value="ê±°ì ">
+                                                    <input class="request_btn request_btn_ok" type="button" value="승인">
+                                                    <input class="request_btn" type="button" value="거절">
                                                 </span>
-                                                <span class="request_title title_padding title_list_text">ì°¸ì¬ ê¸ ì ëª©</span>
-                                                <span class="request_user title_list_text">ì ì²­ì</span>
+                                                <span class="request_title title_padding title_list_text">참여 글 제목</span>
+                                                <span class="request_user title_list_text">신청자</span>
                                             </li>
                                         </div>
                                         <div class="request_list_one">
                                             <li class="request_flex">
                                                 <span class="content_none">
-                                                    <input class="request_btn request_btn_ok" type="button" value="ì¹ì¸">
-                                                    <input class="request_btn" type="button" value="ê±°ì ">
+                                                    <input class="request_btn request_btn_ok" type="button" value="승인">
+                                                    <input class="request_btn" type="button" value="거절">
                                                 </span>
-                                                <span class="request_title title_padding title_list_text">ì°¸ì¬ ê¸ ì ëª©</span>
-                                                <span class="request_user title_list_text">ì ì²­ì</span>
+                                                <span class="request_title title_padding title_list_text">참여 글 제목</span>
+                                                <span class="request_user title_list_text">신청자</span>
                                             </li>
                                         </div>
                                         <div class="request_list_one">
                                             <li class="request_flex">
                                                 <span class="content_none">
-                                                    <input class="request_btn request_btn_ok" type="button" value="ì¹ì¸">
-                                                    <input class="request_btn" type="button" value="ê±°ì ">
+                                                    <input class="request_btn request_btn_ok" type="button" value="승인">
+                                                    <input class="request_btn" type="button" value="거절">
                                                 </span>
-                                                <span class="request_title title_padding title_list_text">ì°¸ì¬ ê¸ ì ëª©</span>
-                                                <span class="request_user title_list_text">ì ì²­ì</span>
+                                                <span class="request_title title_padding title_list_text">참여 글 제목</span>
+                                                <span class="request_user title_list_text">신청자</span>
                                             </li>
                                         </div>
                                         <div class="request_list_one">
                                             <li class="request_flex">
                                                 <span class="content_none">
-                                                    <input class="request_btn request_btn_ok" type="button" value="ì¹ì¸">
-                                                    <input class="request_btn" type="button" value="ê±°ì ">
+                                                    <input class="request_btn request_btn_ok" type="button" value="승인">
+                                                    <input class="request_btn" type="button" value="거절">
                                                 </span>
-                                                <span class="request_title title_padding title_list_text">ì°¸ì¬ ê¸ ì ëª©</span>
-                                                <span class="request_user title_list_text">ì ì²­ì</span>
+                                                <span class="request_title title_padding title_list_text">참여 글 제목</span>
+                                                <span class="request_user title_list_text">신청자</span>
                                             </li>
                                         </div>
                                         <div class="request_list_one">
                                             <li class="request_flex">
                                                 <span class="content_none">
-                                                    <input class="request_btn request_btn_ok" type="button" value="ì¹ì¸">
-                                                    <input class="request_btn" type="button" value="ê±°ì ">
+                                                    <input class="request_btn request_btn_ok" type="button" value="승인">
+                                                    <input class="request_btn" type="button" value="거절">
                                                 </span>
-                                                <span class="request_title title_padding title_list_text">ì°¸ì¬ ê¸ ì ëª©</span>
-                                                <span class="request_user title_list_text">ì ì²­ì</span>
+                                                <span class="request_title title_padding title_list_text">참여 글 제목</span>
+                                                <span class="request_user title_list_text">신청자</span>
                                             </li>
                                         </div>
                                     </ul>
@@ -301,146 +301,146 @@
                     </div>
                 </div>
                 <div class="reject_request_wrapper">
-                    <div class="request_head">ìì²­ ê±°ì </div>
+                    <div class="request_head">요청 거절</div>
                     <div class="reject_list_div">
                         <ul class="request_list">
                             <div class="request_list_one reject_head">
                                 <li class="request_flex">
-                                    <span class="content_none title_bold reject_font_size">ì¹´íê³ ë¦¬</span>
-                                    <span class="request_title title_padding title_bold">ê¸ ì ëª©</span>
+                                    <span class="content_none title_bold reject_font_size">카테고리</span>
+                                    <span class="request_title title_padding title_bold">글 제목</span>
                                     <span class="reject_reason title_bold reject_font_size">
-                                        ê±°ì  ì¬ì 
+                                        거절 사유
                                     </span>
                                     <span class="button_reason" >
-                                        <input class="display_none" type="button" value="ë³´ë´ê¸°"> 
+                                        <input class="display_none" type="button" value="보내기"> 
                                     </span>
                                 </li>
                             </div>
                             <div class="request_list_one">
                                 <li class="request_flex">
-                                    <span class="content_none">ì ì²­</span>
-                                    <span class="request_title title_padding title_list_text">ê¸ ì ëª©</span>
+                                    <span class="content_none">신청</span>
+                                    <span class="request_title title_padding title_list_text">글 제목</span>
                                     <span class="reject_reason">
-                                        <input type="radio" value="11"> ì¬ì§ì²¨ë¶
-                                        <input class="radio_reject_reason" type="radio" value="22"> ì¤ëªë¶ì¡±
-                                        <input class="radio_reject_reason" type="radio" value="33"> ë¶ì ì 
-                                        <input class="radio_reject_reason" type="radio" value="44"> ë¶ì ì 
-                                        <input class="radio_reject_reason" type="radio" value="55"> ë¶ì ì 
+                                        <input type="radio" value="11"> 사진첨부
+                                        <input class="radio_reject_reason" type="radio" value="22"> 설명부족
+                                        <input class="radio_reject_reason" type="radio" value="33"> 부적절
+                                        <input class="radio_reject_reason" type="radio" value="44"> 부적절
+                                        <input class="radio_reject_reason" type="radio" value="55"> 부적절
                                     </span>
                                     <span class="button_reason">
-                                        <input class="button_reason" type="button" value="ë³´ë´ê¸°"> 
+                                        <input class="button_reason" type="button" value="보내기"> 
                                     </span>
                                 </li>
                             </div>
                             <div class="request_list_one">
                                 <li class="request_flex">
-                                    <span class="content_none">ì°¸ì¬</span>
-                                    <span class="request_title title_padding title_list_text">ê¸ ì ëª©</span>
+                                    <span class="content_none">참여</span>
+                                    <span class="request_title title_padding title_list_text">글 제목</span>
                                     <span class="reject_reason">
-                                        <input type="radio" value="11"> ì¬ì§ì²¨ë¶
-                                        <input class="radio_reject_reason" type="radio" value="22"> ì¤ëªë¶ì¡±
-                                        <input class="radio_reject_reason" type="radio" value="33"> ë¶ì ì 
-                                        <input class="radio_reject_reason" type="radio" value="44"> ë¶ì ì 
-                                        <input class="radio_reject_reason" type="radio" value="55"> ë¶ì ì 
+                                        <input type="radio" value="11"> 사진첨부
+                                        <input class="radio_reject_reason" type="radio" value="22"> 설명부족
+                                        <input class="radio_reject_reason" type="radio" value="33"> 부적절
+                                        <input class="radio_reject_reason" type="radio" value="44"> 부적절
+                                        <input class="radio_reject_reason" type="radio" value="55"> 부적절
                                     </span>
                                     <span class="button_reason">
-                                        <input class="button_reason"type="button" value="ë³´ë´ê¸°"> 
+                                        <input class="button_reason"type="button" value="보내기"> 
                                     </span>
                                 </li>
                             </div>
                             <div class="request_list_one">
                                 <li class="request_flex">
-                                    <span class="content_none">ì°¸ì¬</span>
-                                    <span class="request_title title_padding title_list_text">ê¸ ì ëª©</span>
+                                    <span class="content_none">참여</span>
+                                    <span class="request_title title_padding title_list_text">글 제목</span>
                                     <span class="reject_reason">
-                                        <input type="radio" value="11"> ì¬ì§ì²¨ë¶
-                                        <input class="radio_reject_reason" type="radio" value="22"> ì¤ëªë¶ì¡±
-                                        <input class="radio_reject_reason" type="radio" value="33"> ë¶ì ì 
-                                        <input class="radio_reject_reason" type="radio" value="44"> ë¶ì ì 
-                                        <input class="radio_reject_reason" type="radio" value="55"> ë¶ì ì 
+                                        <input type="radio" value="11"> 사진첨부
+                                        <input class="radio_reject_reason" type="radio" value="22"> 설명부족
+                                        <input class="radio_reject_reason" type="radio" value="33"> 부적절
+                                        <input class="radio_reject_reason" type="radio" value="44"> 부적절
+                                        <input class="radio_reject_reason" type="radio" value="55"> 부적절
                                     </span>
                                     <span class="button_reason">
-                                        <input class="button_reason"type="button" value="ë³´ë´ê¸°"> 
+                                        <input class="button_reason"type="button" value="보내기"> 
                                     </span>
                                 </li>
                             </div>
                             <div class="request_list_one">
                                 <li class="request_flex">
-                                    <span class="content_none">ì°¸ì¬</span>
-                                    <span class="request_title title_padding title_list_text">ê¸ ì ëª©</span>
+                                    <span class="content_none">참여</span>
+                                    <span class="request_title title_padding title_list_text">글 제목</span>
                                     <span class="reject_reason">
-                                        <input type="radio" value="11"> ì¬ì§ì²¨ë¶
-                                        <input class="radio_reject_reason" type="radio" value="22"> ì¤ëªë¶ì¡±
-                                        <input class="radio_reject_reason" type="radio" value="33"> ë¶ì ì 
-                                        <input class="radio_reject_reason" type="radio" value="44"> ë¶ì ì 
-                                        <input class="radio_reject_reason" type="radio" value="55"> ë¶ì ì 
+                                        <input type="radio" value="11"> 사진첨부
+                                        <input class="radio_reject_reason" type="radio" value="22"> 설명부족
+                                        <input class="radio_reject_reason" type="radio" value="33"> 부적절
+                                        <input class="radio_reject_reason" type="radio" value="44"> 부적절
+                                        <input class="radio_reject_reason" type="radio" value="55"> 부적절
                                     </span>
                                     <span class="button_reason">
-                                        <input class="button_reason"type="button" value="ë³´ë´ê¸°"> 
+                                        <input class="button_reason"type="button" value="보내기"> 
                                     </span>
                                 </li>
                             </div>
                             <div class="request_list_one">
                                 <li class="request_flex">
-                                    <span class="content_none">ì°¸ì¬</span>
-                                    <span class="request_title title_padding title_list_text">ê¸ ì ëª©</span>
+                                    <span class="content_none">참여</span>
+                                    <span class="request_title title_padding title_list_text">글 제목</span>
                                     <span class="reject_reason">
-                                        <input type="radio" value="11"> ì¬ì§ì²¨ë¶
-                                        <input class="radio_reject_reason" type="radio" value="22"> ì¤ëªë¶ì¡±
-                                        <input class="radio_reject_reason" type="radio" value="33"> ë¶ì ì 
-                                        <input class="radio_reject_reason" type="radio" value="44"> ë¶ì ì 
-                                        <input class="radio_reject_reason" type="radio" value="55"> ë¶ì ì 
+                                        <input type="radio" value="11"> 사진첨부
+                                        <input class="radio_reject_reason" type="radio" value="22"> 설명부족
+                                        <input class="radio_reject_reason" type="radio" value="33"> 부적절
+                                        <input class="radio_reject_reason" type="radio" value="44"> 부적절
+                                        <input class="radio_reject_reason" type="radio" value="55"> 부적절
                                     </span>
                                     <span class="button_reason">
-                                        <input class="button_reason"type="button" value="ë³´ë´ê¸°"> 
+                                        <input class="button_reason"type="button" value="보내기"> 
                                     </span>
                                 </li>
                             </div>
                             <div class="request_list_one">
                                 <li class="request_flex">
-                                    <span class="content_none">ì°¸ì¬</span>
-                                    <span class="request_title title_padding title_list_text">ê¸ ì ëª©</span>
+                                    <span class="content_none">참여</span>
+                                    <span class="request_title title_padding title_list_text">글 제목</span>
                                     <span class="reject_reason">
-                                        <input type="radio" value="11"> ì¬ì§ì²¨ë¶
-                                        <input class="radio_reject_reason" type="radio" value="22"> ì¤ëªë¶ì¡±
-                                        <input class="radio_reject_reason" type="radio" value="33"> ë¶ì ì 
-                                        <input class="radio_reject_reason" type="radio" value="44"> ë¶ì ì 
-                                        <input class="radio_reject_reason" type="radio" value="55"> ë¶ì ì 
+                                        <input type="radio" value="11"> 사진첨부
+                                        <input class="radio_reject_reason" type="radio" value="22"> 설명부족
+                                        <input class="radio_reject_reason" type="radio" value="33"> 부적절
+                                        <input class="radio_reject_reason" type="radio" value="44"> 부적절
+                                        <input class="radio_reject_reason" type="radio" value="55"> 부적절
                                     </span>
                                     <span class="button_reason">
-                                        <input class="button_reason"type="button" value="ë³´ë´ê¸°"> 
+                                        <input class="button_reason"type="button" value="보내기"> 
                                     </span>
                                 </li>
                             </div>
                             <div class="request_list_one">
                                 <li class="request_flex">
-                                    <span class="content_none">ì°¸ì¬</span>
-                                    <span class="request_title title_padding title_list_text">ê¸ ì ëª©</span>
+                                    <span class="content_none">참여</span>
+                                    <span class="request_title title_padding title_list_text">글 제목</span>
                                     <span class="reject_reason">
-                                        <input type="radio" value="11"> ì¬ì§ì²¨ë¶
-                                        <input class="radio_reject_reason" type="radio" value="22"> ì¤ëªë¶ì¡±
-                                        <input class="radio_reject_reason" type="radio" value="33"> ë¶ì ì 
-                                        <input class="radio_reject_reason" type="radio" value="44"> ë¶ì ì 
-                                        <input class="radio_reject_reason" type="radio" value="55"> ë¶ì ì 
+                                        <input type="radio" value="11"> 사진첨부
+                                        <input class="radio_reject_reason" type="radio" value="22"> 설명부족
+                                        <input class="radio_reject_reason" type="radio" value="33"> 부적절
+                                        <input class="radio_reject_reason" type="radio" value="44"> 부적절
+                                        <input class="radio_reject_reason" type="radio" value="55"> 부적절
                                     </span>
                                     <span class="button_reason">
-                                        <input class="button_reason"type="button" value="ë³´ë´ê¸°"> 
+                                        <input class="button_reason"type="button" value="보내기"> 
                                     </span>
                                 </li>
                             </div>
                             <div class="request_list_one">
                                 <li class="request_flex">
-                                    <span class="content_none">ì°¸ì¬</span>
-                                    <span class="request_title title_padding title_list_text">ê¸ ì ëª©</span>
+                                    <span class="content_none">참여</span>
+                                    <span class="request_title title_padding title_list_text">글 제목</span>
                                     <span class="reject_reason">
-                                        <input type="radio" value="11"> ì¬ì§ì²¨ë¶
-                                        <input class="radio_reject_reason" type="radio" value="22"> ì¤ëªë¶ì¡±
-                                        <input class="radio_reject_reason" type="radio" value="33"> ë¶ì ì 
-                                        <input class="radio_reject_reason" type="radio" value="44"> ë¶ì ì 
-                                        <input class="radio_reject_reason" type="radio" value="55"> ë¶ì ì 
+                                        <input type="radio" value="11"> 사진첨부
+                                        <input class="radio_reject_reason" type="radio" value="22"> 설명부족
+                                        <input class="radio_reject_reason" type="radio" value="33"> 부적절
+                                        <input class="radio_reject_reason" type="radio" value="44"> 부적절
+                                        <input class="radio_reject_reason" type="radio" value="55"> 부적절
                                     </span>
                                     <span class="button_reason">
-                                        <input class="button_reason"type="button" value="ë³´ë´ê¸°"> 
+                                        <input class="button_reason"type="button" value="보내기"> 
                                     </span>
                                 </li>
                             </div>
@@ -457,7 +457,7 @@
                                     <li class="page_number_li"><strong>8</strong></li>
                                     <li class="page_number_li"><strong>9</strong></li>
                                     <li class="page_number_li"><strong>10</strong></li>
-                                    <li class="page_number_next_li"><strong>ë¤ì</strong></li>
+                                    <li class="page_number_next_li"><strong>다음</strong></li>
                                   </div>
                                 </ul>
                               </div>
@@ -475,7 +475,7 @@
             <div class="menu_admin">
                 <div><a href="#">
                     <img src="/src/admin/img_admin/home.png">
-                    <div>ì¬ì´í¸ ë°ë¡ê°ê¸°</div>
+                    <div>사이트 바로가기</div>
                 </a></div>
             </div>
             <div class="manage_list_div">
@@ -483,29 +483,29 @@
                     <li class="list_li">
                         <a href="admin_page_request.html">
                             <div><img class="manage_list_img" src="/src/admin/img_admin/browser.png"></div>
-                            <span>ìì²­ ê´ë¦¬</span>
+                            <span>요청 관리</span>
                         </a>
                     </li>
                     <li class="list_li">
                         <a href="admin_page_user.html">
                             <div><img class="manage_list_img" src="/src/admin/img_admin/user.png"></div>
-                            <span>ì´ì©ì ê´ë¦¬</span>
+                            <span>이용자 관리</span>
                         </a>
                     </li>
                     <li class="list_li">
                         <a class="arrow_down_menu" href="javascript:void(0);">
                                 <div><img class="manage_list_img" src="/src/admin/img_admin/ballot.png"></div>
-                                <span>ê²ìê¸ ê´ë¦¬</span>
+                                <span>게시글 관리</span>
                                 <img class="arrow_down" src="/src/admin/img_admin/angle-down1.png">
                                 <ul class="toggle_menu">
                                     <li><a href="admin_page_board.html">
-                                        <div>íìì´ ê²ìí</div>
+                                        <div>품앗이 게시판</div>
                                     </a></li>
                                     <li><a href="admin_page_board_promotion.html">
-                                        <div>íë³´ ê²ìí</div>
+                                        <div>홍보 게시판</div>
                                     </a></li>
                                     <li><a href="admin_page_board_review.html">
-                                        <div>ì¸ì¦, íê¸° ê²ìí</div>
+                                        <div>인증, 후기 게시판</div>
                                     </a></li>
                                 </ul>
                         </a>
@@ -513,19 +513,19 @@
                     <li class="list_li">
                         <a href="#">
                             <div><img class="statis_list_img" src="/src/admin/img_admin/statistic.png"></div>
-                            <span>íµê³</span>
+                            <span>통계</span>
                         </a>
                     </li>
                     <li class="list_li">
                         <a href="/src/admin/html_admin/admin_page_service.html">
                             <div><img class="manage_list_img" src="/src/admin/img_admin/comments.png"></div>
-                            <span>ê³ ê° ì¼í°</span>
+                            <span>고객 센터</span>
                         </a>
                     </li>
                     <li class="list_li list_admin_notice">
                         <a href="">
                             <div><img class="manage_list_img" src="/src/admin/img_admin/exclamation.png"></div>
-                            <span>ê´ë¦¬ì ê³µì§</span>
+                            <span>관리자 공지</span>
                         </a>
                     </li>
                 </ul>
