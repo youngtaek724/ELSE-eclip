@@ -7,9 +7,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/admin_page_statis.css">
+    <link rel="stylesheet" href="/src/admin/css_admin/admin_page_statis.css">
     <link href="/website/css/uicons-outline-rounded.css" rel="stylesheet">
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/admin_page_same.css">
+    <link rel="stylesheet" href="/src/admin/css_admin/admin_page_same.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
@@ -21,9 +21,9 @@
         <div class="main">
             <header class="top_header">
                 <div class="headerbar">
-                    <div class="admin_name">íµê³</div>
+                    <div class="admin_name">통계</div>
                     <div class="exit_button_div">
-                        <button class="exit_button">ëê°ê¸°</button>
+                        <button class="exit_button">나가기</button>
                     </div>
                 </div>
             </header>
@@ -32,29 +32,29 @@
                     <div class="chart_flex">
                         <div class="daily_summary">
                             <div class="visit_title">
-                                ì¼ìë³ ìì½
+                                일자별 요약
                             </div>
                             <div class="daily_summary_list_div">
                                 <div class="card_head">
                                     <div class="form_group">
                                         <select class="choose_year" name="year" id="analyticsYear">
-                                            <option value="2022" selected>2022ë</option>
+                                            <option value="2022" selected>2022년</option>
                                         </select>
                                     </div>
                                     <div class="form_group">
                                         <select class="choose_month" name="month" id="analyticsMonth">
-                                            <option value="1">1ì</option>
-                                            <option value="2">2ì</option>
-                                            <option value="3">3ì</option>
-                                            <option value="4">4ì</option>
-                                            <option value="5">5ì</option>
-                                            <option value="6">6ì</option>
-                                            <option value="7">7ì</option>
-                                            <option value="8">8ì</option>
-                                            <option value="9">9ì</option>
-                                            <option value="10" selected>10ì</option>
-                                            <option value="11">11ì</option>
-                                            <option value="12">12ì</option>
+                                            <option value="1">1월</option>
+                                            <option value="2">2월</option>
+                                            <option value="3">3월</option>
+                                            <option value="4">4월</option>
+                                            <option value="5">5월</option>
+                                            <option value="6">6월</option>
+                                            <option value="7">7월</option>
+                                            <option value="8">8월</option>
+                                            <option value="9">9월</option>
+                                            <option value="10" selected>10월</option>
+                                            <option value="11">11월</option>
+                                            <option value="12">12월</option>
                                         </select>
                                     </div>
                                 </div>
@@ -63,22 +63,22 @@
                                         <table class="summary_table">
                                             <thead>
                                                 <tr>
-                                                    <th class="text_center">ì¼ì</th>
-                                                    <th class="text_center">ë°©ë¬¸ì</th>
-                                                    <th class="text_center">ê°ì</th>
-                                                    <th class="text_center">ë¬¸ì</th>
-                                                    <th class="text_center">ì ì²­</th>
-                                                    <th class="text_center">ì°¸ì¬</th>
-                                                    <th class="text_center">ì ê²ìê¸</th>
-                                                    <th class="text_right">í¬ì¸í¸ ì¬ì©</th>
-                                                    <th class="text_right point_padding">í¬ì¸í¸ ì§ê¸</th>
+                                                    <th class="text_center">일자</th>
+                                                    <th class="text_center">방문자</th>
+                                                    <th class="text_center">가입</th>
+                                                    <th class="text_center">문의</th>
+                                                    <th class="text_center">신청</th>
+                                                    <th class="text_center">참여</th>
+                                                    <th class="text_center">새 게시글</th>
+                                                    <th class="text_right">포인트 사용</th>
+                                                    <th class="text_right point_padding">포인트 지급</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <tr class="today">
-                                                    <td class="text_center">2022-10-25 (í)</td>
-                                                    <td class="text_center">0ëª</td>
-                                                    <td class="text_center">0ëª</td>
+                                                    <td class="text_center">2022-10-25 (화)</td>
+                                                    <td class="text_center">0명</td>
+                                                    <td class="text_center">0명</td>
                                                     <td class="text_center">0</td>
                                                     <td class="text_center">0</td>
                                                     <td class="text_center">0</td>
@@ -87,9 +87,9 @@
                                                     <td class="text_right point_padding">0 P</td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="text_center">2022-10-24 (ì)</td>
-                                                    <td class="text_center">0ëª</td>
-                                                    <td class="text_center">0ëª</td>
+                                                    <td class="text_center">2022-10-24 (월)</td>
+                                                    <td class="text_center">0명</td>
+                                                    <td class="text_center">0명</td>
                                                     <td class="text_center">0</td>
                                                     <td class="text_center">0</td>
                                                     <td class="text_center">0</td>
@@ -98,9 +98,9 @@
                                                     <td class="text_right point_padding">0 P</td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="text_center">2022-10-23 (ì¼)</td>
-                                                    <td class="text_center">0ëª</td>
-                                                    <td class="text_center">0ëª</td>
+                                                    <td class="text_center">2022-10-23 (일)</td>
+                                                    <td class="text_center">0명</td>
+                                                    <td class="text_center">0명</td>
                                                     <td class="text_center">0</td>
                                                     <td class="text_center">0</td>
                                                     <td class="text_center">0</td>
@@ -109,9 +109,9 @@
                                                     <td class="text_right point_padding">0 P</td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="text_center">2022-10-22 (í )</td>
-                                                    <td class="text_center">0ëª</td>
-                                                    <td class="text_center">0ëª</td>
+                                                    <td class="text_center">2022-10-22 (토)</td>
+                                                    <td class="text_center">0명</td>
+                                                    <td class="text_center">0명</td>
                                                     <td class="text_center">0</td>
                                                     <td class="text_center">0</td>
                                                     <td class="text_center">0</td>
@@ -120,9 +120,9 @@
                                                     <td class="text_right point_padding">0 P</td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="text_center">2022-10-21 (ê¸)</td>
-                                                    <td class="text_center">0ëª</td>
-                                                    <td class="text_center">0ëª</td>
+                                                    <td class="text_center">2022-10-21 (금)</td>
+                                                    <td class="text_center">0명</td>
+                                                    <td class="text_center">0명</td>
                                                     <td class="text_center">0</td>
                                                     <td class="text_center">0</td>
                                                     <td class="text_center">0</td>
@@ -131,9 +131,9 @@
                                                     <td class="text_right point_padding">0 P</td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="text_center">2022-10-20 (ëª©)</td>
-                                                    <td class="text_center">0ëª</td>
-                                                    <td class="text_center">0ëª</td>
+                                                    <td class="text_center">2022-10-20 (목)</td>
+                                                    <td class="text_center">0명</td>
+                                                    <td class="text_center">0명</td>
                                                     <td class="text_center">0</td>
                                                     <td class="text_center">0</td>
                                                     <td class="text_center">0</td>
@@ -142,9 +142,9 @@
                                                     <td class="text_right point_padding">0 P</td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="text_center">2022-10-19 (ì)</td>
-                                                    <td class="text_center">0ëª</td>
-                                                    <td class="text_center">0ëª</td>
+                                                    <td class="text_center">2022-10-19 (수)</td>
+                                                    <td class="text_center">0명</td>
+                                                    <td class="text_center">0명</td>
                                                     <td class="text_center">0</td>
                                                     <td class="text_center">0</td>
                                                     <td class="text_center">0</td>
@@ -155,9 +155,9 @@
                                             </tbody>
                                             <tfoot>
                                                 <tr>
-                                                    <td class="text_center">10ì í©ê³</td>
-                                                    <td class="text_center">0ëª</td>
-                                                    <td class="text_center">0ëª</td>
+                                                    <td class="text_center">10월 합계</td>
+                                                    <td class="text_center">0명</td>
+                                                    <td class="text_center">0명</td>
                                                     <td class="text_center">0</td>
                                                     <td class="text_center">0</td>
                                                     <td class="text_center">0</td>
@@ -176,7 +176,7 @@
                         <div class="chart_flex">
                             <div class="chart_flex_div">
                                 <div class="visit_title">
-                                    ì¼ìë³ ë°©ë¬¸ì
+                                    일자별 방문자
                                 </div>
                                 <div class="chart_box">
                                     <div class="visit_chart">
@@ -186,7 +186,7 @@
                             </div>
                             <div class="chart_flex_div">
                                 <div class="visit_title">
-                                    ì°ë ¹ë³ ì´ì©ì
+                                    연령별 이용자
                                 </div>
                                 <div class="chart_box">
                                     <div class="visit_chart">
@@ -209,7 +209,7 @@
             <div class="menu_admin">
                 <div><a href="#">
                     <img src="/src/admin/img_admin/home.png">
-                    <div>ì¬ì´í¸ ë°ë¡ê°ê¸°</div>
+                    <div>사이트 바로가기</div>
                 </a></div>
             </div>
             <div class="manage_list_div">
@@ -217,29 +217,29 @@
                     <li class="list_li">
                         <a href="admin_page_request.html">
                             <div><img class="manage_list_img" src="/src/admin/img_admin/browser.png"></div>
-                            <span>ìì²­ ê´ë¦¬</span>
+                            <span>요청 관리</span>
                         </a>
                     </li>
                     <li class="list_li">
                         <a href="admin_page_user.html">
                             <div><img class="manage_list_img" src="/src/admin/img_admin/user.png"></div>
-                            <span>ì´ì©ì ê´ë¦¬</span>
+                            <span>이용자 관리</span>
                         </a>
                     </li>
                     <li class="list_li">
                         <a class="arrow_down_menu" href="javascript:void(0);">
                                 <div><img class="manage_list_img" src="/src/admin/img_admin/ballot.png"></div>
-                                <span>ê²ìê¸ ê´ë¦¬</span>
+                                <span>게시글 관리</span>
                                 <img class="arrow_down" src="/src/admin/img_admin/angle-down1.png">
                                 <ul class="toggle_menu">
                                     <li><a href="admin_page_board.html">
-                                        <div>íìì´ ê²ìí</div>
+                                        <div>품앗이 게시판</div>
                                     </a></li>
                                     <li><a href="admin_page_board_promotion.html">
-                                        <div>íë³´ ê²ìí</div>
+                                        <div>홍보 게시판</div>
                                     </a></li>
                                     <li><a href="admin_page_board_review.html">
-                                        <div>ì¸ì¦, íê¸° ê²ìí</div>
+                                        <div>인증, 후기 게시판</div>
                                     </a></li>
                                 </ul>
                         </a>
@@ -247,19 +247,19 @@
                     <li class="list_li">
                         <a href="#">
                             <div><img class="statis_list_img" src="/src/admin/img_admin/statistic.png"></div>
-                            <span>íµê³</span>
+                            <span>통계</span>
                         </a>
                     </li>
                     <li class="list_li">
                         <a href="/src/admin/html_admin/admin_page_service.html">
                             <div><img class="manage_list_img" src="/src/admin/img_admin/comments.png"></div>
-                            <span>ê³ ê° ì¼í°</span>
+                            <span>고객 센터</span>
                         </a>
                     </li>
                     <li class="list_li list_admin_notice">
                         <a href="">
                             <div><img class="manage_list_img" src="/src/admin/img_admin/exclamation.png"></div>
-                            <span>ê´ë¦¬ì ê³µì§</span>
+                            <span>관리자 공지</span>
                         </a>
                     </li>
                 </ul>

@@ -9,10 +9,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
-      href="${pageContext.request.contextPath}/assets/css/admin_page_service.css"
+      href="/src/admin/css_admin/admin_page_service.css"
     />
     <link href="/website/css/uicons-outline-rounded.css" rel="stylesheet" />
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/admin_page_same.css" />
+    <link rel="stylesheet" href="/src/admin/css_admin/admin_page_same.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -26,9 +26,9 @@
       <div class="main">
         <header class="top_header">
           <div class="headerbar">
-            <div class="admin_name">ê³ ê° ì¼í°</div>
+            <div class="admin_name">고객 센터</div>
             <div class="exit_button_div">
-              <button class="exit_button">ëê°ê¸°</button>
+              <button class="exit_button">나가기</button>
             </div>
           </div>
         </header>
@@ -36,7 +36,7 @@
           <div class="content_wrapper">
             <div class="user_list">
               <div class="total_user">
-                ë¬¸ì ì¬í­
+                문의 사항
               </div>
               <div class="user_info_wrapper">
                 <div class="user_info_top_div">
@@ -44,25 +44,25 @@
                     <li
                       class="notice_number user_info_title content_text_align title_bold"
                     >
-                      <span>ë²í¸</span>
+                      <span>번호</span>
                     </li>
                     <li
                       class="notice_title user_info_title content_text_align title_bold"
                     >
-                      <span>ì ëª©</span>
+                      <span>제목</span>
                     </li>
                     <li
                       class="notice_writer user_info_title board_title title_bold"
                     >
-                      <span>ìì±ì</span>
+                      <span>작성자</span>
                     </li>
                     <li
                       class="notice_date user_info_title content_text_align title_bold"
                     >
-                      <span>ìì± ë ì§</span>
+                      <span>작성 날짜</span>
                     </li>
                     <li class="answer_yesno user_info_title content_text_align title_bold">
-                        ëµë³ ì¬ë¶
+                        답변 여부
                     </li>
                     <li class="btn_qna_answer">
 
@@ -75,18 +75,18 @@
                     <li
                       class="notice_number user_info_title content_text_align"
                     >
-                      <span>ë²í¸</span>
+                      <span>번호</span>
                     </li>
                     <li
                       class="notice_title user_info_title content_text_align_left"
                     >
-                      <span>ì ëª©ì ëª©ì ëª©ì ëª©ì ëª©ì ëª©</span>
+                      <span>제목제목제목제목제목제목</span>
                     </li>
                     <li class="notice_writer user_info_title board_title">
-                      <span>ìì±ì</span>
+                      <span>작성자</span>
                     </li>
                     <li class="notice_date user_info_title content_text_align">
-                      <span>ìì± ë ì§</span>
+                      <span>작성 날짜</span>
                     </li>
                     <li class="answer_yesno">
                         <div class="answer_no_div">
@@ -94,7 +94,7 @@
                         </div>
                     </li>
                     <li class="btn_qna_answer">
-                        <input class="btn_write" type="button" value="ëµë³íê¸°" />
+                        <input class="btn_write" type="button" value="답변하기" />
                     </li>
                     </ul>
                 </div>
@@ -103,18 +103,18 @@
                     <li
                       class="notice_number user_info_title content_text_align"
                     >
-                      <span>ë²í¸</span>
+                      <span>번호</span>
                     </li>
                     <li
                       class="notice_title user_info_title content_text_align_left"
                     >
-                      <span>ì ëª©ì ëª©ì ëª©ì ëª©ì ëª©ì ëª©</span>
+                      <span>제목제목제목제목제목제목</span>
                     </li>
                     <li class="notice_writer user_info_title board_title">
-                      <span>ìì±ì</span>
+                      <span>작성자</span>
                     </li>
                     <li class="notice_date user_info_title content_text_align">
-                      <span>ìì± ë ì§</span>
+                      <span>작성 날짜</span>
                     </li>
                     <li class="answer_yesno">
                         <div class="answer_no_div">
@@ -122,7 +122,7 @@
                         </div>
                     </li>
                     <li class="btn_qna_answer">
-                        <input class="btn_write" type="button" value="ëµë³íê¸°" />
+                        <input class="btn_write" type="button" value="답변하기" />
                     </li>
                     </ul>
                 </div>
@@ -131,18 +131,18 @@
                     <li
                       class="notice_number user_info_title content_text_align"
                     >
-                      <span>ë²í¸</span>
+                      <span>번호</span>
                     </li>
                     <li
                       class="notice_title user_info_title content_text_align_left"
                     >
-                      <span>ì ëª©ì ëª©ì ëª©ì ëª©ì ëª©ì ëª©</span>
+                      <span>제목제목제목제목제목제목</span>
                     </li>
                     <li class="notice_writer user_info_title board_title">
-                      <span>ìì±ì</span>
+                      <span>작성자</span>
                     </li>
                     <li class="notice_date user_info_title content_text_align">
-                      <span>ìì± ë ì§</span>
+                      <span>작성 날짜</span>
                     </li>
                     <li class="answer_yesno">
                         <div class="answer_no_div">
@@ -150,7 +150,7 @@
                         </div>
                     </li>
                     <li class="btn_qna_answer">
-                        <input class="btn_write" type="button" value="ëµë³íê¸°" />
+                        <input class="btn_write" type="button" value="답변하기" />
                     </li>
                     </ul>
                 </div>
@@ -159,18 +159,18 @@
                     <li
                       class="notice_number user_info_title content_text_align"
                     >
-                      <span>ë²í¸</span>
+                      <span>번호</span>
                     </li>
                     <li
                       class="notice_title user_info_title content_text_align_left"
                     >
-                      <span>ì ëª©ì ëª©ì ëª©ì ëª©ì ëª©ì ëª©</span>
+                      <span>제목제목제목제목제목제목</span>
                     </li>
                     <li class="notice_writer user_info_title board_title">
-                      <span>ìì±ì</span>
+                      <span>작성자</span>
                     </li>
                     <li class="notice_date user_info_title content_text_align">
-                      <span>ìì± ë ì§</span>
+                      <span>작성 날짜</span>
                     </li>
                     <li class="answer_yesno">
                         <div class="answer_no_div">
@@ -178,7 +178,7 @@
                         </div>
                     </li>
                     <li class="btn_qna_answer">
-                        <input class="btn_write" type="button" value="ëµë³íê¸°" />
+                        <input class="btn_write" type="button" value="답변하기" />
                     </li>
                     </ul>
                 </div>
@@ -187,18 +187,18 @@
                     <li
                       class="notice_number user_info_title content_text_align"
                     >
-                      <span>ë²í¸</span>
+                      <span>번호</span>
                     </li>
                     <li
                       class="notice_title user_info_title content_text_align_left"
                     >
-                      <span>ì ëª©ì ëª©ì ëª©ì ëª©ì ëª©ì ëª©</span>
+                      <span>제목제목제목제목제목제목</span>
                     </li>
                     <li class="notice_writer user_info_title board_title">
-                      <span>ìì±ì</span>
+                      <span>작성자</span>
                     </li>
                     <li class="notice_date user_info_title content_text_align">
-                      <span>ìì± ë ì§</span>
+                      <span>작성 날짜</span>
                     </li>
                     <li class="answer_yesno">
                         <div class="answer_no_div">
@@ -206,7 +206,7 @@
                         </div>
                     </li>
                     <li class="btn_qna_answer">
-                        <input class="btn_write" type="button" value="ëµë³íê¸°" />
+                        <input class="btn_write" type="button" value="답변하기" />
                     </li>
                     </ul>
                 </div>
@@ -215,18 +215,18 @@
                     <li
                       class="notice_number user_info_title content_text_align"
                     >
-                      <span>ë²í¸</span>
+                      <span>번호</span>
                     </li>
                     <li
                       class="notice_title user_info_title content_text_align_left"
                     >
-                      <span>ì ëª©ì ëª©ì ëª©ì ëª©ì ëª©ì ëª©</span>
+                      <span>제목제목제목제목제목제목</span>
                     </li>
                     <li class="notice_writer user_info_title board_title">
-                      <span>ìì±ì</span>
+                      <span>작성자</span>
                     </li>
                     <li class="notice_date user_info_title content_text_align">
-                      <span>ìì± ë ì§</span>
+                      <span>작성 날짜</span>
                     </li>
                     <li class="answer_yesno">
                         <div class="answer_no_div">
@@ -234,7 +234,7 @@
                         </div>
                     </li>
                     <li class="btn_qna_answer">
-                        <input class="btn_write" type="button" value="ëµë³íê¸°" />
+                        <input class="btn_write" type="button" value="답변하기" />
                     </li>
                     </ul>
                 </div>
@@ -243,18 +243,18 @@
                     <li
                       class="notice_number user_info_title content_text_align"
                     >
-                      <span>ë²í¸</span>
+                      <span>번호</span>
                     </li>
                     <li
                       class="notice_title user_info_title content_text_align_left"
                     >
-                      <span>ì ëª©ì ëª©ì ëª©ì ëª©ì ëª©ì ëª©</span>
+                      <span>제목제목제목제목제목제목</span>
                     </li>
                     <li class="notice_writer user_info_title board_title">
-                      <span>ìì±ì</span>
+                      <span>작성자</span>
                     </li>
                     <li class="notice_date user_info_title content_text_align">
-                      <span>ìì± ë ì§</span>
+                      <span>작성 날짜</span>
                     </li>
                     <li class="answer_yesno">
                         <div class="answer_no_div">
@@ -262,7 +262,7 @@
                         </div>
                     </li>
                     <li class="btn_qna_answer">
-                        <input class="btn_write" type="button" value="ëµë³íê¸°" />
+                        <input class="btn_write" type="button" value="답변하기" />
                     </li>
                     </ul>
                 </div>
@@ -271,18 +271,18 @@
                     <li
                       class="notice_number user_info_title content_text_align"
                     >
-                      <span>ë²í¸</span>
+                      <span>번호</span>
                     </li>
                     <li
                       class="notice_title user_info_title content_text_align_left"
                     >
-                      <span>ì ëª©ì ëª©ì ëª©ì ëª©ì ëª©ì ëª©</span>
+                      <span>제목제목제목제목제목제목</span>
                     </li>
                     <li class="notice_writer user_info_title board_title">
-                      <span>ìì±ì</span>
+                      <span>작성자</span>
                     </li>
                     <li class="notice_date user_info_title content_text_align">
-                      <span>ìì± ë ì§</span>
+                      <span>작성 날짜</span>
                     </li>
                     <li class="answer_yesno">
                         <div class="answer_no_div">
@@ -290,7 +290,7 @@
                         </div>
                     </li>
                     <li class="btn_qna_answer">
-                        <input class="btn_write" type="button" value="ëµë³íê¸°" />
+                        <input class="btn_write" type="button" value="답변하기" />
                     </li>
                     </ul>
                 </div>
@@ -299,18 +299,18 @@
                     <li
                       class="notice_number user_info_title content_text_align"
                     >
-                      <span>ë²í¸</span>
+                      <span>번호</span>
                     </li>
                     <li
                       class="notice_title user_info_title content_text_align_left"
                     >
-                      <span>ì ëª©ì ëª©ì ëª©ì ëª©ì ëª©ì ëª©</span>
+                      <span>제목제목제목제목제목제목</span>
                     </li>
                     <li class="notice_writer user_info_title board_title">
-                      <span>ìì±ì</span>
+                      <span>작성자</span>
                     </li>
                     <li class="notice_date user_info_title content_text_align">
-                      <span>ìì± ë ì§</span>
+                      <span>작성 날짜</span>
                     </li>
                     <li class="answer_yesno">
                         <div class="answer_yes_div">
@@ -318,7 +318,7 @@
                         </div>
                     </li>
                     <li class="btn_qna_answer">
-                        <input class="btn_write" type="button" value="ëµë³íê¸°" />
+                        <input class="btn_write" type="button" value="답변하기" />
                     </li>
                     </ul>
                 </div>
@@ -327,18 +327,18 @@
                     <li
                       class="notice_number user_info_title content_text_align"
                     >
-                      <span>ë²í¸</span>
+                      <span>번호</span>
                     </li>
                     <li
                       class="notice_title user_info_title content_text_align_left"
                     >
-                      <span>ì ëª©ì ëª©ì ëª©ì ëª©ì ëª©ì ëª©</span>
+                      <span>제목제목제목제목제목제목</span>
                     </li>
                     <li class="notice_writer user_info_title board_title">
-                      <span>ìì±ì</span>
+                      <span>작성자</span>
                     </li>
                     <li class="notice_date user_info_title content_text_align">
-                      <span>ìì± ë ì§</span>
+                      <span>작성 날짜</span>
                     </li>
                     <li class="answer_yesno">
                         <div class="answer_yes_div">
@@ -346,7 +346,7 @@
                         </div>
                     </li>
                     <li class="btn_qna_answer">
-                        <input class="btn_write" type="button" value="ëµë³íê¸°" />
+                        <input class="btn_write" type="button" value="답변하기" />
                     </li>
                     </ul>
                 </div>
@@ -355,18 +355,18 @@
                     <li
                       class="notice_number user_info_title content_text_align"
                     >
-                      <span>ë²í¸</span>
+                      <span>번호</span>
                     </li>
                     <li
                       class="notice_title user_info_title content_text_align_left"
                     >
-                      <span>ì ëª©ì ëª©ì ëª©ì ëª©ì ëª©ì ëª©</span>
+                      <span>제목제목제목제목제목제목</span>
                     </li>
                     <li class="notice_writer user_info_title board_title">
-                      <span>ìì±ì</span>
+                      <span>작성자</span>
                     </li>
                     <li class="notice_date user_info_title content_text_align">
-                      <span>ìì± ë ì§</span>
+                      <span>작성 날짜</span>
                     </li>
                     <li class="answer_yesno">
                         <div class="answer_yes_div">
@@ -374,7 +374,7 @@
                         </div>
                     </li>
                     <li class="btn_qna_answer">
-                        <input class="btn_write" type="button" value="ëµë³íê¸°" />
+                        <input class="btn_write" type="button" value="답변하기" />
                     </li>
                     </ul>
                 </div>
@@ -383,18 +383,18 @@
                     <li
                       class="notice_number user_info_title content_text_align"
                     >
-                      <span>ë²í¸</span>
+                      <span>번호</span>
                     </li>
                     <li
                       class="notice_title user_info_title content_text_align_left"
                     >
-                      <span>ì ëª©ì ëª©ì ëª©ì ëª©ì ëª©ì ëª©</span>
+                      <span>제목제목제목제목제목제목</span>
                     </li>
                     <li class="notice_writer user_info_title board_title">
-                      <span>ìì±ì</span>
+                      <span>작성자</span>
                     </li>
                     <li class="notice_date user_info_title content_text_align">
-                      <span>ìì± ë ì§</span>
+                      <span>작성 날짜</span>
                     </li>
                     <li class="answer_yesno">
                         <div class="answer_yes_div">
@@ -402,7 +402,7 @@
                         </div>
                     </li>
                     <li class="btn_qna_answer">
-                        <input class="btn_write" type="button" value="ëµë³íê¸°" />
+                        <input class="btn_write" type="button" value="답변하기" />
                     </li>
                     </ul>
                 </div>
@@ -411,18 +411,18 @@
                     <li
                       class="notice_number user_info_title content_text_align"
                     >
-                      <span>ë²í¸</span>
+                      <span>번호</span>
                     </li>
                     <li
                       class="notice_title user_info_title content_text_align_left"
                     >
-                      <span>ì ëª©ì ëª©ì ëª©ì ëª©ì ëª©ì ëª©</span>
+                      <span>제목제목제목제목제목제목</span>
                     </li>
                     <li class="notice_writer user_info_title board_title">
-                      <span>ìì±ì</span>
+                      <span>작성자</span>
                     </li>
                     <li class="notice_date user_info_title content_text_align">
-                      <span>ìì± ë ì§</span>
+                      <span>작성 날짜</span>
                     </li>
                     <li class="answer_yesno">
                         <div class="answer_yes_div">
@@ -430,7 +430,7 @@
                         </div>
                     </li>
                     <li class="btn_qna_answer">
-                        <input class="btn_write" type="button" value="ëµë³íê¸°" />
+                        <input class="btn_write" type="button" value="답변하기" />
                     </li>
                     </ul>
                 </div>
@@ -439,18 +439,18 @@
                     <li
                       class="notice_number user_info_title content_text_align"
                     >
-                      <span>ë²í¸</span>
+                      <span>번호</span>
                     </li>
                     <li
                       class="notice_title user_info_title content_text_align_left"
                     >
-                      <span>ì ëª©ì ëª©ì ëª©ì ëª©ì ëª©ì ëª©</span>
+                      <span>제목제목제목제목제목제목</span>
                     </li>
                     <li class="notice_writer user_info_title board_title">
-                      <span>ìì±ì</span>
+                      <span>작성자</span>
                     </li>
                     <li class="notice_date user_info_title content_text_align">
-                      <span>ìì± ë ì§</span>
+                      <span>작성 날짜</span>
                     </li>
                     <li class="answer_yesno">
                         <div class="answer_yes_div">
@@ -458,7 +458,7 @@
                         </div>
                     </li>
                     <li class="btn_qna_answer">
-                        <input class="btn_write" type="button" value="ëµë³íê¸°" />
+                        <input class="btn_write" type="button" value="답변하기" />
                     </li>
                     </ul>
                 </div>
@@ -467,18 +467,18 @@
                     <li
                       class="notice_number user_info_title content_text_align"
                     >
-                      <span>ë²í¸</span>
+                      <span>번호</span>
                     </li>
                     <li
                       class="notice_title user_info_title content_text_align_left"
                     >
-                      <span>ì ëª©ì ëª©ì ëª©ì ëª©ì ëª©ì ëª©</span>
+                      <span>제목제목제목제목제목제목</span>
                     </li>
                     <li class="notice_writer user_info_title board_title">
-                      <span>ìì±ì</span>
+                      <span>작성자</span>
                     </li>
                     <li class="notice_date user_info_title content_text_align">
-                      <span>ìì± ë ì§</span>
+                      <span>작성 날짜</span>
                     </li>
                     <li class="answer_yesno">
                         <div class="answer_yes_div">
@@ -486,7 +486,7 @@
                         </div>
                     </li>
                     <li class="btn_qna_answer">
-                        <input class="btn_write" type="button" value="ëµë³íê¸°" />
+                        <input class="btn_write" type="button" value="답변하기" />
                     </li>
                     </ul>
                 </div>
@@ -505,7 +505,7 @@
                       <li class="page_number_li"><strong>8</strong></li>
                       <li class="page_number_li"><strong>9</strong></li>
                       <li class="page_number_li"><strong>10</strong></li>
-                      <li class="page_number_next_li"><strong>ë¤ì</strong></li>
+                      <li class="page_number_next_li"><strong>다음</strong></li>
                     </div>
                   </ul>
                 </div>
@@ -522,7 +522,7 @@
           <div>
             <a href="#">
               <img src="/src/admin/img_admin/home.png" />
-              <div>ì¬ì´í¸ ë°ë¡ê°ê¸°</div>
+              <div>사이트 바로가기</div>
             </a>
           </div>
         </div>
@@ -536,7 +536,7 @@
                     src="/src/admin/img_admin/browser.png"
                   />
                 </div>
-                <span>ìì²­ ê´ë¦¬</span>
+                <span>요청 관리</span>
               </a>
             </li>
             <li class="list_li">
@@ -547,7 +547,7 @@
                     src="/src/admin/img_admin/user.png"
                   />
                 </div>
-                <span>ì´ì©ì ê´ë¦¬</span>
+                <span>이용자 관리</span>
               </a>
             </li>
             <li class="list_li">
@@ -558,7 +558,7 @@
                     src="/src/admin/img_admin/ballot.png"
                   />
                 </div>
-                <span>ê²ìê¸ ê´ë¦¬</span>
+                <span>게시글 관리</span>
                 <img
                   class="arrow_down"
                   src="/src/admin/img_admin/angle-down1.png"
@@ -566,17 +566,17 @@
                 <ul class="toggle_menu">
                   <li>
                     <a href="admin_page_board.html">
-                      <div>íìì´ ê²ìí</div>
+                      <div>품앗이 게시판</div>
                     </a>
                   </li>
                   <li>
                     <a href="admin_page_board_promotion.html">
-                      <div>íë³´ ê²ìí</div>
+                      <div>홍보 게시판</div>
                     </a>
                   </li>
                   <li>
                     <a href="admin_page_board_review.html">
-                      <div>ì¸ì¦, íê¸° ê²ìí</div>
+                      <div>인증, 후기 게시판</div>
                     </a>
                   </li>
                 </ul>
@@ -590,7 +590,7 @@
                     src="/src/admin/img_admin/statistic.png"
                   />
                 </div>
-                <span>íµê³</span>
+                <span>통계</span>
               </a>
             </li>
             <li class="list_li">
@@ -601,7 +601,7 @@
                     src="/src/admin/img_admin/comments.png"
                   />
                 </div>
-                <span>ê³ ê° ì¼í°</span>
+                <span>고객 센터</span>
               </a>
             </li>
             <li class="list_li list_admin_notice">
@@ -612,7 +612,7 @@
                     src="/src/admin/img_admin/exclamation.png"
                   />
                 </div>
-                <span>ê´ë¦¬ì ê³µì§</span>
+                <span>관리자 공지</span>
               </a>
             </li>
           </ul>
