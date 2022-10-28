@@ -1,11 +1,12 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<!DOCTYPE html>
 <html dir="ltr" lang="ko">
   <head>
     <meta charset="utf-8" />
-    <title>íìì´ ê³ ê°ì¼í°</title>
-    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/assets/css/helpDesk.css" />
+    <title>품앗이 고객센터</title>
+    <link rel="stylesheet" type="text/css" href="css/helpDesk.css" />
 
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
@@ -14,11 +15,11 @@
 
   <!--
     ******************************************************************
-        HelpDesk ìì ì id, class, css ëª¨ë¥´ë ë¶ë¶ì ë°ë¡ ë¬¸ì
+        HelpDesk 작업 시 id, class, css 모르는 부분은 바로 문의
 
-        í¼ë¸ : í©ìí(2022-10-21)
+        퍼블 : 황영택(2022-10-21)
 
-        ë°± : ë¯¸ì 
+        백 : 미정
     ******************************************************************
   -->
 
@@ -31,14 +32,14 @@
               <a href="main.html">
                 <img
                   src="../img/hot6.jpg"
-                  alt="ìí°ëë¡ê³ "
+                  alt="원티드로고"
                   id="heder_logo_image"
                 />
               </a>
               <a href="helpDesk.html">
                 <img
                   src="//theme.zdassets.com/theme_assets/9309779/e5142629ce02b25eae55476f21e3ad5525958812.png"
-                  alt="ê³ ê°ì¼í°ë¡ê³ "
+                  alt="고객센터로고"
                   id="heder_logo_image"
                 />
               </a>
@@ -52,10 +53,10 @@
       <section class="hero-unit text-center hero-image">
         <div class="container">
           <h1 class="help-center-name" id="help_center_title1">
-            íìì´ì ëí´
+            품앗이에 대해
           </h1>
           <h1 class="help-center-name" id="help_center_title2">
-            ê¶ê¸í ì ì ê²ìí´ë¼
+            궁금한 점을 검색해라
           </h1>
           <p class="help-center-details"></p>
           <div class="hc_search">
@@ -64,11 +65,11 @@
                 type="search"
                 name="query"
                 id="query"
-                placeholder="ì) íì¤í¸ì¤ì´ë¤"
+                placeholder="예) 테스트중이다"
                 autocomplete="off"
-                aria-label="ì) ìë¹ì¤ ì´ì©ë°©ë², ë¹ë°ë²í¸ ì°¾ê¸° ë±"
+                aria-label="예) 서비스 이용방법, 비밀번호 찾기 등"
               />
-              <input type="submit" name="commit" value="ê²ì" />
+              <input type="submit" name="commit" value="검색" />
             </form>
           </div>
         </div>
@@ -88,8 +89,8 @@
                     class="main-cat-li"
                   >
                     <span class="category-icon"></span>
-                    <h3 class="mainct-inner">ê°ì¸íì</h3>
-                    <p>ê°ì¸íìì ìí ì´ì© ìë´ìëë¤.</p>
+                    <h3 class="mainct-inner">개인회원</h3>
+                    <p>개인회원을 위한 이용 안내입니다.</p>
                   </a>
                 </li>
                 <li
@@ -102,8 +103,8 @@
                     class="main-cat-li"
                   >
                     <span class="category-icon"></span>
-                    <h3 class="mainct-inner">ê¸°ìíì</h3>
-                    <p>ê¸°ìíìì ìí ì´ì© ìë´ìëë¤.</p>
+                    <h3 class="mainct-inner">기업회원</h3>
+                    <p>기업회원을 위한 이용 안내입니다.</p>
                   </a>
                 </li>
               </ul>
@@ -116,23 +117,23 @@
           <div class="category_view">
             <div class="col-sm-6">
               <section class="articles">
-                <h3>íìì´ ê²ìí</h3>
+                <h3>품앗이 게시판</h3>
                 <ul class="article-list">
                   <li class="promoted-articles-item">
-                    <a href="#">ë´ì© ë³ê²½ì¤ìëë¤</a>
+                    <a href="#">내용 변경중입니다</a>
                   </li>
 
                   <li class="promoted-articles-item">
-                    <a href="#">ë´ì¬ìê° ì¶ë¸íìµëë¤. ì´ë»ê² íë©´ ëëì?</a>
+                    <a href="#">봉사자가 추노했습니다. 어떻게 하면 되나요?</a>
                   </li>
 
                   <li class="promoted-articles-item">
-                    <a href="#">êµ¬ì¸ ê³µê³  ììì ê¼­ ì¬ì©í´ì¼ íëì?</a>
+                    <a href="#">구인 공고 양식을 꼭 사용해야 하나요?</a>
                   </li>
                   <li class="promoted-articles-item">
                     <a href="#"
-                      >ì ì ëë ê²½ë ¥ì¬í­ì´ ìì ì ë§¤ì¹ìì¼ë¡ ë±ë¡í  ì
-                      ìëì?</a
+                      >신입 또는 경력사항이 없을 시 매치업으로 등록할 수
+                      없나요?</a
                     >
                   </li>
                 </ul>
@@ -141,28 +142,28 @@
                   class="see-all-articles btn"
                   style="font-size: 1.1em"
                 >
-                  + ëª¨ë ë³´ê¸°
+                  + 모두 보기
                 </a>
                 <br /><br />
               </section>
             </div>
             <div class="col-sm-6">
               <section class="articles">
-                <h3>íìì´ ê²ìí</h3>
+                <h3>품앗이 게시판</h3>
                 <ul class="article-list">
                   <li class="promoted-articles-item">
-                    <a href="#">ì¬ê¸°ì ë´ì©ì ìì±í©ëë¤.</a>
+                    <a href="#">여기에 내용을 작성합니다.</a>
                   </li>
 
                   <li class="promoted-articles-item">
-                    <a href="#">ì¬ê¸°ì ë´ì©ì ìì±í©ëë¤.</a>
+                    <a href="#">여기에 내용을 작성합니다.</a>
                   </li>
 
                   <li class="promoted-articles-item">
-                    <a href="#">ì¬ê¸°ì ë´ì©ì ìì±í©ëë¤.</a>
+                    <a href="#">여기에 내용을 작성합니다.</a>
                   </li>
                   <li class="promoted-articles-item">
-                    <a href="#">ì¬ê¸°ì ë´ì©ì ìì±í©ëë¤.</a>
+                    <a href="#">여기에 내용을 작성합니다.</a>
                   </li>
                 </ul>
                 <a
@@ -170,7 +171,7 @@
                   class="see-all-articles btn"
                   style="font-size: 1.1em"
                 >
-                  + ëª¨ë ë³´ê¸°
+                  + 모두 보기
                 </a>
                 <br /><br />
               </section>
@@ -183,12 +184,12 @@
         <div class="row">
           <div class="category_view">
             <div class="col-xs-12">
-              <h2 class="hc_title" style="float: left">íìì´ ìì</h2>
+              <h2 class="hc_title" style="float: left">품앗이 소식</h2>
               <h6 class="hc_title_more" style="float: right; margin-top: 25px">
                 <a
                   style="font-size: 14px"
                   href="https://help.wanted.co.kr/hc/ko/categories/360002300071"
-                  >ë ë³´ê¸°</a
+                  >더 보기</a
                 >
               </h6>
               <p class="description"></p>
@@ -215,8 +216,8 @@
                       >
                         <a href="#">
                           <font
-                            >[ê³µì§] ì ì¬ ìí¬ìµì¼ë¡ ì¸í ì¼ìì ì¼ë¡ ìë´ ìë¬´
-                            ì¤ë¨ ìë´</font
+                            >[공지] 전사 워크샵으로 인한 일시적으로 상담 업무
+                            중단 안내</font
                           >
                           <font style="float: right"></font>
                         </a>
@@ -231,7 +232,7 @@
                         "
                       >
                         <a href="#">
-                          <font>[íë] ìë¹ì¤ ì ê² ê´ë ¨ ê³µì§ ìë´</font>
+                          <font>[필독] 서비스 점검 관련 공지 안내</font>
                           <font style="float: right"></font>
                         </a>
                         <time
@@ -240,7 +241,7 @@
                           data-format="L"
                           data-datetime="calendar"
                           class="wanted-news-date"
-                          >2022ë 10ì 11ì¼ 04:35(ìê° íì ì¬ë¶ ë¯¸í©ì)</time
+                          >2022년 10월 11일 04:35(시간 표시 여부 미합의)</time
                         >
                       </li>
 
@@ -254,7 +255,7 @@
                         "
                       >
                         <a href="#">
-                          <font>ì¶ì ì°í´ ìë¬´ ìê° ì¡°ì  ìë´</font>
+                          <font>추석 연휴 업무 시간 조정 안내</font>
                           <font style="float: right"></font>
                         </a>
                       </li>
@@ -269,8 +270,8 @@
                       >
                         <a href="#">
                           <font
-                            >[ìí°ë] ê°ì¸ì ë³´ ì²ë¦¬ë°©ì¹¨ ê°ì ì ëí´ ìë´
-                            ëë¦½ëë¤</font
+                            >[원티드] 개인정보 처리방침 개정에 대해 안내
+                            드립니다</font
                           >
                           <font style="float: right"></font>
                         </a>
@@ -285,7 +286,7 @@
                         "
                       >
                         <a href="#">
-                          <font>[ì§ì¥ì¸ ë°©í ì´ë²¤í¸] ë¹ì²¨ì ê³µê°</font>
+                          <font>[직장인 방학 이벤트] 당첨자 공개</font>
                           <font style="float: right"></font>
                         </a>
                       </li>
@@ -299,7 +300,7 @@
                         "
                       >
                         <a href="#">
-                          <font>[ê²ì ì±ì©ì ìí°ë] ì´ë²¤í¸ ë¹ì²¨ì ê³µê°</font>
+                          <font>[게임 채용은 원티드] 이벤트 당첨자 공개</font>
                           <font style="float: right"></font>
                         </a>
                       </li>
@@ -313,7 +314,7 @@
                         "
                       >
                         <a href="#">
-                          <font>ì±ì©ê³µê³  íì´ì§ ìë°ì´í¸ ìë´ </font>
+                          <font>채용공고 페이지 업데이트 안내 </font>
                           <font style="float: right"></font>
                         </a>
                       </li>
@@ -328,8 +329,8 @@
                       >
                         <a href="#">
                           <font
-                            >Wanted Plus - ì§êµ°ë³ ìµê³ ì êµì¡ì ëª¨ë
-                            íê³³ìì</font
+                            >Wanted Plus - 직군별 최고의 교육을 모두
+                            한곳에서</font
                           >
                           <font style="float: right"></font>
                         </a>
@@ -347,7 +348,7 @@
         <div class="row">
           <div class="category_view">
             <div class="col-xs-12">
-              <h2 class="hc_title">ìë¹ì¤ ìê°</h2>
+              <h2 class="hc_title">서비스 소개</h2>
               <div class="row text-center" id="ser_inc_div">
                 <div
                   class="col-lg-3 col-md-6"
@@ -371,7 +372,7 @@
                         />
                       </div>
                       <div class="card-body">
-                        <h4 class="card-title">ì»¤ë¦¬ì´ ì±ì¥</h4>
+                        <h4 class="card-title">커리어 성장</h4>
                       </div>
                     </a>
                   </div>
@@ -399,7 +400,7 @@
                         />
                       </div>
                       <div class="card-body">
-                        <h4 class="card-title">ë§¤ì¹ì</h4>
+                        <h4 class="card-title">매치업</h4>
                       </div>
                     </a>
                   </div>
@@ -427,7 +428,7 @@
                         />
                       </div>
                       <div class="card-body">
-                        <h4 class="card-title">ì±ì©ê´ê³ </h4>
+                        <h4 class="card-title">채용광고</h4>
                       </div>
                     </a>
                   </div>
@@ -455,7 +456,7 @@
                         />
                       </div>
                       <div class="card-body">
-                        <h4 class="card-title">ê³ ê°ì¼í° ì´ììê° ìë´</h4>
+                        <h4 class="card-title">고객센터 운영시간 안내</h4>
                       </div>
                     </a>
                   </div>

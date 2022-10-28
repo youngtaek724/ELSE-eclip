@@ -19,7 +19,7 @@
       content="width=device-width, initial-scale=1.0, user-scalable=no"
     />
     <meta name="next-head-count" content="27" />
-    <title>í«ìì¤ | íìì´</title>
+    <title>핫식스 | 품앗이</title>
     <link
       rel="stylesheet"
       href="//d1azc1qln24ryf.cloudfront.net/78252/wantedicon/style-cf.css"
@@ -28,8 +28,8 @@
   
 
 
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/boardPromote.css" crossorigin="anonymous"/>
-    <!-- ê²ìí ê´ë ¨ css -->
+    <link rel="stylesheet" href="../css/boardPromote.css" crossorigin="anonymous"/>
+    <!-- 게시판 관련 css -->
     <link
       rel="stylesheet"
       type="text/css"
@@ -38,13 +38,13 @@
     />
 
 
-    <!--header ê´ë ¨ css-->
+    <!--header 관련 css-->
     
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/header.css">
-    <!--footer ê´ë ¨ css-->
-    <link href="${pageContext.request.contextPath}/assets/css/footer.css" rel="stylesheet">
+    <link rel="stylesheet" href="../main/css/header.css">
+    <!--footer 관련 css-->
+    <link href="../main/css/footer.css" rel="stylesheet">
 
-      <!--í°í¸ ê´ë ¨ css ***** í°í¸ ê´ë ¨ cssë í ë²ë§ ì ì©-->
+      <!--폰트 관련 css ***** 폰트 관련 css는 한 번만 적용-->
   <link
     rel="stylesheet"
     type="text/css"
@@ -56,7 +56,7 @@
 
   </head>
   <body style="background-color: white;">
-    <!--header ì ì© ìì-->
+    <!--header 적용 시작-->
     <div id="__next">
       <div class="NavBar_container">
           <div class="MainBar_width">
@@ -67,30 +67,30 @@
                               <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Ficon-menu.png&amp;w=undefined&amp;q=75" alt="hamberger menu" style="width:17px;height:14px;object-fit:contain">
                           </button>
                           <a href="/" class="MainBar_logo">
-                              <!--ë¡ê³  : 74*16 -->
+                              <!--로고 : 74*16 -->
                               <i>logo </i>
                             </a>
                       </div>
                   </div>
                   <ul class="menu_name_list">
                       <li class="">
-                          <a href="/" class="">í</a>
+                          <a href="/" class="">홈</a>
                       </li>
-                      <!--selectNavë ëì¤ì ì ì©-->
+                      <!--selectNav는 나중에 적용-->
                       <li class="selectedNav">
-                          <a href="" class="">íìì´ ê²ìí</a>
+                          <a href="" class="">품앗이 게시판</a>
                       </li>
                       <li class="">
-                          <a href="#" class="" aria-label="">ë§ì´ íì´ì§</a>
+                          <a href="#" class="" aria-label="">마이 페이지</a>
                       </li>
                       <li class="">
-                          <a href="#" class="" aria-label="">ë´ì¬ íë</a>
+                          <a href="#" class="" aria-label="">봉사 활동</a>
                       </li>
                       <li class="">
-                          <a href="#" class="">ì°¸ì¬ë´ì­</a>
+                          <a href="#" class="">참여내역</a>
                       </li>
                       <li>
-                          <a href="#" class="">ë´ì¬ íí©</a>
+                          <a href="#" class="">봉사 현황</a>
                       </li>
                   </ul>
                   <aside class="Aside_box">
@@ -108,27 +108,27 @@
                               </button>
                           </li>
                           <li>
-                              <button class="signUpButton" type="button">íìê°ì/ë¡ê·¸ì¸</button>
+                              <button class="signUpButton" type="button">회원가입/로그인</button>
                           </li>
                           <li class="leftDivision">
-                              <a class="dashboardButton" href="/dashboard">ê¸°ì ìë¹ì¤</a>
+                              <a class="dashboardButton" href="/dashboard">기업 서비스</a>
                           </li>                        
                       </ul>
                   </aside>
               </nav>
           </div>
       </div>
-  <!--header ì ì© ë-->
+  <!--header 적용 끝-->
 
       <inner class="inner">
     
         <article class="board_exchange_labor">
             <header class="board_exchange_labor_title">
-              <h2>íìì´ ê²ìí</h2>
-              <h2>íë³´ ê²ìí</h2>
-              <h2>ì¸ì¦Â·íê¸° ê²ìí</h2>
+              <h2>품앗이 게시판</h2>
+              <h2>홍보 게시판</h2>
+              <h2>인증·후기 게시판</h2>
                 <button type="button" class="board_headerBtn">
-                    <span class="board_headerlabel">ë±ë¡</span>
+                    <span class="board_headerlabel">등록</span>
                 </button>
             </header>
             <div class="List_list">
@@ -141,11 +141,11 @@
                           <button class="bookmarkBtn" type="button"></button>
                         </header>
                         <div class="body">
-                            <div class="card_position">1365 ììë´ì¬ì ëª¨ì§</div>
+                            <div class="card_position">1365 자원봉사자 모집</div>
                            
-                            <div class="card_work_intensity">ë¬¸ì 031-312-1234</div>
-                            <div class="card_location">ë§ 18ì¸ ~ ë§ 40ì¸ ì²­ìë ë° ì±ì¸</div>
-                            <div class="card_work_time">2022.10.17(ì) ~ 10.20(ëª©)</div>
+                            <div class="card_work_intensity">문의 031-312-1234</div>
+                            <div class="card_location">만 18세 ~ 만 40세 청소년 및 성인</div>
+                            <div class="card_work_time">2022.10.17(월) ~ 10.20(목)</div>
                         </div>
                       </a>
                     </div>
@@ -159,11 +159,11 @@
                           <button class="bookmarkBtn" type="button"></button>
                         </header>
                         <div class="body">
-                          <div class="card_position">ììë´ì¬ ì»¨íì¸  ëª¨ì§</div>
+                          <div class="card_position">자원봉사 컨텐츠 모집</div>
                            
-                          <div class="card_work_intensity">ì£¼ìµ : ë¶ì°ì</div>
-                          <div class="card_location">ìë¯¼ ëêµ¬ë ì°¸ì¬ê°ë¥</div>
-                          <div class="card_work_time">2022.10.17(ì) ~ 10.20(ëª©)</div>
+                          <div class="card_work_intensity">주최 : 부산시</div>
+                          <div class="card_location">시민 누구나 참여가능</div>
+                          <div class="card_work_time">2022.10.17(월) ~ 10.20(목)</div>
                         </div>
                       </a>
                     </div>
@@ -177,11 +177,11 @@
                           <button class="bookmarkBtn" type="button"></button>
                         </header>
                         <div class="body">
-                          <div class="card_position">ììë´ì¬ ì»¨íì¸  ëª¨ì§</div>
+                          <div class="card_position">자원봉사 컨텐츠 모집</div>
                            
-                          <div class="card_work_intensity">ì£¼ìµ : ì¸ì°ê´ì­ì</div>
-                          <div class="card_location">ìë¯¼ ëêµ¬ë ì°¸ì¬ê°ë¥</div>
-                          <div class="card_work_time">2022.10.17(ì) ~ 10.20(ëª©)</div>
+                          <div class="card_work_intensity">주최 : 울산광역시</div>
+                          <div class="card_location">시민 누구나 참여가능</div>
+                          <div class="card_work_time">2022.10.17(월) ~ 10.20(목)</div>
                         </div>
                       </a>
                     </div>
@@ -197,11 +197,11 @@
                           <button class="bookmarkBtn" type="button"></button>
                         </header>
                         <div class="body">
-                          <div class="card_position">ëìì¤ íììì ëì¤ê² íê¸°</div>
+                          <div class="card_position">동석쌤 학원에서 나오게 하기</div>
                            
-                          <div class="card_work_intensity">ì£¼ìµ : hot-6</div>
-                          <div class="card_location">ì¹ ê°ë° íì ëêµ¬ë ì°¸ì¬ê°ë¥</div>
-                          <div class="card_work_time">2022.10.24(ì) ~ 10.25(í)</div>
+                          <div class="card_work_intensity">주최 : hot-6</div>
+                          <div class="card_location">웹 개발 학생 누구나 참여가능</div>
+                          <div class="card_work_time">2022.10.24(월) ~ 10.25(화)</div>
                         </div>
                       </a>
                     </div>
@@ -220,11 +220,11 @@
                           <button class="bookmarkBtn" type="button"></button>
                         </header>
                         <div class="body">
-                            <div class="card_position">1365 ììë´ì¬ì ëª¨ì§</div>
+                            <div class="card_position">1365 자원봉사자 모집</div>
                            
-                            <div class="card_work_intensity">ë¬¸ì 031-312-1234</div>
-                            <div class="card_location">ë§ 18ì¸ ~ ë§ 40ì¸ ì²­ìë ë° ì±ì¸</div>
-                            <div class="card_work_time">2022.10.17(ì) ~ 10.20(ëª©)</div>
+                            <div class="card_work_intensity">문의 031-312-1234</div>
+                            <div class="card_location">만 18세 ~ 만 40세 청소년 및 성인</div>
+                            <div class="card_work_time">2022.10.17(월) ~ 10.20(목)</div>
                         </div>
                       </a>
                     </div>
@@ -238,11 +238,11 @@
                           <button class="bookmarkBtn" type="button"></button>
                         </header>
                         <div class="body">
-                          <div class="card_position">ììë´ì¬ ì»¨íì¸  ëª¨ì§</div>
+                          <div class="card_position">자원봉사 컨텐츠 모집</div>
                            
-                          <div class="card_work_intensity">ì£¼ìµ : ë¶ì°ì</div>
-                          <div class="card_location">ìë¯¼ ëêµ¬ë ì°¸ì¬ê°ë¥</div>
-                          <div class="card_work_time">2022.10.17(ì) ~ 10.20(ëª©)</div>
+                          <div class="card_work_intensity">주최 : 부산시</div>
+                          <div class="card_location">시민 누구나 참여가능</div>
+                          <div class="card_work_time">2022.10.17(월) ~ 10.20(목)</div>
                         </div>
                       </a>
                     </div>
@@ -256,11 +256,11 @@
                           <button class="bookmarkBtn" type="button"></button>
                         </header>
                         <div class="body">
-                          <div class="card_position">ììë´ì¬ ì»¨íì¸  ëª¨ì§</div>
+                          <div class="card_position">자원봉사 컨텐츠 모집</div>
                            
-                          <div class="card_work_intensity">ì£¼ìµ : ì¸ì°ê´ì­ì</div>
-                          <div class="card_location">ìë¯¼ ëêµ¬ë ì°¸ì¬ê°ë¥</div>
-                          <div class="card_work_time">2022.10.17(ì) ~ 10.20(ëª©)</div>
+                          <div class="card_work_intensity">주최 : 울산광역시</div>
+                          <div class="card_location">시민 누구나 참여가능</div>
+                          <div class="card_work_time">2022.10.17(월) ~ 10.20(목)</div>
                         </div>
                       </a>
                     </div>
@@ -276,11 +276,11 @@
                           <button class="bookmarkBtn" type="button"></button>
                         </header>
                         <div class="body">
-                          <div class="card_position">ëìì¤ íììì ëì¤ê² íê¸°</div>
+                          <div class="card_position">동석쌤 학원에서 나오게 하기</div>
                            
-                          <div class="card_work_intensity">ì£¼ìµ : hot-6</div>
-                          <div class="card_location">ì¹ ê°ë° íì ëêµ¬ë ì°¸ì¬ê°ë¥</div>
-                          <div class="card_work_time">2022.10.24(ì) ~ 10.25(í)</div>
+                          <div class="card_work_intensity">주최 : hot-6</div>
+                          <div class="card_location">웹 개발 학생 누구나 참여가능</div>
+                          <div class="card_work_time">2022.10.24(월) ~ 10.25(화)</div>
                         </div>
                       </a>
                     </div>
@@ -299,11 +299,11 @@
                           <button class="bookmarkBtn" type="button"></button>
                         </header>
                         <div class="body">
-                            <div class="card_position">1365 ììë´ì¬ì ëª¨ì§</div>
+                            <div class="card_position">1365 자원봉사자 모집</div>
                            
-                            <div class="card_work_intensity">ë¬¸ì 031-312-1234</div>
-                            <div class="card_location">ë§ 18ì¸ ~ ë§ 40ì¸ ì²­ìë ë° ì±ì¸</div>
-                            <div class="card_work_time">2022.10.17(ì) ~ 10.20(ëª©)</div>
+                            <div class="card_work_intensity">문의 031-312-1234</div>
+                            <div class="card_location">만 18세 ~ 만 40세 청소년 및 성인</div>
+                            <div class="card_work_time">2022.10.17(월) ~ 10.20(목)</div>
                         </div>
                       </a>
                     </div>
@@ -317,11 +317,11 @@
                           <button class="bookmarkBtn" type="button"></button>
                         </header>
                         <div class="body">
-                          <div class="card_position">ììë´ì¬ ì»¨íì¸  ëª¨ì§</div>
+                          <div class="card_position">자원봉사 컨텐츠 모집</div>
                            
-                          <div class="card_work_intensity">ì£¼ìµ : ë¶ì°ì</div>
-                          <div class="card_location">ìë¯¼ ëêµ¬ë ì°¸ì¬ê°ë¥</div>
-                          <div class="card_work_time">2022.10.17(ì) ~ 10.20(ëª©)</div>
+                          <div class="card_work_intensity">주최 : 부산시</div>
+                          <div class="card_location">시민 누구나 참여가능</div>
+                          <div class="card_work_time">2022.10.17(월) ~ 10.20(목)</div>
                         </div>
                       </a>
                     </div>
@@ -335,11 +335,11 @@
                           <button class="bookmarkBtn" type="button"></button>
                         </header>
                         <div class="body">
-                          <div class="card_position">ììë´ì¬ ì»¨íì¸  ëª¨ì§</div>
+                          <div class="card_position">자원봉사 컨텐츠 모집</div>
                            
-                          <div class="card_work_intensity">ì£¼ìµ : ì¸ì°ê´ì­ì</div>
-                          <div class="card_location">ìë¯¼ ëêµ¬ë ì°¸ì¬ê°ë¥</div>
-                          <div class="card_work_time">2022.10.17(ì) ~ 10.20(ëª©)</div>
+                          <div class="card_work_intensity">주최 : 울산광역시</div>
+                          <div class="card_location">시민 누구나 참여가능</div>
+                          <div class="card_work_time">2022.10.17(월) ~ 10.20(목)</div>
                         </div>
                       </a>
                     </div>
@@ -355,11 +355,11 @@
                           <button class="bookmarkBtn" type="button"></button>
                         </header>
                         <div class="body">
-                          <div class="card_position">ëìì¤ íììì ëì¤ê² íê¸°</div>
+                          <div class="card_position">동석쌤 학원에서 나오게 하기</div>
                            
-                          <div class="card_work_intensity">ì£¼ìµ : hot-6</div>
-                          <div class="card_location">ì¹ ê°ë° íì ëêµ¬ë ì°¸ì¬ê°ë¥</div>
-                          <div class="card_work_time">2022.10.24(ì) ~ 10.25(í)</div>
+                          <div class="card_work_intensity">주최 : hot-6</div>
+                          <div class="card_location">웹 개발 학생 누구나 참여가능</div>
+                          <div class="card_work_time">2022.10.24(월) ~ 10.25(화)</div>
                         </div>
                       </a>
                     </div>
@@ -372,16 +372,16 @@
             </article>
             
             </div>
-            <!-- ì¤ì  ë´ì© ìì± ë¶ë¶-->
+            <!-- 실제 내용 작성 부분-->
           </div>
         </div>
       </inner>
-<!--footer ì ì© ìì-->
+<!--footer 적용 시작-->
 <footer class="Footer_footerClass__OWEZy">
   <div class="Footer_rowClass__bFAtS">
     <div class="NavLinks_NavLinks__xaNkJ">
       <div class="NavLinks_NavLinks__logo__MCbfZ">
-        <!--ì´ê³³ì ê¸°ìì ë¡ê³ ê° ë¤ì´ê°ëë¤-->
+        <!--이곳에 기업의 로고가 들어갑니다-->
         <img
           src="../img/hot6.jpg"
           alt="wanted"
@@ -392,19 +392,19 @@
         <a
           href="https://www.wantedlab.com/"
           class=""
-          >ê¸°ììê°</a
+          >기업소개</a
         ><a
           href="https://www.wanted.co.kr/terms"
           class=""
-          >ì´ì©ì½ê´</a
+          >이용약관</a
         ><a
           href="https://www.wanted.co.kr/privacy"
           class=""
-          >ê°ì¸ì ë³´ ì²ë¦¬ë°©ì¹¨</a
+          >개인정보 처리방침</a
         ><a
           href="helpDesk.html"
           class=""
-          >ê³ ê°ì¼í°</a
+          >고객센터</a
         >
       </div>
     </div>
@@ -462,8 +462,8 @@
   </div>
   <div class="Footer_rowClass__bFAtS Footer_border__k1rgk">
     <p class="Footer_footerText__CTqnd kr">
-      ì´ê³³ì Footerì ë´ì©ì ì ìµëë¤<br>
-      ex) 6ì¡° íì´í
+      이곳에 Footer의 내용을 적습니다<br>
+      ex) 6조 파이팅
     </p>
     <div class="LocaleSelect_localeSelectClass__7TvCY">
       <img
@@ -471,9 +471,9 @@
         src="https://static.wanted.co.kr/images/userweb/ico_KR.svg"
         alt="country flag KR"
       /><select>
-        <option value="KR">íêµ­ (íêµ­ì´)</option>
-        <!--ì¶í ì í
-        <option value="JP">æ¥æ¬ (æ¥æ¬èª)</option>
+        <option value="KR">한국 (한국어)</option>
+        <!--추후 선택
+        <option value="JP">日本 (日本語)</option>
         <option value="WW">Worldwide (English)</option>
         <option value="SG">Singapore (English)</option></select
       ><i class="icon-arrow_bottom_fill"></i>
@@ -481,7 +481,7 @@
     </div>
   </div>
 </footer>
-<!--footer ì ì© ë-->
+<!--footer 적용 끝-->
     </div>
   </body>
 </html>

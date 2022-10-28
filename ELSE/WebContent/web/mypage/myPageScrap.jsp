@@ -7,16 +7,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ê´ì¬ëª©ë¡</title>
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/myPage.css" crossorigin="anonymous"/>
+    <title>관심목록</title>
+    <link rel="stylesheet" href="..\css\myPage.css" crossorigin="anonymous"/>
 
-        <!--header ê´ë ¨ css-->
+        <!--header 관련 css-->
     
-        <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/header.css">
-        <!--footer ê´ë ¨ css-->
-        <link href="${pageContext.request.contextPath}/assets/css/footer.css" rel="stylesheet">
+        <link rel="stylesheet" href="../main/css/header.css">
+        <!--footer 관련 css-->
+        <link href="../main/css/footer.css" rel="stylesheet">
     
-          <!--í°í¸ ê´ë ¨ css ***** í°í¸ ê´ë ¨ cssë í ë²ë§ ì ì©-->
+          <!--폰트 관련 css ***** 폰트 관련 css는 한 번만 적용-->
       <link
         rel="stylesheet"
         type="text/css"
@@ -25,7 +25,7 @@
 
 </head>
 <body>
-     <!--header ì ì© ìì-->
+     <!--header 적용 시작-->
      <div id="__next">
         <div class="NavBar_container">
             <div class="MainBar_width">
@@ -36,30 +36,30 @@
                                 <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Ficon-menu.png&amp;w=undefined&amp;q=75" alt="hamberger menu" style="width:17px;height:14px;object-fit:contain">
                             </button>
                             <a href="/" class="MainBar_logo">
-                                <!--ë¡ê³  : 74*16 -->
+                                <!--로고 : 74*16 -->
                                 <i>logo </i>
                               </a>
                         </div>
                     </div>
                     <ul class="menu_name_list">
                         <li class="">
-                            <a href="/" class="">í</a>
+                            <a href="/" class="">홈</a>
                         </li>
-                        <!--selectNavë ëì¤ì ì ì©-->
+                        <!--selectNav는 나중에 적용-->
                         <li class="selectedNav">
-                            <a href="" class="">íìì´ ê²ìí</a>
+                            <a href="" class="">품앗이 게시판</a>
                         </li>
                         <li class="">
-                            <a href="#" class="" aria-label="">ë§ì´ íì´ì§</a>
+                            <a href="#" class="" aria-label="">마이 페이지</a>
                         </li>
                         <li class="">
-                            <a href="#" class="" aria-label="">ë´ì¬ íë</a>
+                            <a href="#" class="" aria-label="">봉사 활동</a>
                         </li>
                         <li class="">
-                            <a href="#" class="">ì°¸ì¬ë´ì­</a>
+                            <a href="#" class="">참여내역</a>
                         </li>
                         <li>
-                            <a href="#" class="">ë´ì¬ íí©</a>
+                            <a href="#" class="">봉사 현황</a>
                         </li>
                     </ul>
                     <aside class="Aside_box">
@@ -77,10 +77,10 @@
                                 </button>
                             </li>
                             <li>
-                                <button class="signUpButton" type="button">íìê°ì/ë¡ê·¸ì¸</button>
+                                <button class="signUpButton" type="button">회원가입/로그인</button>
                             </li>
                             <li class="leftDivision">
-                                <a class="dashboardButton" href="/dashboard">ê¸°ì ìë¹ì¤</a>
+                                <a class="dashboardButton" href="/dashboard">기업 서비스</a>
                             </li>                        
                         </ul>
                     </aside>
@@ -88,26 +88,26 @@
             </div>
         </div>
       </div>
-    <!--header ì ì© ë-->   
+    <!--header 적용 끝-->   
 
 
         <br><Br><Br><br>
     <div class="mypage_background">
         <h1 style="margin-left: 15%;">ELSE</h1>
-        <!-- ê°ì¸ì ë³´ íì´ì§ -->
+        <!-- 개인정보 페이지 -->
         <div class="mypage" id="mpDIV">
-            <!-- ì¼ìª½ ê°ì¸ì ë³´ êµ¬ì±íë©´ -->
+            <!-- 왼쪽 개인정보 구성화면 -->
             <div class="userInfo" style="width: 17%; line-height: 2; margin-left: 14.5%; background-color: white; float: left;" id="mpDIV">
-                <!-- ì ì  íë¡í ì¬ì§ -->
+                <!-- 유저 프로필 사진 -->
                 <div class="userProfile" id="mpDIV">
                     <img src="../img/pinggu.jpeg" class="userProfile" style="margin-bottom:10%;">
                     <div class="userProfile_Upload" id="mpDIV">
                     </div>
                 </div>
-                <!-- ì ì  ê°ì¸ì ë³´ -->
+                <!-- 유저 개인정보 -->
                 <div style="margin-bottom: 5%;" id="mpDIV">
                       <div class="userName" id="mpDIV">
-                          <h1>íê¸¸ë</h1>
+                          <h1>홍길동</h1>
                           <p style="font-size: 20px;">hongGD@gmail.com</p> 
                       </div>
                       
@@ -115,112 +115,112 @@
                           <p style="font-size: 20px;">010-1234-5678</p> 
                       </div>
                       
-                          <h3 style="display: inline-flex">ê´ì¬íê·¸ : </h3>
-                          <p style="display: inline-flex"> ê³¼ì¼, ëë, ì²´í</p>
+                          <h3 style="display: inline-flex">관심태그 : </h3>
+                          <p style="display: inline-flex"> 과일, 나눔, 체험</p>
                       
                 </div>
                       
                       <!-- <hr class="userinfo_hr" style="border-color:#e3dede; border:3px 0 0 0"> -->
                       
                       <div class="point" style="text-align: left;">
-                          <p style="display: inline-flex; font-size: 25px;  margin-left: 10%;" id="bold">í¬ì¸í¸ : </p>
+                          <p style="display: inline-flex; font-size: 25px;  margin-left: 10%;" id="bold">포인트 : </p>
                           <p style="display: inline-flex; font-size: 25px;" id="bold"> 10,000 P</p>
                       </div>
                       
                       <div class="point">
                         <div class="list" id="left" id="mpDIV">
-                          <p style="font-size: 25px;">ì ì²­ë´ì­</p>
+                          <p style="font-size: 25px;">신청내역</p>
                         </div>
                         <div class="likeList" id="left" id="mpDIV">
-                          <p style="font-size: 25px;">ê´ì¬ëª©ë¡</p>
+                          <p style="font-size: 25px;">관심목록</p>
                         </div>
                         <div class="undo" id="left" id="mpDIV">
-                          <p style="font-size: 25px;">ì ì²­ì·¨ì</p>
+                          <p style="font-size: 25px;">신청취소</p>
                         </div>
                       </div>
                       <div class="point">
                         <div class="userOption" id="left" id="mpDIV"> 
-                          <p style="font-size: 25px;">ê³ì ì¤ì </p>
+                          <p style="font-size: 25px;">계정설정</p>
                         </div>
                       </div>
                       <div id="mpDIV"></div>
             </div>
-          <!-- ììª½ ì§ìíí© -->
+          <!-- 위쪽 지원현황 -->
                   <div class="listTool" id="mpDIV">
-                      <h1 style="text-align: left; font-size: 20px; margin-left: 5%;">ì§ìíí©</h1>
+                      <h1 style="text-align: left; font-size: 20px; margin-left: 5%;">지원현황</h1>
                       <div id="mpDIV">
                           <div style="float: left; width: 24%;" id="mpDIV">
                             <h1> 0</h1>
-                              <p style="font-size: 20px;"> ì§ììë£ </p>
+                              <p style="font-size: 20px;"> 지원완료 </p>
                           </div>
                           <div class="supportList" style="float: left; width: 24%;">
                             <h1>0</h1>
-                              <p style="font-size: 20px;"> ì§ìì ì´ë </p> 
+                              <p style="font-size: 20px;"> 지원서 열람 </p> 
                           </div>
                           <div class="supportList" style="float: left; width: 24%;">
                             <h1>2</h1>
-                              <p style="font-size: 20px;"> ì°¸ì¬ì´ë ¥ </p> 
+                              <p style="font-size: 20px;"> 참여이력 </p> 
                           </div>
                           <div class="supportList" style="float: left; width: 24%;">
                             <h1>3</h1>
-                              <p style="font-size: 20px;"> ì¤í¬ë© </p> 
+                              <p style="font-size: 20px;"> 스크랩 </p> 
                           </div>
                       </div>
                       <div></div>
                       <div class="report">
                       </div>
                   </div>
-                  <!-- ì¤ìì ë¤ì´ê° ë´ì© -->
+                  <!-- 중앙에 들어갈 내용 -->
                     <div class="profile" id="mpDIV">
                         <div style="margin-top: 5%; margin-bottom: 5%;"id="mpDIV">
                         </div>
-                        <h3 style="text-align: left; margin-left: 3%; font-size: 25px;">íê¸¸ëëì ê´ì¬ëª©ë¡</h3>
+                        <h3 style="text-align: left; margin-left: 3%; font-size: 25px;">홍길동님의 관심목록</h3>
 
                         <div class="list_div">
                         <div style="margin-left: 3%; margin-right: 3%;float: left;" id="mpDIV">
-                            <img src="../img\ê³¼ìì.jpeg" style="width: 300px; height: 150px;">
+                            <img src="../img\과수원.jpeg" style="width: 300px; height: 150px;">
                         </div>
                         <div style="margin-bottom: 2%; height: 30%;" id="mpDIV">
-                            <h2>ê³¼ìì ê³¼ì¼ ìí ë° ê°ë³í¬ì¥</h2>
+                            <h2>과수원 과일 수확 및 개별포장</h2>
                             <div>
-                                <p style="text-align: left; font-size: 15px;">ì¥ì : ì¶©ì²­ë¶ë ìëêµ° ìëë©´
-                                    <br> ë ì§ : 20xxë xxì xxì¼
-                                    <br> ìë¬´ìê° : 11ì ~ 16ì
-                                    <br> ìë¬´ê°ë : ì¤
-                                    <br> ìë¬´ë´ì© : ë³µì­ì, ì¬ê³¼, í¬ë ë± ê³¼ì¼ ìííì¬ íì§ë³ë¡ ë±ê¸ì ëëê³ 
-                                    <br> ê° ë±ê¸ì ë°ë¼ ê°ë³í¬ì¥ ë° íë°° ë°°ì¡</p>
+                                <p style="text-align: left; font-size: 15px;">장소 : 충청북도 영동군 영동면
+                                    <br> 날짜 : 20xx년 xx월 xx일
+                                    <br> 업무시간 : 11시 ~ 16시
+                                    <br> 업무강도 : 중
+                                    <br> 업무내용 : 복숭아, 사과, 포도 등 과일 수확하여 품질별로 등급을 나누고
+                                    <br> 각 등급에 따라 개별포장 및 택배 배송</p>
                           </div>
                         </div>
                       </div>
 
                       <div class="list_div">
                         <div style="margin-left: 3%;margin-right: 3%; float: left; height: 30%;" id="mpDIV">
-                            <img src="../img\ë¸ê¸°ëì¥.jpeg" style="width: 300px; height: 150px;">
+                            <img src="../img\딸기농장.jpeg" style="width: 300px; height: 150px;">
                         </div>
                         <div style="margin-bottom: 2%; height: 30%;" id="mpDIV">
-                            <h2>ë¸ê¸°ëì¥ ë¸ê¸° ì²´í ìë´</h2>
+                            <h2>딸기농장 딸기 체험 안내</h2>
                             <div>
-                                <p style="text-align: left; font-size: 15px;">ì¥ì : ì¶©ì²­ë¨ë ë¼ì°ì ëêµë
-                                    <br> ë ì§ : 20xxë xxì xxì¼
-                                    <br> ìë¬´ìê° : 09ì ~ 18ì
-                                    <br> ìë¬´ê°ë : í
-                                    <br> ìë¬´ë´ì© : ì£¼ë§ì ì´ì©íì¬ ë¸ê¸°ëì¥ì ì²´ííë¬ ì¤ë ì ì¹ì ì´ë¦°ì´ë¤ì
-                                    <br> ìì íê² íµìíê³  ë¸ê¸°ë¥¼ ìííê³  ë§ë³´ë©° ì¦ê±°ì´ ìê°ì ë³´ë¼ ì ìëë¡ ìë´</p>
+                                <p style="text-align: left; font-size: 15px;">장소 : 충청남도 논산시 대교동
+                                    <br> 날짜 : 20xx년 xx월 xx일
+                                    <br> 업무시간 : 09시 ~ 18시
+                                    <br> 업무강도 : 하
+                                    <br> 업무내용 : 주말을 이용하여 딸기농장에 체험하러 오는 유치원 어린이들을
+                                    <br> 안전하게 통솔하고 딸기를 수확하고 맛보며 즐거운 시간을 보낼 수 있도록 안내</p>
                               </div>
                         </div>
                       </div>
                       <div class="list_div">
                         <div style="margin-left: 3%;margin-right: 3%; float: left; height: 30%;" id="mpDIV">
-                            <img src="../img\ê°ì¬ë.jpg" style="width: 300px; height: 160px;">
+                            <img src="../img\강사님.jpg" style="width: 300px; height: 160px;">
                         </div>
                         <div style="margin-bottom: 2%; height: 30%;" id="mpDIV">
-                            <h2>KOTEA IT ì¹ê°ë°</h2>
+                            <h2>KOTEA IT 웹개발</h2>
                             <div>
-                                <p style="text-align: left; font-size: 15px;">ì¥ì : ìì¸ì ê°ë¨êµ¬ ì­ì¼ë
-                                    <br> ë ì§ : 2022ë 10ì 24ì¼
-                                    <br> ìë¬´ìê° : 19ì ~ 22ì
-                                    <br> ìë¬´ê°ë : ì
-                                    <br> ìë¬´ë´ì© : ì½ 50ëª ê°ê¹ì´ ëë ì¸ìì ìëë¡ ì¹ê°ë°ì ëíì¬ ê°ì.
+                                <p style="text-align: left; font-size: 15px;">장소 : 서울시 강남구 역삼동
+                                    <br> 날짜 : 2022년 10월 24일
+                                    <br> 업무시간 : 19시 ~ 22시
+                                    <br> 업무강도 : 상
+                                    <br> 업무내용 : 약 50명 가까이 되는 인원을 상대로 웹개발에 대하여 강의.
                                     <br></p>
                               </div>
                         </div>
@@ -230,12 +230,12 @@
                             <img src="../img\blank.png" style="width: 300px; height: 160px;">
                         </div>
                         <div style="margin-bottom: 2%; height: 30%;" id="mpDIV">
-                            <h2>ìë¡­ê² ì¶ê°ë  ìì­ìëë¤.</h2>
+                            <h2>새롭게 추가될 영역입니다.</h2>
                             <div style="margin-left: 3%;">
-                            <p style="text-align: left; font-size: 20px;">ì¥ì : -
-                            <br> ë ì§ : -
-                            <br> ìë¬´ìê° : -
-                            <br> ìë¬´ê°ë : -
+                            <p style="text-align: left; font-size: 20px;">장소 : -
+                            <br> 날짜 : -
+                            <br> 업무시간 : -
+                            <br> 업무강도 : -
                             <br>
                             <br> 
                             </p></div>
@@ -248,7 +248,7 @@
     </aside>
 </div>
 <br><Br><Br><br>
-<!--footer ì ì© ìì-->
+<!--footer 적용 시작-->
 
 </body>
 
@@ -257,7 +257,7 @@
     <div class="Footer_rowClass__bFAtS">
       <div class="NavLinks_NavLinks__xaNkJ">
         <div class="NavLinks_NavLinks__logo__MCbfZ" >
-          <!--ì´ê³³ì ê¸°ìì ë¡ê³ ê° ë¤ì´ê°ëë¤-->
+          <!--이곳에 기업의 로고가 들어갑니다-->
           <img
             src="../img/hot6.jpg"
             alt="wanted"
@@ -268,19 +268,19 @@
           <a
             href="https://www.wantedlab.com/"
             class=""
-            >ê¸°ììê°</a
+            >기업소개</a
           ><a
             href="https://www.wanted.co.kr/terms"
             class=""
-            >ì´ì©ì½ê´</a
+            >이용약관</a
           ><a
             href="https://www.wanted.co.kr/privacy"
             class=""
-            >ê°ì¸ì ë³´ ì²ë¦¬ë°©ì¹¨</a
+            >개인정보 처리방침</a
           ><a
             href="helpDesk.html"
             class=""
-            >ê³ ê°ì¼í°</a
+            >고객센터</a
           >
         </div>
       </div>
@@ -338,8 +338,8 @@
     </div>
     <div class="Footer_rowClass__bFAtS Footer_border__k1rgk">
       <p class="Footer_footerText__CTqnd kr">
-        ì´ê³³ì Footerì ë´ì©ì ì ìµëë¤<br>
-        ex) 6ì¡° íì´í
+        이곳에 Footer의 내용을 적습니다<br>
+        ex) 6조 파이팅
       </p>
       <div class="LocaleSelect_localeSelectClass__7TvCY">
         <img
@@ -347,9 +347,9 @@
           src="https://static.wanted.co.kr/images/userweb/ico_KR.svg"
           alt="country flag KR"
         /><select>
-          <option value="KR">íêµ­ (íêµ­ì´)</option>
-          <!--ì¶í ì í
-          <option value="JP">æ¥æ¬ (æ¥æ¬èª)</option>
+          <option value="KR">한국 (한국어)</option>
+          <!--추후 선택
+          <option value="JP">日本 (日本語)</option>
           <option value="WW">Worldwide (English)</option>
           <option value="SG">Singapore (English)</option></select
         ><i class="icon-arrow_bottom_fill"></i>
@@ -357,5 +357,5 @@
       </div>
     </div>
   </footer>
-  <!--footer ì ì© ë-->
+  <!--footer 적용 끝-->
 </html>

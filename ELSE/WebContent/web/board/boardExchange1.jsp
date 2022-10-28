@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>	
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -19,10 +19,10 @@
       content="width=device-width, initial-scale=1.0, user-scalable=no"
     />
     <meta name="next-head-count" content="27" />
-    <title>í«ìì¤ | íìì´</title>
+    <title>핫식스 | 품앗이</title>
 <<<<<<< HEAD
-    <!-- ã¡main css-->
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/header.css" crossorigin="anonymous" />
+    <!-- ㅡmain css-->
+    <link rel="stylesheet" href="src/main/css/header.css" crossorigin="anonymous" />
 =======
 >>>>>>> 64f120a9a720b89b082bfc6f9b9c483f3bcf75b9
     <link
@@ -31,10 +31,10 @@
       media="screen"
     />
 
-    <!--í°í¸ê´ë ¨-->
+    <!--폰트관련-->
 
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/boardExchange.css" crossorigin="anonymous"/>
-    <!-- ê²ìí ê´ë ¨ css -->
+    <link rel="stylesheet" href="../css/boardExchange.css" crossorigin="anonymous"/>
+    <!-- 게시판 관련 css -->
     <link
       rel="stylesheet"
       type="text/css"
@@ -42,13 +42,13 @@
       crossorigin="anonymous"
     />
 
-  <!--header ê´ë ¨ css-->
+  <!--header 관련 css-->
     
-  <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/header.css">
-  <!--footer ê´ë ¨ css-->
+  <link rel="stylesheet" href="../main/css/header.css">
+  <!--footer 관련 css-->
   <link href="../main/css/footer.css" rel="stylesheet">
 
-    <!--í°í¸ ê´ë ¨ css ***** í°í¸ ê´ë ¨ cssë í ë²ë§ ì ì©-->
+    <!--폰트 관련 css ***** 폰트 관련 css는 한 번만 적용-->
 <link
   rel="stylesheet"
   type="text/css"
@@ -60,7 +60,7 @@
   </head>
   <body style="background-color: white;">
 
-  <!--header ì ì© ìì-->
+  <!--header 적용 시작-->
   <div id="__next">
     <div class="NavBar_container">
         <div class="MainBar_width">
@@ -71,30 +71,30 @@
                             <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Ficon-menu.png&amp;w=undefined&amp;q=75" alt="hamberger menu" style="width:17px;height:14px;object-fit:contain">
                         </button>
                         <a href="/" class="MainBar_logo">
-                            <!--ë¡ê³  : 74*16 -->
+                            <!--로고 : 74*16 -->
                             <i>logo </i>
                           </a>
                     </div>
                 </div>
                 <ul class="menu_name_list">
                     <li class="">
-                        <a href="/" class="">í</a>
+                        <a href="/" class="">홈</a>
                     </li>
-                    <!--selectNavë ëì¤ì ì ì©-->
+                    <!--selectNav는 나중에 적용-->
                     <li class="selectedNav">
-                        <a href="" class="">íìì´ ê²ìí</a>
+                        <a href="" class="">품앗이 게시판</a>
                     </li>
                     <li class="">
-                        <a href="#" class="" aria-label="">ë§ì´ íì´ì§</a>
+                        <a href="#" class="" aria-label="">마이 페이지</a>
                     </li>
                     <li class="">
-                        <a href="#" class="" aria-label="">ë´ì¬ íë</a>
+                        <a href="#" class="" aria-label="">봉사 활동</a>
                     </li>
                     <li class="">
-                        <a href="#" class="">ì°¸ì¬ë´ì­</a>
+                        <a href="#" class="">참여내역</a>
                     </li>
                     <li>
-                        <a href="#" class="">ë´ì¬ íí©</a>
+                        <a href="#" class="">봉사 현황</a>
                     </li>
                 </ul>
                 <aside class="Aside_box">
@@ -112,29 +112,29 @@
                             </button>
                         </li>
                         <li>
-                            <button class="signUpButton" type="button">íìê°ì/ë¡ê·¸ì¸</button>
+                            <button class="signUpButton" type="button">회원가입/로그인</button>
                         </li>
                         <li class="leftDivision">
-                            <a class="dashboardButton" href="/dashboard">ê¸°ì ìë¹ì¤</a>
+                            <a class="dashboardButton" href="/dashboard">기업 서비스</a>
                         </li>                        
                     </ul>
                 </aside>
             </nav>
         </div>
     </div>
-<!--header ì ì© ë-->
+<!--header 적용 끝-->
 
 
       <inner class="inner" style="background-color: white;">
         
         <article class="board_exchange_labor">
             <header class="board_exchange_labor_title">
-                <h2>íìì´ ê²ìí</h2>
-                <h2>íë³´ ê²ìí</h2>
-                <h2>ì¸ì¦Â·íê¸° ê²ìí</h2>
+                <h2>품앗이 게시판</h2>
+                <h2>홍보 게시판</h2>
+                <h2>인증·후기 게시판</h2>
                 <br>
                 <button type="button" class="board_headerBtn">
-                    <span class="board_headerlabel">ë±ë¡</span>
+                    <span class="board_headerlabel">등록</span>
                 </button>
             </header>
             <div class="List_list">
@@ -147,12 +147,12 @@
                           <button class="bookmarkBtn" type="button"></button>
                         </header>
                         <div class="body">
-                            <div class="card_position">ê±°ê¸° ìë¤ ì½ì§ ìíëê°</div>
-                            <div class="card_deadline">ëª¨ì§ì¤</div>
+                            <div class="card_position">거기 자네 삽질 잘하는가</div>
+                            <div class="card_deadline">모집중</div>
                             
-                            <div class="card_work_intensity">ìë¬´ ê°ë : ì</div>
-                            <div class="card_location">ê°ë¦</div>
-                            <div class="card_work_time">ë´ì¬ ìê° : 10:00~14:00</div>
+                            <div class="card_work_intensity">업무 강도 : 상</div>
+                            <div class="card_location">강릉</div>
+                            <div class="card_work_time">봉사 시간 : 10:00~14:00</div>
                         </div>
                       </a>
                     </div>
@@ -166,12 +166,12 @@
                           <button class="bookmarkBtn" type="button"></button>
                         </header>
                         <div class="body">
-                            <div class="card_position">ì¼ ìëª©ì¼ì´ë¤</div>
-                            <div class="card_deadline">ëª¨ì§ì¤</div>
+                            <div class="card_position">야 식목일이다</div>
+                            <div class="card_deadline">모집중</div>
                             
-                            <div class="card_work_intensity">ìë¬´ ê°ë : ì¤</div>
-                            <div class="card_location">íí</div>
-                            <div class="card_work_time">ë´ì¬ ìê° : 10:00~14:00</div>
+                            <div class="card_work_intensity">업무 강도 : 중</div>
+                            <div class="card_location">평택</div>
+                            <div class="card_work_time">봉사 시간 : 10:00~14:00</div>
                         </div>
                       </a>
                     </div>
@@ -185,12 +185,12 @@
                           <button class="bookmarkBtn" type="button"></button>
                         </header>
                         <div class="body">
-                            <div class="card_position">ìì°ì¡ì´ ê°ë³´ìì´</div>
-                            <div class="card_deadline">ê²í ì¤</div>
+                            <div class="card_position">새우잡이 가보자이</div>
+                            <div class="card_deadline">검토중</div>
                             
-                            <div class="card_work_intensity">ìë¬´ ê°ë : ìµì</div>
-                            <div class="card_location">ìì´</div>
-                            <div class="card_work_time">ë´ì¬ ìê° : 01:00~10:00</div>
+                            <div class="card_work_intensity">업무 강도 : 최상</div>
+                            <div class="card_location">속초</div>
+                            <div class="card_work_time">봉사 시간 : 01:00~10:00</div>
                         </div>
                       </a>
                     </div>
@@ -206,12 +206,12 @@
                           <button class="bookmarkBtn" type="button"></button>
                         </header>
                         <div class="body">
-                            <div class="card_position">ë¬´ì¬ ê°ê·¤ ìë°ë§¨?</div>
-                            <div class="card_deadline">ë§ê°</div>
+                            <div class="card_position">무사 감귤 안따맨?</div>
+                            <div class="card_deadline">마감</div>
                             
-                            <div class="card_work_intensity">ìë¬´ ê°ë : ì¤</div>
-                            <div class="card_location">ì ì£¼</div>
-                            <div class="card_work_time">ë´ì¬ ìê° : 12:00~18:00</div>
+                            <div class="card_work_intensity">업무 강도 : 중</div>
+                            <div class="card_location">제주</div>
+                            <div class="card_work_time">봉사 시간 : 12:00~18:00</div>
                         </div>
                       </a>
                     </div>
@@ -230,12 +230,12 @@
                             <button class="bookmarkBtn" type="button"></button>
                           </header>
                           <div class="body">
-                              <div class="card_position">ê±°ê¸° ìë¤ ì½ì§ ìíëê°</div>
-                              <div class="card_deadline">ëª¨ì§ì¤</div>
+                              <div class="card_position">거기 자네 삽질 잘하는가</div>
+                              <div class="card_deadline">모집중</div>
                               
-                              <div class="card_work_intensity">ìë¬´ ê°ë : ì</div>
-                              <div class="card_location">ê°ë¦</div>
-                              <div class="card_work_time">ë´ì¬ ìê° : 10:00~14:00</div>
+                              <div class="card_work_intensity">업무 강도 : 상</div>
+                              <div class="card_location">강릉</div>
+                              <div class="card_work_time">봉사 시간 : 10:00~14:00</div>
                           </div>
                         </a>
                       </div>
@@ -249,12 +249,12 @@
                             <button class="bookmarkBtn" type="button"></button>
                           </header>
                           <div class="body">
-                              <div class="card_position">ì¼ ìëª©ì¼ì´ë¤</div>
-                              <div class="card_deadline">ëª¨ì§ì¤</div>
+                              <div class="card_position">야 식목일이다</div>
+                              <div class="card_deadline">모집중</div>
                               
-                              <div class="card_work_intensity">ìë¬´ ê°ë : ì¤</div>
-                              <div class="card_location">íí</div>
-                              <div class="card_work_time">ë´ì¬ ìê° : 10:00~14:00</div>
+                              <div class="card_work_intensity">업무 강도 : 중</div>
+                              <div class="card_location">평택</div>
+                              <div class="card_work_time">봉사 시간 : 10:00~14:00</div>
                           </div>
                         </a>
                       </div>
@@ -268,12 +268,12 @@
                             <button class="bookmarkBtn" type="button"></button>
                           </header>
                           <div class="body">
-                              <div class="card_position">ìì°ì¡ì´ ê°ë³´ìì´</div>
-                              <div class="card_deadline">ê²í ì¤</div>
+                              <div class="card_position">새우잡이 가보자이</div>
+                              <div class="card_deadline">검토중</div>
                               
-                              <div class="card_work_intensity">ìë¬´ ê°ë : ìµì</div>
-                              <div class="card_location">ìì´</div>
-                              <div class="card_work_time">ë´ì¬ ìê° : 01:00~10:00</div>
+                              <div class="card_work_intensity">업무 강도 : 최상</div>
+                              <div class="card_location">속초</div>
+                              <div class="card_work_time">봉사 시간 : 01:00~10:00</div>
                           </div>
                         </a>
                       </div>
@@ -289,12 +289,12 @@
                             <button class="bookmarkBtn" type="button"></button>
                           </header>
                           <div class="body">
-                              <div class="card_position">ë¬´ì¬ ê°ê·¤ ìë°ë§¨?</div>
-                              <div class="card_deadline">ë§ê°</div>
+                              <div class="card_position">무사 감귤 안따맨?</div>
+                              <div class="card_deadline">마감</div>
                               
-                              <div class="card_work_intensity">ìë¬´ ê°ë : ì¤</div>
-                              <div class="card_location">ì ì£¼</div>
-                              <div class="card_work_time">ë´ì¬ ìê° : 12:00~18:00</div>
+                              <div class="card_work_intensity">업무 강도 : 중</div>
+                              <div class="card_location">제주</div>
+                              <div class="card_work_time">봉사 시간 : 12:00~18:00</div>
                           </div>
                         </a>
                       </div>
@@ -313,12 +313,12 @@
                             <button class="bookmarkBtn" type="button"></button>
                           </header>
                           <div class="body">
-                              <div class="card_position">ê±°ê¸° ìë¤ ì½ì§ ìíëê°</div>
-                              <div class="card_deadline">ëª¨ì§ì¤</div>
+                              <div class="card_position">거기 자네 삽질 잘하는가</div>
+                              <div class="card_deadline">모집중</div>
                               
-                              <div class="card_work_intensity">ìë¬´ ê°ë : ì</div>
-                              <div class="card_location">ê°ë¦</div>
-                              <div class="card_work_time">ë´ì¬ ìê° : 10:00~14:00</div>
+                              <div class="card_work_intensity">업무 강도 : 상</div>
+                              <div class="card_location">강릉</div>
+                              <div class="card_work_time">봉사 시간 : 10:00~14:00</div>
                           </div>
                         </a>
                       </div>
@@ -332,12 +332,12 @@
                             <button class="bookmarkBtn" type="button"></button>
                           </header>
                           <div class="body">
-                              <div class="card_position">ì¼ ìëª©ì¼ì´ë¤</div>
-                              <div class="card_deadline">ëª¨ì§ì¤</div>
+                              <div class="card_position">야 식목일이다</div>
+                              <div class="card_deadline">모집중</div>
                               
-                              <div class="card_work_intensity">ìë¬´ ê°ë : ì¤</div>
-                              <div class="card_location">íí</div>
-                              <div class="card_work_time">ë´ì¬ ìê° : 10:00~14:00</div>
+                              <div class="card_work_intensity">업무 강도 : 중</div>
+                              <div class="card_location">평택</div>
+                              <div class="card_work_time">봉사 시간 : 10:00~14:00</div>
                           </div>
                         </a>
                       </div>
@@ -351,12 +351,12 @@
                             <button class="bookmarkBtn" type="button"></button>
                           </header>
                           <div class="body">
-                              <div class="card_position">ìì°ì¡ì´ ê°ë³´ìì´</div>
-                              <div class="card_deadline">ê²í ì¤</div>
+                              <div class="card_position">새우잡이 가보자이</div>
+                              <div class="card_deadline">검토중</div>
                               
-                              <div class="card_work_intensity">ìë¬´ ê°ë : ìµì</div>
-                              <div class="card_location">ìì´</div>
-                              <div class="card_work_time">ë´ì¬ ìê° : 01:00~10:00</div>
+                              <div class="card_work_intensity">업무 강도 : 최상</div>
+                              <div class="card_location">속초</div>
+                              <div class="card_work_time">봉사 시간 : 01:00~10:00</div>
                           </div>
                         </a>
                       </div>
@@ -372,12 +372,12 @@
                             <button class="bookmarkBtn" type="button"></button>
                           </header>
                           <div class="body">
-                              <div class="card_position">ë¬´ì¬ ê°ê·¤ ìë°ë§¨?</div>
-                              <div class="card_deadline">ë§ê°</div>
+                              <div class="card_position">무사 감귤 안따맨?</div>
+                              <div class="card_deadline">마감</div>
                               
-                              <div class="card_work_intensity">ìë¬´ ê°ë : ì¤</div>
-                              <div class="card_location">ì ì£¼</div>
-                              <div class="card_work_time">ë´ì¬ ìê° : 12:00~18:00</div>
+                              <div class="card_work_intensity">업무 강도 : 중</div>
+                              <div class="card_location">제주</div>
+                              <div class="card_work_time">봉사 시간 : 12:00~18:00</div>
                           </div>
                         </a>
                       </div>
@@ -390,7 +390,7 @@
             </article>
             
             </div>
-            <!-- ì¤ì  ë´ì© ìì± ë¶ë¶-->
+            <!-- 실제 내용 작성 부분-->
           </div>
         </div>
       </inner>
@@ -398,7 +398,7 @@
         <div class="Footer_rowClass__bFAtS">
           <div class="NavLinks_NavLinks__xaNkJ">
             <div class="NavLinks_NavLinks__logo__MCbfZ">
-              <!--ì´ê³³ì ê¸°ìì ë¡ê³ ê° ë¤ì´ê°ëë¤-->
+              <!--이곳에 기업의 로고가 들어갑니다-->
               <img
                 src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fuserweb%2Flogo_wanted_black.png&amp;w=110&amp;q=100"
                 alt="wanted"
@@ -413,7 +413,7 @@
                 rel="noopener noreferrer"
                 data-attribute-id="fnb"
                 data-fnb-kind="investment"
-                >ê¸°ììê°</a
+                >기업소개</a
               ><a
                 href="https://www.wanted.co.kr/terms"
                 class=""
@@ -422,7 +422,7 @@
                 rel="noopener noreferrer"
                 data-attribute-id="fnb"
                 data-fnb-kind="termsOfUse"
-                >ì´ì©ì½ê´</a
+                >이용약관</a
               ><a
                 href="https://www.wanted.co.kr/privacy"
                 class=""
@@ -431,7 +431,7 @@
                 rel="noopener noreferrer"
                 data-attribute-id="fnb"
                 data-fnb-kind="privacyPolicy"
-                >ê°ì¸ì ë³´ ì²ë¦¬ë°©ì¹¨</a
+                >개인정보 처리방침</a
               ><a
                 href="helpDesk.html"
                 class=""
@@ -440,7 +440,7 @@
                 rel="noopener noreferrer"
                 data-attribute-id="fnb"
                 data-fnb-kind="FAQ"
-                >ê³ ê°ì¼í°</a
+                >고객센터</a
               >
             </div>
           </div>
@@ -522,10 +522,10 @@
         </div>
         <div class="Footer_rowClass__bFAtS Footer_border__k1rgk">
           <p class="Footer_footerText__CTqnd kr">
-            (ì£¼)ìí°ëë© (ëíì´ì¬:ì´ë³µê¸°) | ìì¸í¹ë³ì ì¡íêµ¬ ì¬ë¦¼í½ë¡ 300
-            ë¡¯ë°ìëíì 35ì¸µ | íµì íë§¤ë²í¸ : 2020-ìì¸ì¡í-3147<br />ì ë£ì§ììê°ì¬ìë±ë¡ë²í¸
-            : (êµ­ë´) ì 2020-3230259-14-5-00018í¸ | (êµ­ì¸) ìì¸ëë¶-ì -2020-2 |
-            ì¬ììë±ë¡ë²í¸ : 299-86-00021 | 02-539-7118<br />Â© Wantedlab, Inc.
+            (주)원티드랩 (대표이사:이복기) | 서울특별시 송파구 올림픽로 300
+            롯데월드타워 35층 | 통신판매번호 : 2020-서울송파-3147<br />유료직업소개사업등록번호
+            : (국내) 제2020-3230259-14-5-00018호 | (국외) 서울동부-유-2020-2 |
+            사업자등록번호 : 299-86-00021 | 02-539-7118<br />© Wantedlab, Inc.
           </p>
           <div class="LocaleSelect_localeSelectClass__7TvCY">
             <img
@@ -533,8 +533,8 @@
               src="https://static.wanted.co.kr/images/userweb/ico_KR.svg"
               alt="country flag KR"
             /><select>
-              <option value="KR">íêµ­ (íêµ­ì´)</option>
-              <option value="JP">æ¥æ¬ (æ¥æ¬èª)</option>
+              <option value="KR">한국 (한국어)</option>
+              <option value="JP">日本 (日本語)</option>
               <option value="WW">Worldwide (English)</option>
               <option value="SG">Singapore (English)</option></select
             ><i class="icon-arrow_bottom_fill"></i>
@@ -543,12 +543,12 @@
       </footer>
     </div>
 
-<!--footer ì ì© ìì-->
+<!--footer 적용 시작-->
 <footer class="Footer_footerClass__OWEZy">
   <div class="Footer_rowClass__bFAtS">
     <div class="NavLinks_NavLinks__xaNkJ">
       <div class="NavLinks_NavLinks__logo__MCbfZ">
-        <!--ì´ê³³ì ê¸°ìì ë¡ê³ ê° ë¤ì´ê°ëë¤-->
+        <!--이곳에 기업의 로고가 들어갑니다-->
         <img
           src="../img/hot6.jpg"
           alt="wanted"
@@ -559,19 +559,19 @@
         <a
           href="https://www.wantedlab.com/"
           class=""
-          >ê¸°ììê°</a
+          >기업소개</a
         ><a
           href="https://www.wanted.co.kr/terms"
           class=""
-          >ì´ì©ì½ê´</a
+          >이용약관</a
         ><a
           href="https://www.wanted.co.kr/privacy"
           class=""
-          >ê°ì¸ì ë³´ ì²ë¦¬ë°©ì¹¨</a
+          >개인정보 처리방침</a
         ><a
           href="helpDesk.html"
           class=""
-          >ê³ ê°ì¼í°</a
+          >고객센터</a
         >
       </div>
     </div>
@@ -629,8 +629,8 @@
   </div>
   <div class="Footer_rowClass__bFAtS Footer_border__k1rgk">
     <p class="Footer_footerText__CTqnd kr">
-      ì´ê³³ì Footerì ë´ì©ì ì ìµëë¤<br>
-      ex) 6ì¡° íì´í
+      이곳에 Footer의 내용을 적습니다<br>
+      ex) 6조 파이팅
     </p>
     <div class="LocaleSelect_localeSelectClass__7TvCY">
       <img
@@ -638,9 +638,9 @@
         src="https://static.wanted.co.kr/images/userweb/ico_KR.svg"
         alt="country flag KR"
       /><select>
-        <option value="KR">íêµ­ (íêµ­ì´)</option>
-        <!--ì¶í ì í
-        <option value="JP">æ¥æ¬ (æ¥æ¬èª)</option>
+        <option value="KR">한국 (한국어)</option>
+        <!--추후 선택
+        <option value="JP">日本 (日本語)</option>
         <option value="WW">Worldwide (English)</option>
         <option value="SG">Singapore (English)</option></select
       ><i class="icon-arrow_bottom_fill"></i>
@@ -648,7 +648,7 @@
     </div>
   </div>
 </footer>
-<!--footer ì ì© ë-->
+<!--footer 적용 끝-->
 
   </body>
 </html>

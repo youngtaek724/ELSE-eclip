@@ -17,7 +17,7 @@
   
   <servlet-mapping>
   	<servlet-name>User</servlet-name>
-  	<url-pattern>*.me</url-pattern>
+  	<url-pattern>*.me1</url-pattern>
   </servlet-mapping>
 
   <servlet>
@@ -27,7 +27,7 @@
   
   <servlet-mapping>
   	<servlet-name>Board</servlet-name>
-  	<url-pattern>*.me</url-pattern>
+  	<url-pattern>*.me2</url-pattern>
   </servlet-mapping>
   
   <servlet>
@@ -37,7 +37,7 @@
   
   <servlet-mapping>
   	<servlet-name>Admin</servlet-name>
-  	<url-pattern>*.me</url-pattern>
+  	<url-pattern>*.me3</url-pattern>
   </servlet-mapping>
   
   <servlet>
@@ -47,7 +47,7 @@
   
   <servlet-mapping>
   	<servlet-name>MyPage</servlet-name>
-  	<url-pattern>*.me</url-pattern>
+  	<url-pattern>*.me4</url-pattern>
   </servlet-mapping>    
   
   <servlet>
@@ -57,6 +57,6 @@
   
   <servlet-mapping>
   	<servlet-name>Index</servlet-name>
-  	<url-pattern>*.me</url-pattern>
+  	<url-pattern>*.me5</url-pattern>
   </servlet-mapping>  
 </web-app>
