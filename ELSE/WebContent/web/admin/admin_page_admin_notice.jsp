@@ -1,6 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+     <%@page isELIgnored="false" %> 
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -31,7 +33,10 @@
       <div class="main">
         <header class="top_header">
           <div class="headerbar">
+          <div style = "display : flex; justify-content: space-between; width : 80%;">
             <div class="admin_name">관리자 공지</div>
+            <span>총 3 개 </span>
+            </div>
             <div class="exit_button_div">
               <button class="exit_button">나가기</button>
             </div>
@@ -42,11 +47,13 @@
             <div class="user_list">
               <div class="total_user">
                 공지 사항
-                <input class="btn_write" type="button" value="글작성" />
+                
+                <input class="btn_write" type="button" value="" onclick = ""/>글작성
               </div>
               <div class="user_info_wrapper">
                 <div class="user_info_top_div">
                   <ul class="notice_info">
+                  <!-- 
                     <li
                       class="notice_number user_info_title content_text_align title_bold"
                     >
@@ -67,6 +74,24 @@
                     >
                       <span>작성 날짜</span>
                     </li>
+                     -->
+				<c:choose>
+<!-- 				<c:when test="${not empty boards and fn:length(boards) > 0}"> -->
+				<c:forEach var="board" items="${boards}">
+						<li><c:out value="${board.getBoardId()}"/></li>
+						<li><c:out value="${board.getBoardType()}"/></li>
+						<li><c:out value="${board.getMainText()}"/></li>
+						<li><c:out value="${board.getStatus()}"/></li>
+						<li><c:out value="${board.getUserNum()}"/></li>
+						<li><c:out value="${board.getUserdId()}"/></li>
+					</c:forEach>
+	<!-- 				</c:when>-->
+					<c:otherwise>
+					<tr>
+						<td colspan="5" align="center">등록된 게시물이 없습니다.</td>
+					</tr>
+					</c:otherwise>
+					</c:choose>                                          
                   </ul>
                 </div>
                 <div class="notice_info_one_important">

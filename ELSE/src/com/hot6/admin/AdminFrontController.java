@@ -30,6 +30,8 @@ public class AdminFrontController extends HttpServlet{
 			// 승인/거절 버튼 -> 거절 시 요청거절테이블로 insert
 		}else if(target.equals("/admin/reqTableDelete.me")) {
 			// 승인/거절 버튼 클릭 시 -> 요청/신청 테이블에서 delete
+		}else if(target.equals("/admin/adminBoardListOk.me")) {
+			result = new AdmBoardListOkController().execute(req, resp);
 		}
 		
 		
