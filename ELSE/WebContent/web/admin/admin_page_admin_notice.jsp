@@ -9,16 +9,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
-      href="${pageContext.request.contextPath}/assets/css/admin_page_admin_notice.css"
+      href="${pageContext.request.contextPath}/assets/css/admin/admin_page_admin_notice.css"
     />
     <link href="/website/css/uicons-outline-rounded.css" rel="stylesheet" />
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/admin_page_same.css" />
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/admin/admin_page_same.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.3/dist/web/static/pretendard-dynamic-subset.css"
+    /> 
     <title></title>
   </head>
   <body>
@@ -328,11 +333,11 @@
       </div>
 
       <div class="menu">
-        <div class="logo_img"><a href="/src/admin/html_admin/admin_page_main.html"><div>ELSE</div></a></div>
+        <div class="logo_img"><a href="${pageContext.request.contextPath}/web/admin/admin_page_main.jsp"><div>ELSE</div></a></div>
         <div class="menu_admin">
           <div>
             <a href="#">
-              <img src="/src/admin/img_admin/home.png" />
+              <img src="${pageContext.request.contextPath}/assets/images/home.png" />
               <div>사이트 바로가기</div>
             </a>
           </div>
@@ -344,7 +349,7 @@
                 <div>
                   <img
                     class="manage_list_img"
-                    src="/src/admin/img_admin/browser.png"
+                    src="${pageContext.request.contextPath}/assets/images/browser.png"
                   />
                 </div>
                 <span>요청 관리</span>
@@ -355,7 +360,7 @@
                 <div>
                   <img
                     class="manage_list_img"
-                    src="/src/admin/img_admin/user.png"
+                    src="${pageContext.request.contextPath}/assets/images/user.png"
                   />
                 </div>
                 <span>이용자 관리</span>
@@ -366,13 +371,13 @@
                 <div>
                   <img
                     class="manage_list_img"
-                    src="/src/admin/img_admin/ballot.png"
+                    src="${pageContext.request.contextPath}/assets/images/ballot.png"
                   />
                 </div>
                 <span>게시글 관리</span>
                 <img
                   class="arrow_down"
-                  src="/src/admin/img_admin/angle-down1.png"
+                  src="${pageContext.request.contextPath}/assets/images/angle-down1.png"
                 />
                 <ul class="toggle_menu">
                   <li>
@@ -398,7 +403,7 @@
                 <div>
                   <img
                     class="statis_list_img"
-                    src="/src/admin/img_admin/statistic.png"
+                    src="${pageContext.request.contextPath}/assets/images/statistic.png"
                   />
                 </div>
                 <span>통계</span>
@@ -409,7 +414,7 @@
                 <div>
                   <img
                     class="manage_list_img"
-                    src="/src/admin/img_admin/comments.png"
+                    src="${pageContext.request.contextPath}/assets/images/comments.png"
                   />
                 </div>
                 <span>고객 센터</span>
@@ -420,7 +425,7 @@
                 <div>
                   <img
                     class="manage_list_img"
-                    src="/src/admin/img_admin/exclamation.png"
+                    src="${pageContext.request.contextPath}/assets/images/exclamation.png"
                   />
                 </div>
                 <span>관리자 공지</span>

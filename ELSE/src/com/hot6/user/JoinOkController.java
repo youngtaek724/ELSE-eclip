@@ -22,7 +22,7 @@ public class JoinOkController implements Execute{
 		userVO.setUserName(req.getParameter("userName"));
 		userVO.setPhoneNumber(req.getParameter("userPhoneNum"));
 		userVO.setUserPw(req.getParameter("userPassword"));
-		userVO.setUserPwCheck(req.getParameter("userPasswordCheck"));
+	//	userVO.setUserPwCheck(req.getParameter("userPasswordCheck"));
 		
 		userDAO.join(userVO);
 		
