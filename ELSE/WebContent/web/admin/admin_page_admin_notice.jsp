@@ -47,13 +47,12 @@
             <div class="user_list">
               <div class="total_user">
                 공지 사항
-                
-                <input class="btn_write" type="button" value="" onclick = ""/>글작성
+                <form method="post" action="${pageContext.request.contextPath}/admin/adminBoardListOk.adm">
+                <input class="btn_write" type="button" value="글작성" onclick = ""/>
               </div>
               <div class="user_info_wrapper">
                 <div class="user_info_top_div">
                   <ul class="notice_info">
-                  <!-- 
                     <li
                       class="notice_number user_info_title content_text_align title_bold"
                     >
@@ -73,33 +72,17 @@
                       class="notice_date user_info_title content_text_align title_bold"
                     >
                       <span>작성 날짜</span>
-                    </li>
-                     -->
-				<c:choose>
-<!-- 				<c:when test="${not empty boards and fn:length(boards) > 0}"> -->
-				<c:forEach var="board" items="${boards}">
-						<li><c:out value="${board.getBoardId()}"/></li>
-						<li><c:out value="${board.getBoardType()}"/></li>
-						<li><c:out value="${board.getMainText()}"/></li>
-						<li><c:out value="${board.getStatus()}"/></li>
-						<li><c:out value="${board.getUserNum()}"/></li>
-						<li><c:out value="${board.getUserdId()}"/></li>
-					</c:forEach>
-	<!-- 				</c:when>-->
-					<c:otherwise>
-					<tr>
-						<td colspan="5" align="center">등록된 게시물이 없습니다.</td>
-					</tr>
-					</c:otherwise>
-					</c:choose>                                          
+                    </li>                                
                   </ul>
                 </div>
+                
                 <div class="notice_info_one_important">
                   <ul class="notice_info">
                     <li
                       class="notice_number_important user_info_title content_text_align"
+                      name = "no"
                     >
-                      <span>중요</span>
+                      <span><c:out value ="${admin.getBoardId()}"/></span>
                     </li>
                     <li
                       class="notice_title user_info_title content_text_align_left"
@@ -134,6 +117,7 @@
                     </li>
                   </ul>
                 </div>
+                </form>
                 <div class="notice_info_one">
                   <ul class="notice_info">
                     <li

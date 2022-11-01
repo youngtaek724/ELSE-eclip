@@ -13,9 +13,13 @@ public class MyBatisConfig {
 	
 	// static 블록 : 어플리케이션이 실행될 때 딱 한번만 실행
 	static {
+		System.out.println("config");
 		try {
 			String resource = "./com/mybatis/config/config.xml";
+			System.out.println(resource);
+			
 			Reader reader = Resources.getResourceAsReader(resource);
+			System.out.println("reader = "+reader);
 			sqlSessionFactory = new SqlSessionFactoryBuilder().build(reader);
 		} catch (IOException e) {
 			System.out.println("초기화 문제 발생, MyBatisConfig.java");
@@ -24,6 +28,7 @@ public class MyBatisConfig {
 	}
 
 	public static SqlSessionFactory getSqlSessionFactory() {
+		System.out.println("config 파일임");
 		return sqlSessionFactory;
 	}
 

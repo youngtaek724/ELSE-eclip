@@ -8,13 +8,15 @@ import com.hot6.admin.vo.AdminDTO;
 import com.mybatis.config.MyBatisConfig;
 
 public class AdminDAO {
-	public SqlSession sqlSession;
-	
+	public SqlSession sqlSession = null;
 	public AdminDAO() {
-		sqlSession = MyBatisConfig.getSqlSessionFactory().openSession(true);
+		System.out.println("admDAO!!");
+		sqlSession = MyBatisConfig.getSqlSessionFactory().openSession(true);		
+		System.out.println("admDAO 끝!");
 	}	
 	
 	public List<AdminDTO> selectAll() {
+		System.out.println("admDTO 실행");
 		return sqlSession.selectList("admin.selectAll");
 	}
 }
