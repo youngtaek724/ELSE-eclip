@@ -8,26 +8,25 @@
 	</select>
 
 	<!-- 관리자 게시판 등록 쿼리 -->
-	<insert in = "insertBoard" parameterType = "adminVO">
+	<insert id = "insertBoard" parameterType = "adminVO">
 		INSERT INTO test.tbl_board
 		(board_id, board_boardtype, board_maintext, board_status, user_num)
-		VALUES(#{boardId}, ${boardType}, ${mainText}, ${status}, ${userNum});
-
+		VALUES(#{boardId}, #{boardType}, #{mainText}, #{status}, #{userNum});
 	</insert>
 	
 	
 
-	<insert id="rejectInsert" parameterType="">
+	<insert id="rejectInsert" resultType = "">
 		insert into (요청거절테이블)
 		values (게시글 번호, 게시글 제목, 작성자)
 	</insert>
 
-	<delete id="reqTableDelete" parameterType="">
+	<delete id="reqTableDelete" >
 		delete from (요청/신청 테이블)
 		where (승인/거절 버튼이 눌린 거)
 	</delete>
 	
-	<insert id="noticeInsert" parameterType="">
+	<insert id="noticeInsert" >
 		insert into (관리자공지)
 		values (글제목, 작성날짜, 작성자)
 	</insert>

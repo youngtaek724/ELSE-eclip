@@ -16,6 +16,7 @@ public class AddBoardController implements Execute {
 	@Override
 	public Result execute(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServerException {
 		System.out.println("=====ADDBOARDCONTROLLER=======");
+		req.setCharacterEncoding("utf-8");
 		AdminDAO adminDAO = new AdminDAO();
 		AdminVO adminVO = new AdminVO();
 		
@@ -25,9 +26,11 @@ public class AddBoardController implements Execute {
 		adminVO.setUserNum(Integer.valueOf(req.getParameter("userNum")));
 		adminVO.setMainText(req.getParameter("mainText"));
 		adminVO.setBoardType(req.getParameter("boardType"));
-		
-		
-		//adminDAO.insertBoard(null);	
+		System.out.println("adminVO!!");
+		System.out.println(adminVO.getMainText());
+		System.out.println(adminVO.getBoardId());
+		adminDAO.insertBoard(adminVO);
+		System.out.println("insert에 전달 완료");
 		return null;
 	}
 }

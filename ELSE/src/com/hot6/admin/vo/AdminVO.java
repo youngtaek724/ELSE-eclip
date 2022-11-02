@@ -1,7 +1,5 @@
 package com.hot6.admin.vo;
 
-import com.hot6.user.vo.UserVO;
-
 public class AdminVO {
 
 	private int boardId;

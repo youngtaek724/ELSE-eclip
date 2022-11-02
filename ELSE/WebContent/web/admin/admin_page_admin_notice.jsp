@@ -47,8 +47,9 @@
             <div class="user_list">
               <div class="total_user">
                 공지 사항
-                <form method="post" action="${pageContext.request.contextPath}/admin/adminBoardListOk.adm">
-                <input class="btn_write" type="button" value="글작성" onclick = ""/>
+                <form method="post" action="${pageContext.request.contextPath}/admin/addBoard.adm">
+                <input class="btn_write" type="button" value="글작성" onclick = "click()"/>
+                </form>
               </div>
               <div class="user_info_wrapper">
                 <div class="user_info_top_div">
@@ -446,4 +447,9 @@
     </div>
   </body>
   <script src="${pageContext.request.contextPath}/assets/js/admin_page_main.js"></script>
+  <script>
+  	function onclick(){
+  		alert("!");
+  	}
+  </script>
 </html>

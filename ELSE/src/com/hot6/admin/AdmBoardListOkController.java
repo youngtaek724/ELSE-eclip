@@ -16,7 +16,7 @@ public class AdmBoardListOkController implements Execute {
 	@Override
 	public Result execute(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServerException {
 		System.out.println("==============ListOkCOntroller in============");
-		req.setCharacterEncoding("UTF-8");
+		req.setCharacterEncoding("utf-8");
 		
 		System.out.println("before dao");
 		AdminDAO adminDAO = new AdminDAO();
