@@ -9,19 +9,21 @@ import javax.servlet.http.HttpServletResponse;
 import com.hot6.Execute;
 import com.hot6.Result;
 import com.hot6.admin.dao.AdminDAO;
-import com.hot6.admin.vo.AdminDTO;
+import com.hot6.admin.vo.AdminVO;
 
-public class AdmBoardListOkController implements Execute {
+public class AdmMainController implements Execute {
 
 	@Override
 	public Result execute(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServerException {
+		System.out.println("admMain 컨트롤러 실행");
 		req.setCharacterEncoding("utf-8");
 		
 		AdminDAO adminDAO = new AdminDAO();
 		Result result = new Result();
-		req.setAttribute("boards", adminDAO.selectAll());
-		result.setPath("/web/admin/admin_page_admin_notice.jsp");
+		req.setAttribute("boards", adminDAO.mainNotice());
+		System.out.println(adminDAO.mainNotice().get(0).getBoardTextName());
+		result.setPath("/web/admin/admin_page_main.jsp");
+		
 		return result;
 	}
-
 }

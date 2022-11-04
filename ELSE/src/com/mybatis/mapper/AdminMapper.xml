@@ -3,20 +3,27 @@
 <mapper namespace="admin">
 	<!-- 관리자 게시판 조회 쿼리 -->
 	<select id = "selectAll" resultType = "adminDTO">
-		select board_id, board_boardType, board_mainText, board_status, a.user_num, a.user_id from tbl_user a 
-		join tbl_board b where a.user_num = b.user_num;
+		select board_id, board_textname , user_name , board_texttime from tbl_user u join tbl_board tb where u.user_num =tb.user_num
 	</select>
 
 	<!-- 관리자 게시판 등록 쿼리 -->
 	<insert id = "insertBoard" parameterType = "adminVO">
-		INSERT INTO test.tbl_board
-		(board_id, board_boardtype, board_maintext, board_status, user_num)
-		VALUES(#{boardId}, #{boardType}, #{mainText}, #{status}, #{userNum});
+	INSERT INTO test.tbl_board
+	(board_id, board_textname, board_boardtype, board_texttime, board_moditime, board_maintext, board_workhard, board_worktime, board_workarea, board_status, board_statusans, user_num)
+	VALUES(#{boardId}, #{boardTextName}, '01', SYSDATE(), SYSDATE(), #{boardMainText}, '', '', '', 0, '', #{userNum})
 	</insert>
 	
-	
+	<select id = "mainNotice" resultType = "adminDTO">
+		select board_textname , board_texttime from tbl_board tb where board_boardtype = 01 order by board_texttime desc 
+	</select>
 
-	<insert id="rejectInsert" resultType = "">
+	<select id = "selectInquiry" resultType = "inquiryDTO">
+		select iq_id , iq_textname, iq_texttime , iq_answerYN , user_name from tbl_user u join tbl_inquiry ti
+		where u.user_num = ti.user_num
+	</select>
+
+
+	<insert id="rejectInsert">
 		insert into (요청거절테이블)
 		values (게시글 번호, 게시글 제목, 작성자)
 	</insert>

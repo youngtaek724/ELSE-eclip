@@ -17,6 +17,8 @@
    		<typeAlias type="com.hot6.board.vo.FileVO" alias="fileVO"/>
    		<typeAlias type="com.hot6.admin.vo.AdminVO" alias="adminVO"/>
    		<typeAlias type="com.hot6.admin.vo.AdminDTO" alias="adminDTO"/>
+   		<typeAlias type="com.hot6.admin.vo.InquiryVO" alias="inquiryVO"/>
+   		<typeAlias type="com.hot6.admin.vo.InquiryDTO" alias="inquiryDTO"/>
    </typeAliases>
 
    <environments default="mysql">

@@ -7,9 +7,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/src/admin/css_admin/admin_page_board_review.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/admin/admin_page_board_review.css">
     <link href="/website/css/uicons-outline-rounded.css" rel="stylesheet">
-    <link rel="stylesheet" href="/src/admin/css_admin/admin_page_same.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/admin/admin_page_same.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
@@ -29,7 +29,7 @@
             <div class="content">
                 <div class="content_wrapper">
                     <div class="user_search">
-                        <a href="javascript:void(0)"><img src="/src/admin/img_admin/search (2).png"></a>
+                        <a href="javascript:void(0)"><img src="${pageContext.request.contextPath}/assets/images/search (2).png"></a>
                         <div>
                             <input class="search_text" type="text" placeholder="검색">
                         </div>
@@ -121,7 +121,7 @@
             <div class="logo_img"><a href="/src/admin/html_admin/admin_page_main.html"><div>ELSE</div></a></div>
             <div class="menu_admin">
                 <div><a href="#">
-                    <img src="/src/admin/img_admin/home.png">
+                    <img src="${pageContext.request.contextPath}/assets/images/home.png">
                     <div>사이트 바로가기</div>
                 </a></div>
             </div>
@@ -129,21 +129,21 @@
                 <ul class="manage_list">
                     <li class="list_li">
                         <a href="admin_page_request.html">
-                            <div><img class="manage_list_img" src="/src/admin/img_admin/browser.png"></div>
+                            <div><img class="manage_list_img" src="${pageContext.request.contextPath}/assets/images/browser.png"></div>
                             <span>요청 관리</span>
                         </a>
                     </li>
                     <li class="list_li">
                         <a href="admin_page_user.html">
-                            <div><img class="manage_list_img" src="/src/admin/img_admin/user.png"></div>
+                            <div><img class="manage_list_img" src="${pageContext.request.contextPath}/assets/images/user.png"></div>
                             <span>이용자 관리</span>
                         </a>
                     </li>
                     <li class="list_li">
                         <a class="arrow_down_menu" href="javascript:void(0);">
-                                <div><img class="manage_list_img" src="/src/admin/img_admin/ballot.png"></div>
+                                <div><img class="manage_list_img" src="${pageContext.request.contextPath}/assets/images/ballot.png"></div>
                                 <span>게시글 관리</span>
-                                <img class="arrow_down" src="/src/admin/img_admin/angle-down1.png">
+                                <img class="arrow_down" src="${pageContext.request.contextPath}/assets/images/angle-down1.png">
                                 <ul class="toggle_menu">
                                     <li><a href="admin_page_board.html">
                                         <div>품앗이 게시판</div>
@@ -159,19 +159,19 @@
                     </li>
                     <li class="list_li">
                         <a href="#">
-                            <div><img class="statis_list_img" src="/src/admin/img_admin/statistic.png"></div>
+                            <div><img class="statis_list_img" src="${pageContext.request.contextPath}/assets/images/statistic.png"></div>
                             <span>통계</span>
                         </a>
                     </li>
                     <li class="list_li">
                         <a href="/src/admin/html_admin/admin_page_service.html">
-                            <div><img class="manage_list_img" src="/src/admin/img_admin/comments.png"></div>
+                            <div><img class="manage_list_img" src="${pageContext.request.contextPath}/assets/images/comments.png"></div>
                             <span>고객 센터</span>
                         </a>
                     </li>
                     <li class="list_li list_admin_notice">
                         <a href="">
-                            <div><img class="manage_list_img" src="/src/admin/img_admin/exclamation.png"></div>
+                            <div><img class="manage_list_img" src="${pageContext.request.contextPath}/assets/images/exclamation.png"></div>
                             <span>관리자 공지</span>
                         </a>
                     </li>

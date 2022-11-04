@@ -6,14 +6,28 @@ public class AdminDTO {
 
 	private int boardId;
 	private String boardType;
-	private String mainText;
+	private String boardTextName;
+	private String boardMainText;
 	private int  status;
 	private int userNum;
 	private String userId;
+	private String userName;
+	private String boardTextTime;
 	
-	
+	public String getBoardTextTime() {
+		return boardTextTime;
+	}
+	public void setBoardTextTime(String boardTextTime) {
+		this.boardTextTime = boardTextTime;
+	}
 	public int getBoardId() {
 		return boardId;
+	}
+	public String getUserName() {
+		return userName;
+	}
+	public void setUserName(String userName) {
+		this.userName = userName;
 	}
 	public void setBoardId(int boardId) {
 		this.boardId = boardId;
@@ -24,11 +38,17 @@ public class AdminDTO {
 	public void setBoardType(String boardType) {
 		this.boardType = boardType;
 	}
-	public String getMainText() {
-		return mainText;
+	public String getBoardTextName() {
+		return boardTextName;
 	}
-	public void setMainText(String mainText) {
-		this.mainText = mainText;
+	public void setBoardTextName(String boardTextName) {
+		this.boardTextName = boardTextName;
+	}
+	public String getBoardMainText() {
+		return boardMainText;
+	}
+	public void setBoardMainText(String boardMainText) {
+		this.boardMainText = boardMainText;
 	}
 	public int getStatus() {
 		return status;
@@ -48,6 +68,4 @@ public class AdminDTO {
 	public void setUserId(String userId) {
 		this.userId = userId;
 	}
-	
-
 }

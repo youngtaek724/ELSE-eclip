@@ -7,13 +7,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/src/admin/css_admin/admin_page_user.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/admin/admin_page_user.css">
     <link href="/website/css/uicons-outline-rounded.css" rel="stylesheet">
-    <link rel="stylesheet" href="/src/admin/css_admin/admin_page_same.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/admin/admin_page_same.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
-    <title></title>
+    <title>관리자 공지 게시판</title>
 </head>
 <body>
     <div id="base">
@@ -151,11 +151,12 @@
 
 
 
+
         <div class="menu">
             <div class="logo_img"><a href="/src/admin/html_admin/admin_page_main.html"><div>ELSE</div></a></div>
             <div class="menu_admin">
                 <div><a href="#">
-                    <img src="/src/admin/img_admin/home.png">
+                    <img src="${pageContext.request.contextPath}/assets/images/home.png">
                     <div>사이트 바로가기</div>
                 </a></div>
             </div>
@@ -163,21 +164,21 @@
                 <ul class="manage_list">
                     <li class="list_li">
                         <a href="admin_page_request.html">
-                            <div><img class="manage_list_img" src="/src/admin/img_admin/browser.png"></div>
+                            <div><img class="manage_list_img" src="${pageContext.request.contextPath}/assets/images/browser.png"></div>
                             <span>요청 관리</span>
                         </a>
                     </li>
                     <li class="list_li">
                         <a href="admin_page_user.html">
-                            <div><img class="manage_list_img" src="/src/admin/img_admin/user.png"></div>
+                            <div><img class="manage_list_img" src="${pageContext.request.contextPath}/assets/images/user.png"></div>
                             <span>이용자 관리</span>
                         </a>
                     </li>
                     <li class="list_li">
                         <a class="arrow_down_menu" href="javascript:void(0);">
-                                <div><img class="manage_list_img" src="/src/admin/img_admin/ballot.png"></div>
+                                <div><img class="manage_list_img" src="${pageContext.request.contextPath}/assets/images/ballot.png"></div>
                                 <span>게시글 관리</span>
-                                <img class="arrow_down" src="/src/admin/img_admin/angle-down1.png">
+                                <img class="arrow_down" src="${pageContext.request.contextPath}/assets/images/angle-down1.png">
                                 <ul class="toggle_menu">
                                     <li><a href="admin_page_board.html">
                                         <div>품앗이 게시판</div>
@@ -193,26 +194,26 @@
                     </li>
                     <li class="list_li">
                         <a href="#">
-                            <div><img class="statis_list_img" src="/src/admin/img_admin/statistic.png"></div>
+                            <div><img class="statis_list_img" src="${pageContext.request.contextPath}/assets/images/statistic.png"></div>
                             <span>통계</span>
                         </a>
                     </li>
                     <li class="list_li">
-                        <a href="/src/admin/html_admin/admin_page_service.html">
-                            <div><img class="manage_list_img" src="/src/admin/img_admin/comments.png"></div>
-                            <span>고객 센터</span>
-                        </a>
+                        <form method="post" action = "${pageContext.request.contextPath}/admin/service.adm">
+                            <div><img class="manage_list_img" src="${pageContext.request.contextPath}/assets/images/comments.png"></div>
+                            <button><span>고객 센터</span></button>
+                        </form>
                     </li>
                     <li class="list_li list_admin_notice">
-                        <a href="">
-                            <div><img class="manage_list_img" src="/src/admin/img_admin/exclamation.png"></div>
-                            <span>관리자 공지</span>
-                        </a>
+                   	<form method="post" action = "${pageContext.request.contextPath}/admin/notice.adm">
+                            <div><img class="manage_list_img" src="${pageContext.request.contextPath}/assets/images/exclamation.png"></div>
+                            <button><span>관리자 공지</span></button>
+                      </form>
                     </li>
                 </ul>
             </div>
         </div>
     </div>
 </body>
-<script src="/src/admin/js_admin/admin_page_main.js"></script>
+ <script src="${pageContext.request.contextPath}/assets/js/admin_page_main.js"></script>
 </html>

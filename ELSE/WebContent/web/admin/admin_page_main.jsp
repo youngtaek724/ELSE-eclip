@@ -1,6 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -99,38 +101,25 @@
                             <div class="box box_bottom">
                                 <div class="box_title">최신 게시글</div>
                                 <div class="question_box">
+                                	<c:choose>
+									<c:when test="${not empty boards and fn:length(boards) > 0}">
+									<c:forEach var="board" items="${boards}">	
                                     <ul class="question_list">
                                         <li class="list_title">
                                             <a class="title_content" href="#">
-                                                <div class="title_text">10월 24일 (월) 점검으로 인한 서비스 일시 중지 예정 안내 </div>
-                                                <div class="title_date">2022-10-17</div>
-                                            </a>
-                                        </li>
-                                        <li class="list_title">
-                                            <a class="title_content" href="#">
-                                                <div class="title_text">10월 24일 (월) 점검으로 인한 서비스 일시 중지 예정 안내 </div>
-                                                <div class="title_date">2022-10-17</div>
-                                            </a>
-                                        </li>
-                                        <li class="list_title">
-                                            <a class="title_content" href="#">
-                                                <div class="title_text">10월 24일 (월) 점검으로 인한 서비스 일시 중지 예정 안내 </div>
-                                                <div class="title_date">2022-10-17</div>
-                                            </a>
-                                        </li>
-                                        <li class="list_title">
-                                            <a class="title_content" href="#">
-                                                <div class="title_text">10월 24일 (월) 점검으로 인한 서비스 일시 중지 예정 안내 </div>
-                                                <div class="title_date">2022-10-17</div>
-                                            </a>
-                                        </li>
-                                        <li class="list_title">
-                                            <a class="title_content" href="#">
-                                                <div class="title_text">10월 24일 (월) 점검으로 인한 서비스 일시 중지 예정 안내 </div>
-                                                <div class="title_date">2022-10-17</div>
+                                                <div class="title_text"><c:out value="${board.getBoardTextName()}"/></div>
+                                                <div class="title_date"><c:out value="${board.getBoardTextTime()}"/></div>
                                             </a>
                                         </li>
                                     </ul>
+                                    </c:forEach>
+									</c:when>
+									<c:otherwise>
+									<tr>
+										<td colspan="5" align="center">등록된 게시물이 없습니다.</td>
+									</tr>
+									</c:otherwise>
+									</c:choose>
                                 </div>
                             </div>
                         
@@ -228,23 +217,25 @@
                         </a>
                     </li>
                     <li class="list_li">
-                        <a href="/src/admin/html_admin/admin_page_service.html">
+                        <form method="post" action = "${pageContext.request.contextPath}/admin/service.adm">
                             <div><img class="manage_list_img" src="${pageContext.request.contextPath}/assets/images/comments.png"></div>
-                            <span>고객 센터</span>
-                        </a>
+                            <button><span>고객 센터</span></button>
+                        </form>
                     </li>
                     <li class="list_li list_admin_notice">
-                        <a href="">
+                   	<form method="post" action = "${pageContext.request.contextPath}/admin/notice.adm">
                             <div><img class="manage_list_img" src="${pageContext.request.contextPath}/assets/images/exclamation.png"></div>
-                            <span>관리자 공지</span>
-                        </a>
+                            <button><span>관리자 공지</span></button>
+                      </form>
                     </li>
                 </ul>
             </div>
         </div>
     </div>
 </body>
-<script src="/src/admin/js_admin/admin_page_main.js"></script>
-<script src="/src/admin/js_admin/visit_statis.js"></script>
-<script src="/src/admin/js_admin/new_user.js"></script>
+<!-- <form method="post" action = "${pageContext.request.contextPath}/admin/addOk.adm"> -->
+ <script src="${pageContext.request.contextPath}/assets/js/admin_page_main.js"></script>
+<script src="${pageContext.request.contextPath}/assets/js/admin_page_main.js"></script>
+<script src="${pageContext.request.contextPath}/assets/js/visit_statis.js"></script>
+<script src="${pageContext.request.contextPath}/assets/js/new_user.js"></script>
 </html>

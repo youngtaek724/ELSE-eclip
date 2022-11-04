@@ -22,13 +22,13 @@ public class AddBoardController implements Execute {
 		
 		System.out.println("객체 생성 성공!");
 		adminVO.setBoardId(Integer.valueOf(req.getParameter("boardId")));
-		adminVO.setStatus(Integer.valueOf(req.getParameter("status")));
+		adminVO.setBoardTextName(req.getParameter("boardTextName"));
+		adminVO.setBoardMainText(req.getParameter("boardMainText"));
 		adminVO.setUserNum(Integer.valueOf(req.getParameter("userNum")));
-		adminVO.setMainText(req.getParameter("mainText"));
-		adminVO.setBoardType(req.getParameter("boardType"));
-		System.out.println("adminVO!!");
-		System.out.println(adminVO.getMainText());
 		System.out.println(adminVO.getBoardId());
+		System.out.println(adminVO.getBoardTextName());
+		System.out.println(adminVO.getBoardMainText());
+		adminVO.getUserNum();
 		adminDAO.insertBoard(adminVO);
 		System.out.println("insert에 전달 완료");
 		return null;
