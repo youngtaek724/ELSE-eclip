@@ -21,7 +21,11 @@ public class AdmMainController implements Execute {
 		AdminDAO adminDAO = new AdminDAO();
 		Result result = new Result();
 		req.setAttribute("boards", adminDAO.mainNotice());
+		req.setAttribute("inquirys", adminDAO.mainInquiry());
+		req.setAttribute("notices", adminDAO.mainAdmNotice());
 		System.out.println(adminDAO.mainNotice().get(0).getBoardTextName());
+		System.out.println(adminDAO.mainInquiry().get(0).getIqTextTime());
+		System.out.println(adminDAO.mainAdmNotice().get(0).getBoardMainText());
 		result.setPath("/web/admin/admin_page_main.jsp");
 		
 		return result;

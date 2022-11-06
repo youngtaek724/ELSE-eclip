@@ -10,7 +10,7 @@
     Statement stmt = null;
     ResultSet res = null;
   
-    String jdbcUrl = "jdbc:mysql://localhost:3306/test";
+    String jdbcUrl = "jdbc:mysql://localhost:3306/hot6else";
     String dbId = "root";
     String dbPass = "1234";
 	

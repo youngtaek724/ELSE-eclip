@@ -7,14 +7,21 @@
 	</select>
 
 	<!-- 관리자 게시판 등록 쿼리 -->
-	<insert id = "insertBoard" parameterType = "adminVO">
-	INSERT INTO test.tbl_board
-	(board_id, board_textname, board_boardtype, board_texttime, board_moditime, board_maintext, board_workhard, board_worktime, board_workarea, board_status, board_statusans, user_num)
-	VALUES(#{boardId}, #{boardTextName}, '01', SYSDATE(), SYSDATE(), #{boardMainText}, '', '', '', 0, '', #{userNum})
+	<insert id = "insertBoard" parameterType = "adminVO">	
+	INSERT INTO hot6else.tbl_board
+	VALUES(#{boardId}, #{boardTextName}, '00', '', SYSDATE(), SYSDATE(), #{boardMainText}, '', '', '', 0, '', #{userNum});
 	</insert>
 	
 	<select id = "mainNotice" resultType = "adminDTO">
 		select board_textname , board_texttime from tbl_board tb where board_boardtype = 01 order by board_texttime desc 
+	</select>
+
+	<select id = "mainAdmNotice" resultType = "adminVO">
+		select board_textname , board_texttime from tbl_board tb where board_boardtype = 00 order by board_texttime desc
+	</select>
+
+	<select id = "mainInquiry" resultType = "inquiryVO">
+		select iq_textname, iq_texttime from tbl_inquiry order by iq_texttime desc
 	</select>
 
 	<select id = "selectInquiry" resultType = "inquiryDTO">
@@ -22,7 +29,10 @@
 		where u.user_num = ti.user_num
 	</select>
 
-
+	<select id = "selectAllUser" resultType = "userVO">
+		select user_name, user_email, user_point, user_status ,user_trust, user_phonenum, user_address from tbl_user tu
+	</select>
+	
 	<insert id="rejectInsert">
 		insert into (요청거절테이블)
 		values (게시글 번호, 게시글 제목, 작성자)

@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -36,16 +37,11 @@
                     </div>
                     <div class="user_list">
                         <div class="total_user">전체 이용자 ?명</div>
+                        
                         <div class="user_info_wrapper">
                             <div class="user_info_top_div">
                                 <ul class="user_info">
                                     <li class="check">
-                                        <div class="checkbox">
-                                            <input id="total_check" type="checkbox">
-                                        </div>
-                                    </li>
-                                    <li class="nick user_info_title content_text_align title_bold">
-                                        <span>닉네임</span>
                                     </li>
                                     <li class="user_info_title content_text_align title_bold">
                                         <span>이름</span>
@@ -70,77 +66,46 @@
                                     </li>
                                 </ul>
                             </div>
+                     
                             <div class="user_list_info">
+                
                                 <div class="user_list_box">
+                                   	<c:choose>
+									<c:when test="${not empty users and fn:length(users) > 0}">
+									<c:forEach var="user" items="${users}">	
                                     <ul class="user_content user_info">
-                                        <li class="check">
-                                            <div>
-                                                <input class="one_check" type="checkbox">
-                                            </div>
+                                        <li class="user_info_title user_one_info content_text_align">
+                                            <span><c:out value="${user.getUserName()}"/></span>
                                         </li>
                                         <li class="user_info_title user_one_info content_text_align">
-                                            <span>정보</span>
+                                            <span><c:out value="${user.getUserEmail()}"/></span>
                                         </li>
                                         <li class="user_info_title user_one_info content_text_align">
-                                            <span>정보</span>
+                                            <span><c:out value="${user.getUserPoint()}"/></span>
                                         </li>
                                         <li class="user_info_title user_one_info content_text_align">
-                                            <span>정보</span>
+                                            <span><c:out value="${user.getUserStatus()}"/></span>
                                         </li>
                                         <li class="user_info_title user_one_info content_text_align">
-                                            <span>정보</span>
+                                            <span><c:out value="${user.getUserTrust()}"/></span>
                                         </li>
                                         <li class="user_info_title user_one_info content_text_align">
-                                            <span>정보</span>
+                                            <span><c:out value="${user.getPhoneNumber()}"/></span>
                                         </li>
                                         <li class="user_info_title user_one_info content_text_align">
-                                            <span>정보</span>
-                                        </li>
-                                        <li class="user_info_title user_one_info content_text_align">
-                                            <span>정보</span>
-                                        </li>
-                                        <li class="user_info_title user_one_info content_text_align">
-                                            <span>정보</span>
+                                            <span><c:out value="${user.getUserAddress()}"/></span>
                                         </li>
                                     </ul>
+                                    </c:forEach>
+									</c:when>
+									<c:otherwise>
+									<tr>
+										<td colspan="5" align="center">등록된 게시물이 없습니다.</td>
+									</tr>
+									</c:otherwise>
+									</c:choose>
                                 </div>
                             </div>
-                            <div class="user_list_info">
-                                <div class="user_list_box">
-                                    <ul class="user_content user_info">
-                                        <li class="check">
-                                            <div>
-                                                <input class="one_check" type="checkbox">
-                                            </div>
-                                        </li>
-                                        <li class="user_info_title user_one_info content_text_align">
-                                            <span>정보</span>
-                                        </li>
-                                        <li class="user_info_title user_one_info content_text_align">
-                                            <span>정보</span>
-                                        </li>
-                                        <li class="user_info_title user_one_info content_text_align">
-                                            <span>정보</span>
-                                        </li>
-                                        <li class="user_info_title user_one_info content_text_align">
-                                            <span>정보</span>
-                                        </li>
-                                        <li class="user_info_title user_one_info content_text_align">
-                                            <span>정보</span>
-                                        </li>
-                                        <li class="user_info_title user_one_info content_text_align">
-                                            <span>정보</span>
-                                        </li>
-                                        <li class="user_info_title user_one_info content_text_align">
-                                            <span>정보</span>
-                                        </li>
-                                        <li class="user_info_title user_one_info content_text_align">
-                                            <span>정보</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            
                         </div>
                     </div>
                 </div>

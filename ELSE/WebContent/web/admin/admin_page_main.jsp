@@ -35,8 +35,18 @@
                         <div class="admin_notice">관리자 ToDo</div>
                         <div class="notice_box">
                             <div>
-                                <div class="notice_content">관리자 할 일 1</div>
-                                <div class="notice_content">관리자 할 일 2</div>
+                                <c:choose>
+								<c:when test="${not empty notices and fn:length(notices) > 0}">
+								<c:forEach var="notice" items="${notices}">	
+                                	<div class="notice_content"><c:out value="${notice.getBoardTextName()}"/></div>
+                                </c:forEach>
+								</c:when>
+								<c:otherwise>
+									<tr>
+										<td colspan="5" align="center">등록된 게시물이 없습니다.</td>
+									</tr>
+								</c:otherwise>
+								</c:choose>
                             </div>
                         </div>
                     </div>
@@ -126,38 +136,26 @@
                         <div class="box box_bottom">
                             <div class="box_title">문의글</div>
                             <div class="question_box">
+                            <c:choose>
+								<c:when test="${not empty inquirys and fn:length(inquirys) > 0}">
+								<c:forEach var="inquiry" items="${inquirys}">	
+                            
                                 <ul class="question_list">
                                     <li class="list_title">
                                         <a class="title_content" href="#">
-                                            <div class="title_text">10월 24일 (월) 점검으로 인한 서비스 일시 중지 예정 안내 </div>
-                                            <div class="title_date">2022-10-17</div>
+                                            <div class="title_text"><c:out value="${inquiry.getIqTextName()}"/></div>
+                                            <div class="title_date"><c:out value="${inquiry.getIqTextTime()}"/></div>
                                         </a>
-                                    </li>
-                                    <li class="list_title">
-                                        <a class="title_content" href="#">
-                                            <div class="title_text">10월 24일 (월) 점검으로 인한 서비스 일시 중지 예정 안내 </div>
-                                            <div class="title_date">2022-10-17</div>
-                                        </a>
-                                    </li>
-                                    <li class="list_title">
-                                        <a class="title_content" href="#">
-                                            <div class="title_text">10월 24일 (월) 점검으로 인한 서비스 일시 중지 예정 안내 </div>
-                                            <div class="title_date">2022-10-17</div>
-                                        </a>
-                                    </li>
-                                    <li class="list_title">
-                                        <a class="title_content" href="#">
-                                            <div class="title_text">10월 24일 (월) 점검으로 인한 서비스 일시 중지 예정 안내 </div>
-                                            <div class="title_date">2022-10-17</div>
-                                        </a>
-                                    </li>
-                                    <li class="list_title">
-                                        <a class="title_content" href="#">
-                                            <div class="title_text">10월 24일 (월) 점검으로 인한 서비스 일시 중지 예정 안내 </div>
-                                            <div class="title_date">2022-10-17</div>
-                                        </a>
-                                    </li>
+                                    </li>                                
                                 </ul>
+                                </c:forEach>
+								</c:when>
+								<c:otherwise>
+								<tr>
+									<td colspan="5" align="center">등록된 게시물이 없습니다.</td>
+								</tr>
+								</c:otherwise>
+								</c:choose>
                             </div>
                         </div>
                         </div>
