@@ -28,7 +28,7 @@ public class AdminFrontController extends HttpServlet{
 		System.out.println(target);
 		Result result = null;
 		System.out.println("==========admFrontCont========");
-		
+
 		// 관리자 공지 페이지
 		if(target.equals("/admin/notice.adm")){
 			System.out.println("관리자 공지 페이지로 이동함");
@@ -63,6 +63,26 @@ public class AdminFrontController extends HttpServlet{
 			result = new AdmUserController().execute(req, resp);
 			result.setPath("/web/admin/admin_page_user.jsp");
 		}
+		// 품앗이 게시판 페이지
+		else if(target.equals("/admin/board.adm")) {
+			result = new AdmBoardController().execute(req,resp);
+			result.setPath("/web/admin/admin_page_board.jsp");
+		}
+		else if(target.equals("/admin/boardDetail.adm")) {
+			result = new AdmBoardDetailController().execute(req, resp);
+			result.setPath("/web/admin/output.jsp");
+		}
+		// 홍보 게시판 페이지
+		else if(target.equals("/admin/promotion.adm")) {
+			result = new AdmPromotionController().execute(req,resp);
+			result.setPath("/web/admin/admin_page_promotion.jsp");
+		}
+		// 리뷰 게시판 페이지
+		else if(target.equals("/admin/review.adm")) {
+			result = new AdmReviewController().execute(req,resp);
+			result.setPath("/web/admin/admin_page_review.jsp");
+		}
+		
 		
 		else if(target.equals("/admin/test.adm")) {
 			System.out.println("test.adm");

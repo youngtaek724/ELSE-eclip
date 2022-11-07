@@ -13,7 +13,14 @@ public class AdminDTO {
 	private String userId;
 	private String userName;
 	private String boardTextTime;
+	private int rownumber;
 	
+	public int getRownumber() {
+		return rownumber;
+	}
+	public void setRownumber(int rownumber) {
+		this.rownumber = rownumber;
+	}
 	public String getBoardTextTime() {
 		return boardTextTime;
 	}

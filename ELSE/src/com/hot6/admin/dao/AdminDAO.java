@@ -8,7 +8,8 @@ import com.hot6.admin.vo.AdminDTO;
 import com.hot6.admin.vo.AdminVO;
 import com.hot6.admin.vo.InquiryDTO;
 import com.hot6.admin.vo.InquiryVO;
-import com.hot6.user.vo.UserVO;
+import com.hot6.admin.vo.NoticeVO;
+import com.hot6.user.vo.UserDTO;
 import com.mybatis.config.MyBatisConfig;
 
 public class AdminDAO {
@@ -29,7 +30,17 @@ public class AdminDAO {
 		return sqlSession.selectList("admin.selectAll");
 	}
 	
-	public List<AdminDTO> mainNotice(){
+	// 홍보게시글
+	public List<AdminDTO> selectPromotion(){
+		return sqlSession.selectList("admin.selectPromotion");
+	}
+	
+	// 리뷰게시글
+		public List<AdminDTO> selectReview(){
+			return sqlSession.selectList("admin.selectReview");
+		}
+	
+	public List<NoticeVO> mainNotice(){
 		System.out.println("main DAO 실행");
 		return sqlSession.selectList("admin.mainNotice");
 	}
@@ -43,9 +54,13 @@ public class AdminDAO {
 		System.out.println("mainInquiry");
 		return sqlSession.selectList("admin.mainInquiry");
 	}
- 	
+
+	public List<NoticeVO> selectNotice(){
+		return sqlSession.selectList("admin.selectNotice");
+	}
+	
+	// 메인 최신 게시글
 	public List<AdminVO> mainAdmNotice(){
-		System.out.println("mainADMNotice!!");
 		return sqlSession.selectList("admin.mainAdmNotice");
 	}
 	
@@ -53,8 +68,16 @@ public class AdminDAO {
 		System.out.println("insertBoard 실행");
 		sqlSession.insert("admin.insertBoard", adminVO);
 	}
+
+	public int selectUserCount() {
+		return sqlSession.selectOne("admin.selectUserCount");
+	}
 	
-	public List<UserVO> selectAllUser() {
+	public List<UserDTO> selectAllUser() {
 		return sqlSession.selectList("admin.selectAllUser");
+	}
+	
+	public List<InquiryDTO> detailInquiry(int iqId){
+		return sqlSession.selectList("admin.detailInquiry", iqId);
 	}
 }

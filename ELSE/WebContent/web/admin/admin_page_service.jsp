@@ -81,7 +81,9 @@
                     <li
                       class="notice_title user_info_title content_text_align_left"
                     >
-                      <span><c:out value="${board.getIqTextName()}"/></span>
+                      <span><a href = "${pageContext.request.contextPath}/admin/boardDetail.adm?no=${board.getIqId()}">
+                      <c:out value="${board.getIqTextName()}"/>
+                      <a></a></span>
                     </li>
                     <li class="notice_writer user_info_title board_title">
                       <span><c:out value="${board.getUserName()}"/></span>

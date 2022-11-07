@@ -36,9 +36,9 @@
                         <div class="notice_box">
                             <div>
                                 <c:choose>
-								<c:when test="${not empty notices and fn:length(notices) > 0}">
-								<c:forEach var="notice" items="${notices}">	
-                                	<div class="notice_content"><c:out value="${notice.getBoardTextName()}"/></div>
+								<c:when test="${not empty boards and fn:length(boards) > 0}">
+								<c:forEach var="board" items="${boards}" begin = "0" end = "1" step = "1">	
+                                	<div class="notice_content"><c:out value="${board.getNoTextName()}"/></div>
                                 </c:forEach>
 								</c:when>
 								<c:otherwise>
@@ -66,7 +66,6 @@
                                             <thead>
                                                 <tr>
                                                     <th class="daily_summary_table_head daily_summary_table_head_first">일자</th>
-                                                    <th class="daily_summary_table_head">방문자</th>
                                                     <th class="daily_summary_table_head">등록 게시글</th>
                                                     <th class="daily_summary_table_head">참여 신청</th>
                                                     <th class="daily_summary_table_head">가입자</th>
@@ -80,7 +79,6 @@
                                                     <td class="text_right">깔라만시</td>
                                                     <td class="text_right">깔라만시</td>
                                                     <td class="text_right">깔라만시</td>
-                                                    <td class="text_right">깔라만시</td>
                                                 </tr>
                                             </tbody>
                                             <tfoot>
@@ -90,11 +88,9 @@
                                                     <td class="text_right">진로</td>
                                                     <td class="text_right">진로</td>
                                                     <td class="text_right">진로</td>
-                                                    <td class="text_right">진로</td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text_left">이번 달 합계</td>
-                                                    <td class="text_right">연고</td>
                                                     <td class="text_right">연고</td>
                                                     <td class="text_right">연고</td>
                                                     <td class="text_right">연고</td>
@@ -112,13 +108,13 @@
                                 <div class="box_title">최신 게시글</div>
                                 <div class="question_box">
                                 	<c:choose>
-									<c:when test="${not empty boards and fn:length(boards) > 0}">
-									<c:forEach var="board" items="${boards}">	
+									<c:when test="${not empty notices and fn:length(notices) > 0}">
+									<c:forEach var="notice" items="${notices}" begin = "0" end = "3" step = "1">	
                                     <ul class="question_list">
                                         <li class="list_title">
                                             <a class="title_content" href="#">
-                                                <div class="title_text"><c:out value="${board.getBoardTextName()}"/></div>
-                                                <div class="title_date"><c:out value="${board.getBoardTextTime()}"/></div>
+                                                <div class="title_text"><c:out value="${notice.getBoardTextName()}"/></div>
+                                                <div class="title_date"><c:out value="${notice.getBoardTextTime()}"/></div>
                                             </a>
                                         </li>
                                     </ul>
@@ -138,7 +134,7 @@
                             <div class="question_box">
                             <c:choose>
 								<c:when test="${not empty inquirys and fn:length(inquirys) > 0}">
-								<c:forEach var="inquiry" items="${inquirys}">	
+								<c:forEach var="inquiry" items="${inquirys}" begin = "0" end = "3" step = "1">	
                             
                                 <ul class="question_list">
                                     <li class="list_title">
@@ -169,66 +165,96 @@
 
 
         <div class="menu">
-            <div class="logo_img"><a href="/src/admin/html_admin/admin_page_main.html"><div>ELSE</div></a></div>
-            <div class="menu_admin">
-                <div><a href="#">
-                    <img src="${pageContext.request.contextPath}/assets/images/home.png">
-                    <div>사이트 바로가기</div>
-                </a></div>
-            </div>
-            <div class="manage_list_div">
-                <ul class="manage_list">
-                    <li class="list_li">
-                        <a href="admin_page_request.html">
-                            <div><img class="manage_list_img" src="${pageContext.request.contextPath}/assets/images/browser.png"></div>
-                            <span>요청 관리</span>
-                        </a>
-                    </li>
-                    <li class="list_li">
-                        <a href="admin_page_user.html">
-                            <div><img class="manage_list_img" src="${pageContext.request.contextPath}/assets/images/user.png"></div>
-                            <span>이용자 관리</span>
-                        </a>
-                    </li>
-                    <li class="list_li">
-                        <a class="arrow_down_menu" href="javascript:void(0);">
-                                <div><img class="manage_list_img" src="${pageContext.request.contextPath}/assets/images/ballot.png"></div>
-                                <span>게시글 관리</span>
-                                <img class="arrow_down" src="${pageContext.request.contextPath}/assets/images/angle-down1.png">
-                                <ul class="toggle_menu">
-                                    <li><a href="admin_page_board.html">
-                                        <div>품앗이 게시판</div>
-                                    </a></li>
-                                    <li><a href="admin_page_board_promotion.html">
-                                        <div>홍보 게시판</div>
-                                    </a></li>
-                                    <li><a href="admin_page_board_review.html">
-                                        <div>인증, 후기 게시판</div>
-                                    </a></li>
-                                </ul>
-                        </a>
-                    </li>
-                    <li class="list_li">
-                        <a href="#">
-                            <div><img class="statis_list_img" src="${pageContext.request.contextPath}/assets/images/statistic.png"></div>
-                            <span>통계</span>
-                        </a>
-                    </li>
-                    <li class="list_li">
-                        <form method="post" action = "${pageContext.request.contextPath}/admin/service.adm">
-                            <div><img class="manage_list_img" src="${pageContext.request.contextPath}/assets/images/comments.png"></div>
-                            <button><span>고객 센터</span></button>
-                        </form>
-                    </li>
-                    <li class="list_li list_admin_notice">
-                   	<form method="post" action = "${pageContext.request.contextPath}/admin/notice.adm">
-                            <div><img class="manage_list_img" src="${pageContext.request.contextPath}/assets/images/exclamation.png"></div>
-                            <button><span>관리자 공지</span></button>
-                      </form>
-                    </li>
-                </ul>
-            </div>
+        <div class="logo_img"><a href="${pageContext.request.contextPath}/admin/main.adm"><div>ELSE</div></a></div>
+        <div class="menu_admin">
+          <div>
+            <a href="#">
+              <img src="${pageContext.request.contextPath}/assets/images/home.png" />
+              <div>사이트 바로가기</div>
+            </a>
+          </div>
         </div>
+        <div class="manage_list_div">
+          <ul class="manage_list">
+            <li class="list_li">
+              <a href="${pageContext.request.contextPath}/admin/user.adm">
+                <div>
+                  <img
+                    class="manage_list_img"
+                    src="${pageContext.request.contextPath}/assets/images/user.png"
+                  />
+                </div>
+                <span>이용자 관리</span>
+              </a>
+            </li>
+            <li class="list_li">
+              <a class="arrow_down_menu" href="javascript:void(0);">
+                <div>
+                  <img
+                    class="manage_list_img"
+                    src="${pageContext.request.contextPath}/assets/images/ballot.png"
+                  />
+                </div>
+                <span>게시글 관리</span>
+                <img
+                  class="arrow_down"
+                  src="${pageContext.request.contextPath}/assets/images/angle-down1.png"
+                />
+                <ul class="toggle_menu">
+                  <li>
+                    <a href="${pageContext.request.contextPath}/admin/board.adm">
+                      <div>품앗이 게시판</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="${pageContext.request.contextPath}/admin/promotion.adm">
+                      <div>홍보 게시판</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="${pageContext.request.contextPath}/admin/review.adm">
+                      <div>인증, 후기 게시판</div>
+                    </a>
+                  </li>
+                </ul>
+              </a>
+            </li>
+            <li class="list_li">
+              <a href="#">
+                <div>
+                  <img
+                    class="statis_list_img"
+                    src="${pageContext.request.contextPath}/assets/images/statistic.png"
+                  />
+                </div>
+                <span>통계</span>
+              </a>
+            </li>
+            <li class="list_li">
+              <a href="${pageContext.request.contextPath}/admin/service.adm">
+                <div>
+                  <img
+                    class="manage_list_img"
+                    src="${pageContext.request.contextPath}/assets/images/comments.png"
+                  />
+                </div>
+                <span>고객 센터</span>
+              </a>
+            </li>
+            <li class="list_li list_admin_notice">
+              <a href="${pageContext.request.contextPath}/admin/notice.adm">
+                <div>
+                  <img
+                    class="manage_list_img"
+                    src="${pageContext.request.contextPath}/assets/images/exclamation.png"
+                  />
+                </div>
+                <span>관리자 공지</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
 </body>
 <!-- <form method="post" action = "${pageContext.request.contextPath}/admin/addOk.adm"> -->

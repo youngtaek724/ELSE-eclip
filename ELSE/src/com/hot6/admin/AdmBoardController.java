@@ -10,16 +10,16 @@ import com.hot6.Execute;
 import com.hot6.Result;
 import com.hot6.admin.dao.AdminDAO;
 
-public class AdmUserController implements Execute {
+public class AdmBoardController implements Execute {
 
 	@Override
 	public Result execute(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServerException {
 		req.setCharacterEncoding("utf-8");
+		System.out.println("컨트롤러얌!");
 		AdminDAO adminDAO = new AdminDAO();
 		Result result = new Result();
-		req.setAttribute("users", adminDAO.selectAllUser());
-		req.setAttribute("total", adminDAO.selectUserCount());
-		System.out.println(adminDAO.selectUserCount());
+		req.setAttribute("boards", adminDAO.selectAll());
+		result.setPath("web/admin/admin_page_board.jsp");
 		return result;
 	}
 

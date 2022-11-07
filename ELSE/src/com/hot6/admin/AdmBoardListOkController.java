@@ -19,7 +19,7 @@ public class AdmBoardListOkController implements Execute {
 		
 		AdminDAO adminDAO = new AdminDAO();
 		Result result = new Result();
-		req.setAttribute("boards", adminDAO.selectAll());
+		req.setAttribute("boards", adminDAO.selectNotice());
 		result.setPath("/web/admin/admin_page_admin_notice.jsp");
 		return result;
 	}

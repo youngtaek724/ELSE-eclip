@@ -8,6 +8,7 @@
 
 	<typeAliases>
    		<typeAlias type="com.hot6.user.vo.UserVO" alias="userVO"/>
+   		<typeAlias type="com.hot6.user.vo.UserDTO" alias="userDTO"/>
    		<typeAlias type="com.hot6.user.vo.UsermodiVO" alias="usermodiVO"/>
    		<typeAlias type="com.hot6.user.vo.TrustVO" alias="tructVO"/>
    		<typeAlias type="com.hot6.user.vo.SubmitVO" alias="submitVO"/>
@@ -19,6 +20,7 @@
    		<typeAlias type="com.hot6.admin.vo.AdminDTO" alias="adminDTO"/>
    		<typeAlias type="com.hot6.admin.vo.InquiryVO" alias="inquiryVO"/>
    		<typeAlias type="com.hot6.admin.vo.InquiryDTO" alias="inquiryDTO"/>
+   		<typeAlias type="com.hot6.admin.vo.NoticeVO" alias="noticeVO"/>
    </typeAliases>
 
    <environments default="mysql">

@@ -1,6 +1,6 @@
 package com.hot6.user.vo;
 
-public class UserVO {
+public class UserDTO {
 	private int userNumber;
 	private String userName;
 	private String userPw;
@@ -11,6 +11,14 @@ public class UserVO {
 	private int userTrust;
 	private String userAddress;
 	private String userSince;
+	private int total;
+	
+	public int getTotal() {
+		return total;
+	}
+	public void setTotal(int total) {
+		this.total = total;
+	}
 	public int getUserNumber() {
 		return userNumber;
 	}
@@ -74,5 +82,4 @@ public class UserVO {
 	
 	
 
-	
 }
