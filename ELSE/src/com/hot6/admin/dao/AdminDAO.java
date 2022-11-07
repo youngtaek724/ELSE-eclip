@@ -80,4 +80,12 @@ public class AdminDAO {
 	public List<InquiryDTO> detailInquiry(int iqId){
 		return sqlSession.selectList("admin.detailInquiry", iqId);
 	}
+	
+	public int todayInquiry() {
+		return sqlSession.selectOne("admin.todayInquiry");
+	}
+	
+	public int todaySign() {
+		return sqlSession.selectOne("admin.todaySign");
+	}
 }

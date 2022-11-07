@@ -131,18 +131,7 @@
         <div class="manage_list_div">
           <ul class="manage_list">
             <li class="list_li">
-              <a href="admin_page_request.html">
-                <div>
-                  <img
-                    class="manage_list_img"
-                    src="${pageContext.request.contextPath}/assets/images/browser.png"
-                  />
-                </div>
-                <span>요청 관리</span>
-              </a>
-            </li>
-            <li class="list_li">
-              <a href="admin_page_user.html">
+              <a href="${pageContext.request.contextPath}/admin/user.adm">
                 <div>
                   <img
                     class="manage_list_img"

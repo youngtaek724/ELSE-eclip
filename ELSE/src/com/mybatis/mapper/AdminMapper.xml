@@ -61,6 +61,13 @@
 	from tbl_user u join tbl_inquiry ti where iq_id = #{iqId} and u.user_num =ti.user_num ;
 	</select>
 	
+	<select id = "todayInquiry" resultType = "_int">
+		select count(iq_id) from tbl_inquiry ti where  DATE_FORMAT(iq_texttime,'%Y-%m-%d') =  DATE_FORMAT( sysdate(),'%Y-%m-%d')
+	</select> 
+	
+	<select id ="todaySign" resultType = "_int">
+		select count(user_num) from tbl_user tu where  DATE_FORMAT(user_since,'%Y-%m-%d') =  DATE_FORMAT( sysdate(),'%Y-%m-%d')
+	</select>
 	
 	<insert id="rejectInsert">
 		insert into (요청거절테이블)

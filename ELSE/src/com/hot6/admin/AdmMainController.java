@@ -23,8 +23,9 @@ public class AdmMainController implements Execute {
 		req.setAttribute("boards", adminDAO.mainNotice());
 		req.setAttribute("inquirys", adminDAO.mainInquiry());
 		req.setAttribute("notices", adminDAO.mainAdmNotice());
+		req.setAttribute("todayInquiry", adminDAO.todayInquiry());
+		req.setAttribute("todaySign", adminDAO.todaySign());
 		result.setPath("/web/admin/admin_page_main.jsp");
-		
 		return result;
 	}
 }

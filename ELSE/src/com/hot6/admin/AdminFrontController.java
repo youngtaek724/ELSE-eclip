@@ -82,7 +82,10 @@ public class AdminFrontController extends HttpServlet{
 			result = new AdmReviewController().execute(req,resp);
 			result.setPath("/web/admin/admin_page_review.jsp");
 		}
-		
+		// 이용자 관리 페이지
+		else if (target.equals("/admin/user.adm")) {
+			
+		}
 		
 		else if(target.equals("/admin/test.adm")) {
 			System.out.println("test.adm");

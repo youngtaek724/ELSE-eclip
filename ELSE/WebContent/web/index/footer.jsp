@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="css/footer.css" rel="stylesheet" />
+    <link href="${pageContext.request.contextPath}/assets/css/index/footer.css" rel="stylesheet" />
     <!--폰트 관련 css-->
     <link
       rel="stylesheet"
@@ -88,20 +88,16 @@
           이곳에 Footer의 내용을 적습니다<br />
           ex) 6조 파이팅
         </p>
+                  <select>
+            <option value="KR">한국 (한국어)</option>
+          </select>
         <div class="LocaleSelect_localeSelectClass__7TvCY">
           <img
             class="countryIcon"
             src="https://static.wanted.co.kr/images/userweb/ico_KR.svg"
             alt="country flag KR"
           />
-          <select>
-            <option value="KR">한국 (한국어)</option>
-            <!--
-              <option value="JP">日本 (日本語)</option>
-              <option value="WW">Worldwide (English)</option>
-              <option value="SG">Singapore (English)</option>
-              !-->
-          </select>
+
           <i class="icon-arrow_bottom_fill"></i>
         </div>
       </div>

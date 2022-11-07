@@ -86,8 +86,8 @@
                                                     <td class="text_left">최근 7일 합계</td>
                                                     <td class="text_right">진로</td>
                                                     <td class="text_right">진로</td>
-                                                    <td class="text_right">진로</td>
-                                                    <td class="text_right">진로</td>
+                                                    <td class="text_right">${todaySign} 명</td>
+                                                    <td class="text_right">${todayInquiry} 건</td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text_left">이번 달 합계</td>

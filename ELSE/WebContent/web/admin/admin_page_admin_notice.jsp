@@ -125,7 +125,7 @@
         </div>
       </div>
 
-                 <div class="menu">
+    <div class="menu">
         <div class="logo_img"><a href="${pageContext.request.contextPath}/admin/main.adm"><div>ELSE</div></a></div>
         <div class="menu_admin">
           <div>
@@ -138,18 +138,7 @@
         <div class="manage_list_div">
           <ul class="manage_list">
             <li class="list_li">
-              <a href="admin_page_request.html">
-                <div>
-                  <img
-                    class="manage_list_img"
-                    src="${pageContext.request.contextPath}/assets/images/browser.png"
-                  />
-                </div>
-                <span>요청 관리</span>
-              </a>
-            </li>
-            <li class="list_li">
-              <a href="admin_page_user.html">
+              <a href="${pageContext.request.contextPath}/admin/user.adm">
                 <div>
                   <img
                     class="manage_list_img"
@@ -174,17 +163,17 @@
                 />
                 <ul class="toggle_menu">
                   <li>
-                    <a href="admin_page_board.html">
+                    <a href="${pageContext.request.contextPath}/admin/board.adm">
                       <div>품앗이 게시판</div>
                     </a>
                   </li>
                   <li>
-                    <a href="admin_page_board_promotion.html">
+                    <a href="${pageContext.request.contextPath}/admin/promotion.adm">
                       <div>홍보 게시판</div>
                     </a>
                   </li>
                   <li>
-                    <a href="admin_page_board_review.html">
+                    <a href="${pageContext.request.contextPath}/admin/review.adm">
                       <div>인증, 후기 게시판</div>
                     </a>
                   </li>
