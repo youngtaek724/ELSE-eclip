@@ -34,10 +34,9 @@
         <header class="top_header">
           <div class="headerbar">
           <div style = "display : flex; justify-content: space-between; width : 80%;">
-            <div class="admin_name">관리자 공지</div>
+            <div class="admin_name">문의사항 상세내용</div>
             </div>
             <div class="exit_button_div">
-              <button class="exit_button">나가기</button>
             </div>
           </div>
         </header>

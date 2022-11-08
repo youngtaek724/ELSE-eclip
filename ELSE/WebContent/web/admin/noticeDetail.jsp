@@ -35,7 +35,6 @@
           <div class="headerbar">
           <div style = "display : flex; justify-content: space-between; width : 80%;">
             <div class="admin_name">관리자 공지</div>
-            <span>총 3 개 </span>
             </div>
             <div class="exit_button_div">
               <button class="exit_button">나가기</button>
@@ -46,81 +45,29 @@
           <div class="content_wrapper">
             <div class="user_list">
               <div class="total_user">
-                공지 사항
-                <form method="post" action = "${pageContext.request.contextPath}/admin/addBoard.adm">
-                <button class = "btn_write">글작성</button>
+                상세 내용
+                <form method="post" action = "${pageContext.request.contextPath}/admin/service.adm">
+                <button class = "btn_write">목록</button>
                 </form>
               </div>
                
               <div class="user_info_wrapper">
-                <div class="user_info_top_div">
-                  <ul class="notice_info">
-                    <li
-                      class="notice_number user_info_title content_text_align title_bold"
-                    >
-                      <span>번호</span>
-                    </li>
-                    <li
-                      class="notice_title user_info_title content_text_align title_bold"
-                    >
-                   <span>제목</span>
-                    </li>
-                    <li
-                      class="notice_writer user_info_title board_title title_bold"
-                    >
-                      <span>작성자</span>
-                    </li>
-                    <li
-                      class="notice_date user_info_title content_text_align title_bold"
-                    >
-                      <span>작성 날짜</span>
-                    </li>                                
-                  </ul>
-                </div>
-					<c:choose>
-					<c:when test="${not empty boards and fn:length(boards) > 0}">
-					<c:forEach var="board" items="${boards}">
-					 <div class="notice_info_one_important">
-                  <ul class="notice_info">
-                    <li class="notice_number_important user_info_title content_text_align" name = "no">
-                      <span><c:out value="${board.getNoRowNum()}"/></span>
-                    </li>
-                    <li class="notice_title user_info_title content_text_align_left">
-                        <a href = "${pageContext.request.contextPath}/admin/noticeDetail.adm?no=${board.getNoId()}"> 
-                        <span><c:out value="${board.getNoTextName()}"/></span>
-                        </a>
-                    </li>
-                    <li class="notice_writer user_info_title board_title">
-                      <span><c:out value="${board.getNoWriter()}"/></span> </li>
-                    <li class="notice_date user_info_title content_text_align">
-                      <span><c:out value="${board.getNoTextTime()}"/></span></li>
-                  </ul>
-                </div>
-					</c:forEach>
+              	<div class = "container">
+                	<c:choose>
+					<c:when test="${not empty id and fn:length(id) > 0}">
+					<c:forEach var="id" items="${id}">	
+					<div class = "innerDetail"><span class ="leftDetail">제목 : <c:out value="${id.getNoTextName()}"/></span></div>
+					<div class = "innerDetail"><span>작성 시간: <c:out value="${id.getNoTextTime()}"/></span></div>
+					<div class = "innerDetail">상세 내용 : <c:out value="${id.getNoMainText()}"/></div>
+				 	</c:forEach>
 					</c:when>
 					<c:otherwise>
-						<tr>
-							<td colspan="5" align="center">등록된 게시물이 없습니다.</td>
-						</tr>
+					<tr>
+						<td colspan="5" align="center">등록된 게시물이 없습니다.</td>
+					</tr>
 					</c:otherwise>
 					</c:choose>
-                </div>
-                <div class="page_number">
-                  <ul class="page_number_ul">
-                    <div class="page_number_div">
-                      <li class="page_number_li"><strong>1</strong></li>
-                      <li class="page_number_li"><strong>2</strong></li>
-                      <li class="page_number_li"><strong>3</strong></li>
-                      <li class="page_number_li"><strong>4</strong></li>
-                      <li class="page_number_li"><strong>5</strong></li>
-                      <li class="page_number_li"><strong>6</strong></li>
-                      <li class="page_number_li"><strong>7</strong></li>
-                      <li class="page_number_li"><strong>8</strong></li>
-                      <li class="page_number_li"><strong>9</strong></li>
-                      <li class="page_number_li"><strong>10</strong></li>
-                      <li class="page_number_next_li"><strong>다음</strong></li>
-                    </div>
-                  </ul>
+					</div>
                 </div>
               </div>
             </div>
@@ -128,7 +75,7 @@
         </div>
       </div>
 
-    <div class="menu">
+                 <div class="menu">
         <div class="logo_img"><a href="${pageContext.request.contextPath}/admin/main.adm"><div>ELSE</div></a></div>
         <div class="menu_admin">
           <div>
@@ -141,7 +88,7 @@
         <div class="manage_list_div">
           <ul class="manage_list">
             <li class="list_li">
-              <a href="${pageContext.request.contextPath}/admin/user.adm">
+              <a href="admin_page_user.html">
                 <div>
                   <img
                     class="manage_list_img"
@@ -166,17 +113,17 @@
                 />
                 <ul class="toggle_menu">
                   <li>
-                    <a href="${pageContext.request.contextPath}/admin/board.adm">
+                    <a href="admin_page_board.html">
                       <div>품앗이 게시판</div>
                     </a>
                   </li>
                   <li>
-                    <a href="${pageContext.request.contextPath}/admin/promotion.adm">
+                    <a href="admin_page_board_promotion.html">
                       <div>홍보 게시판</div>
                     </a>
                   </li>
                   <li>
-                    <a href="${pageContext.request.contextPath}/admin/review.adm">
+                    <a href="admin_page_board_review.html">
                       <div>인증, 후기 게시판</div>
                     </a>
                   </li>
@@ -227,3 +174,7 @@
   	}
   </script>
 </html>
+
+
+
+              

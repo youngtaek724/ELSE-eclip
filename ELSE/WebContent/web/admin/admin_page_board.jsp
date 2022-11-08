@@ -14,7 +14,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
-    <title></title>
+<script src = "https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <title>품앗이 게시판</title>
 </head>
 <body>
     <div id="base">
@@ -35,9 +36,10 @@
                             <input class="search_text" type="text" placeholder="검색">
                         </div>
                     </div>
+                
                     <div class="user_list">
                         <div class="total_user">품앗이 게시글
-                            <input class="btn_delete" type="button" value="삭제">
+                            <input class="btn_delete" type="button" value="삭제" onclick = "deleteReport()">
                         </div>
                         <div class="user_info_wrapper">
                             <div class="user_info_top_div">
@@ -76,15 +78,17 @@
                                     <ul class="user_content user_info">
                                         <li class="check">
                                             <div>
-                                                <input class="one_check" type="checkbox">
+                                            	<form method="post" action = "${pageContext.request.contextPath}/admin/delete.adm">
+                                                <input class="one_check" type="button" value = "삭제" name = "test" id = "${board.getBoardId()}" style = "width:40px; height : 20px">                        
+                                                </form>
                                             </div>
                                         </li>
                                         <li class="user_info_title user_one_info content_text_align">
                                             <span><c:out value="${board.getRownumber()}"/></span>
                                         </li>
                                          <li class="user_info_title user_one_info board_title" >
-                                            <span><a href = "${pageContext.request.contextPath}/admin/boardDetail.adm?no=${board.getBoardId()}">
-                                            <c:out value="${board.getBoardTextName()}"/></a></span>
+                                            <span>
+                                            <c:out value="${board.getBoardTextName()}"/></span>
                                         </li>
                                         <li class="user_info_title user_one_info content_text_align">
                                             <span><c:out value="${board.getUserName()}"/></span>
@@ -109,6 +113,7 @@
 								</c:otherwise>
 								</c:choose>
                             </div>
+                   
                         </div>
                     </div>
                 </div>
@@ -221,8 +226,7 @@ function popup(){
 	window.open(url, name, option);
 }
 
-function hi(){
-	alert("hi");
-}
+
+
 </script>
 </html>

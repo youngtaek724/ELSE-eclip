@@ -15,7 +15,6 @@ public class AdmServiceController implements Execute {
 	@Override
 	public Result execute(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServerException {
 		req.setCharacterEncoding("utf-8");
-		System.out.println("서비스 컨트롤러");
 		AdminDAO adminDAO = new AdminDAO();
 		Result result = new Result();
 		req.setAttribute("boards", adminDAO.selectInquiry());

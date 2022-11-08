@@ -7,8 +7,16 @@ public class NoticeVO {
 	private String noMainText;
 	private String noTextTime;
 	private String noWriter;
+	private int noRowNum;
 	
 	
+	
+	public int getNoRowNum() {
+		return noRowNum;
+	}
+	public void setNoRowNum(int noRowNum) {
+		this.noRowNum = noRowNum;
+	}
 	public String getNoWriter() {
 		return noWriter;
 	}

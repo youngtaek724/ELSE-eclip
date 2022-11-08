@@ -50,8 +50,10 @@
                             </div>
                         </div>
                     </div>
-
-                    
+                    <c:forEach var="test" items="${test}" begin = "0" end = "7" step = "1">	
+                    <input type = "list" value = "${test}" id = "test">
+                    </c:forEach>
+                     
                     <div class="main_content">
                         <div class="box_box_top">
                             <div class="box box_top">
@@ -226,7 +228,7 @@
               </a>
             </li>
             <li class="list_li">
-              <a href="#" id = "click">
+              <a href="#">
                 <div>
                   <img
                     class="statis_list_img"
@@ -269,11 +271,7 @@
 <script src="${pageContext.request.contextPath}/assets/js/visit_statis.js"></script>
 <script src="${pageContext.request.contextPath}/assets/js/new_user.js"></script>
 <script>
- 	document.getElementById("click").addEventListener('click', clickEvent);
- 	
- 	function clickEvent(){
- 		alert("준비중입니다");
- 	}
+
 
 
 </script>

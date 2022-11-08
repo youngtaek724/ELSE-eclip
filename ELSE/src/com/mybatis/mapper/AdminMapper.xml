@@ -24,8 +24,9 @@
 
 	<!-- 관리자 게시판 등록 쿼리 -->
 	<insert id = "insertBoard" parameterType = "adminVO">	
-	INSERT INTO hot6else.tbl_board
-	VALUES(#{boardId}, #{boardTextName}, '00', '', SYSDATE(), SYSDATE(), #{boardMainText}, '', '', '', 0, '', #{userNum});
+	INSERT INTO hot6else.tbl_notice
+	(no_textname, no_maintext, no_texttime, no_writer)
+	VALUES(#{boardTextName}, #{boardMainText}, sysdate(), 'admin');
 	</insert>
 	
 	<select id = "mainNotice" resultType = "noticeVO">
@@ -33,20 +34,23 @@
 	</select>
 
 	<select id ="selectNotice" resultType = "noticeVO">
-		select no_id, no_textName, no_maintext, no_textTime, no_writer from tbl_notice
-	</select>
+		select @rownum := @rownum +1 no_rowNum, a.no_textName , a.no_maintext , a.no_textTime, no_writer, no_id  
+		from (select no_id, no_textName, no_maintext, no_textTime, no_writer from tbl_notice order by no_textTime desc) a, 	
+		(select @rownum :=0) rownum;
+
+	</select>	
 	
 	<select id = "mainAdmNotice" resultType = "adminVO">
 		select board_textname , board_texttime from tbl_board tb order by board_texttime desc ;
 	</select>
 
 	<select id = "mainInquiry" resultType = "inquiryVO">
-		select iq_textname, iq_texttime from tbl_inquiry order by iq_texttime desc
+		select iq_textname, iq_texttime, iq_id from tbl_inquiry order by iq_texttime desc
 	</select>
 
 	<select id = "selectInquiry" resultType = "inquiryDTO">
 		select iq_id , iq_textname, iq_texttime , iq_answerYN , user_name from tbl_user u join tbl_inquiry ti
-		where u.user_num = ti.user_num
+		where u.user_num = ti.user_num order by iq_texttime desc
 	</select>
 
 	<select id = "selectAllUser" resultType = "userDTO">
@@ -61,27 +65,38 @@
 	from tbl_user u join tbl_inquiry ti where iq_id = #{iqId} and u.user_num =ti.user_num ;
 	</select>
 	
+	<select id = "detailNotice" resultType = "noticeVO">
+		select no_textname , no_maintext , no_texttime  from tbl_notice where no_id = #{no_id}
+	</select>
+	
 	<select id = "todayInquiry" resultType = "_int">
 		select count(iq_id) from tbl_inquiry ti where  DATE_FORMAT(iq_texttime,'%Y-%m-%d') =  DATE_FORMAT( sysdate(),'%Y-%m-%d')
 	</select> 
 	
+	<select id = "monthInquiry" resultType = "_int">
+		select count(iq_id) from tbl_inquiry ti where  DATE_FORMAT(iq_texttime,'%Y-%m-%d') between #{month} and  DATE_FORMAT( sysdate(),'%Y-%m-%d')
+	</select>
 	<select id ="todaySign" resultType = "_int">
 		select count(user_num) from tbl_user tu where  DATE_FORMAT(user_since,'%Y-%m-%d') =  DATE_FORMAT( sysdate(),'%Y-%m-%d')
 	</select>
 	
-	<insert id="rejectInsert">
-		insert into (요청거절테이블)
-		values (게시글 번호, 게시글 제목, 작성자)
-	</insert>
-
-	<delete id="reqTableDelete" >
-		delete from (요청/신청 테이블)
-		where (승인/거절 버튼이 눌린 거)
-	</delete>
+	<select id ="monthSign" resultType = "_int">
+		select count(user_num) from tbl_user tu where  DATE_FORMAT(user_since,'%Y-%m-%d')  between #{month} and  DATE_FORMAT( sysdate(),'%Y-%m-%d');
+	</select>
 	
-	<insert id="noticeInsert" >
-		insert into (관리자공지)
-		values (글제목, 작성날짜, 작성자)
-	</insert>
+	<select id = "todayBoard" resultType = "_int">
+		select count(board_id) from tbl_board tb where  DATE_FORMAT(board_texttime ,'%Y-%m-%d') =  DATE_FORMAT( sysdate(),'%Y-%m-%d')
+	</select>
+	
+	<select id = "monthBoard" resultType ="_int">
+		select count(board_id) from tbl_board tb where  DATE_FORMAT(board_texttime ,'%Y-%m-%d') between #{month} and  DATE_FORMAT( sysdate(),'%Y-%m-%d')
+	</select>
+	
+	<select id = "todayParti" resultType = "_int">
+		select count(parti_idnum) from tbl_parti tp where DATE_FORMAT(parti_time,'%Y-%m-%d') =  DATE_FORMAT( sysdate(),'%Y-%m-%d')
+	</select>
 
+	<select id = "monthParti" resultType = "_int">
+		select count(parti_idnum) from tbl_parti tp where DATE_FORMAT(parti_time,'%Y-%m-%d') between #{month} and  DATE_FORMAT( sysdate(),'%Y-%m-%d')
+	</select>
 </mapper>

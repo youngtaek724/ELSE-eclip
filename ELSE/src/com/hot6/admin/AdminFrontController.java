@@ -25,29 +25,26 @@ public class AdminFrontController extends HttpServlet{
 	
 	protected void doProcess(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		String target = req.getRequestURI().substring(req.getContextPath().length());
-		System.out.println(target);
 		Result result = null;
-		System.out.println("==========admFrontCont========");
 
 		// 관리자 공지 페이지
 		if(target.equals("/admin/notice.adm")){
-			System.out.println("관리자 공지 페이지로 이동함");
+			System.out.println("!");
 			result = new Result();
 			result = new AdmBoardListOkController().execute(req, resp);
 			result.setPath("/web/admin/admin_page_admin_notice.jsp");
 		}
 		//게시글 작성 페이지 완료
 		else if(target.equals("/admin/addBoard.adm")) {
-			System.out.println("관리자 게시글 작성 페이지");
 			result = new Result();
-			result.setPath("/web/admin/admin_page_insert_board.jsp");}
+			result.setPath("/web/admin/admin_page_insert_board.jsp");
+			}
 				
 		//관리자 공지글 작성 완료
 		else if(target.equals("/admin/addOk.adm")) {
-			System.out.println("게시글이 전송되었습니다");
-			result = new AddBoardController().execute(req, resp);		
-			System.out.println("게시글이 등록되었습니다");}
-		
+			result = new AddBoardController().execute(req, resp);	
+			result.setPath("/admin/notice.adm");	
+		}
 		// 메인 페이지
 		else if(target.equals("/admin/main.adm")) {
 			result = new AdmMainController().execute(req, resp);
@@ -72,6 +69,10 @@ public class AdminFrontController extends HttpServlet{
 			result = new AdmBoardDetailController().execute(req, resp);
 			result.setPath("/web/admin/output.jsp");
 		}
+		else if(target.equals("/admin/noticeDetail.adm")) {
+			result = new AdmNoticeDetailController().execute(req, resp);
+			result.setPath("/web/admin/noticeDetail.jsp");
+		}
 		// 홍보 게시판 페이지
 		else if(target.equals("/admin/promotion.adm")) {
 			result = new AdmPromotionController().execute(req,resp);
@@ -86,13 +87,13 @@ public class AdminFrontController extends HttpServlet{
 		else if (target.equals("/admin/user.adm")) {
 			
 		}
-		
 		else if(target.equals("/admin/test.adm")) {
-			System.out.println("test.adm");
 			result = new Result();
 			result.setPath("/web/admin/test.jsp");
 		}
-		
+		else if(target.equals("/admin/delete.adm")) {
+			System.out.println("delete");
+		}
 		
 		
 		if(result != null) {

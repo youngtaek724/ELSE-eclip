@@ -15,7 +15,6 @@ import com.mybatis.config.MyBatisConfig;
 public class AdminDAO {
 	public SqlSession sqlSession;
 	public AdminDAO() {
-		System.out.println("admDAO!!");
 		try {
 			sqlSession = MyBatisConfig.getSqlSessionFactory().openSession(true);	
 		} catch (Exception e) {
@@ -26,7 +25,6 @@ public class AdminDAO {
 	}	
 	
 	public List<AdminDTO> selectAll() {
-		System.out.println("admDTO 실행");
 		return sqlSession.selectList("admin.selectAll");
 	}
 	
@@ -41,17 +39,14 @@ public class AdminDAO {
 		}
 	
 	public List<NoticeVO> mainNotice(){
-		System.out.println("main DAO 실행");
 		return sqlSession.selectList("admin.mainNotice");
 	}
 	
 	public List<InquiryDTO> selectInquiry(){
-		System.out.println("selectInquiry");
 		return sqlSession.selectList("admin.selectInquiry");
 	}
 	
 	public List<InquiryVO> mainInquiry(){
-		System.out.println("mainInquiry");
 		return sqlSession.selectList("admin.mainInquiry");
 	}
 
@@ -65,7 +60,6 @@ public class AdminDAO {
 	}
 	
 	public void insertBoard(AdminVO adminVO) {
-		System.out.println("insertBoard 실행");
 		sqlSession.insert("admin.insertBoard", adminVO);
 	}
 
@@ -81,11 +75,41 @@ public class AdminDAO {
 		return sqlSession.selectList("admin.detailInquiry", iqId);
 	}
 	
+	public List<NoticeVO> detailNotice(int noId){
+		return sqlSession.selectList("admin.detailNotice", noId);
+	}
+	
 	public int todayInquiry() {
 		return sqlSession.selectOne("admin.todayInquiry");
+	}
+	
+	public int monthInquiry(String month) {
+		return sqlSession.selectOne("admin.monthInquiry", month);
 	}
 	
 	public int todaySign() {
 		return sqlSession.selectOne("admin.todaySign");
 	}
+	
+	public int monthSign(String month) {
+		return sqlSession.selectOne("admin.monthSign", month);
+	}
+	
+	public int todayBoard() {
+		return sqlSession.selectOne("admin.todayBoard");
+	}
+	
+	public int monthBoard(String month) {
+		return sqlSession.selectOne("admin.monthBoard", month);
+	}
+	
+	public int todayParti() {
+		return sqlSession.selectOne("admin.todayParti");
+	}
+	
+	public int monthParti(String month) {
+		return sqlSession.selectOne("admin.monthParti", month);
+	}
+
+	
 }

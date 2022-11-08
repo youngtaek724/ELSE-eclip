@@ -18,13 +18,12 @@ public class AddBoardController implements Execute {
 		req.setCharacterEncoding("utf-8");
 		AdminDAO adminDAO = new AdminDAO();
 		AdminVO adminVO = new AdminVO();
-		
-		adminVO.setBoardId(Integer.valueOf(req.getParameter("boardId")));
+		Result result = new Result();
+	
 		adminVO.setBoardTextName(req.getParameter("boardTextName"));
 		adminVO.setBoardMainText(req.getParameter("boardMainText"));
-		adminVO.setUserNum(Integer.valueOf(req.getParameter("userNum")));
-		adminVO.getUserNum();
 		adminDAO.insertBoard(adminVO);
-		return null;
+		result.setPath("/web/admin/admin_page_admin_notice.jsp");	
+		return result;
 	}
 }

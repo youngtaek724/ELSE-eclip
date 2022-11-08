@@ -19,7 +19,6 @@ public class AdmBoardDetailController implements Execute {
 		int iqId = Integer.parseInt(req.getParameter("no"));
 		Result result = new Result();
 		req.setAttribute("id", adminDAO.detailInquiry(iqId));
-		System.out.println(adminDAO.detailInquiry(iqId).get(0).getIqMainText());
 		return result;
 	}
 

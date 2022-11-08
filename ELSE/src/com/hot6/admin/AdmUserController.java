@@ -19,7 +19,6 @@ public class AdmUserController implements Execute {
 		Result result = new Result();
 		req.setAttribute("users", adminDAO.selectAllUser());
 		req.setAttribute("total", adminDAO.selectUserCount());
-		System.out.println(adminDAO.selectUserCount());
 		return result;
 	}
 
